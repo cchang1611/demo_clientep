@@ -1,0 +1,230 @@
+/* Defines the width of the carousel and centers it on the page */
+
+
+.slick-carousel {
+
+  width: 100%;
+  max-width: 963px;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  display: -ms-flexbox;
+  justify-content: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+}
+
+
+/* The width of each slide */
+.slick-slide {
+  width: 350px;
+}
+
+/* Color of the arrows */
+.slick-next::before, .slick-prev::before {
+
+  color: var(--b04);
+  font-size: 40px;
+
+}
+
+.slick-prev, .slick-next {
+
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: -30px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: 0;
+
+}
+
+.slick-prev {
+
+    left: -50px !important;
+
+}
+
+.slick-next {
+
+    right: -50px !important;
+
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+
+:focus {
+
+    outline:none;
+
+}
+
+.slick-list {
+
+    width: 100%;
+    height: 150px;
+    max-width: 963px;
+
+}
+
+.Carrousel__ThumbContainer {
+
+  min-width: 150px !important;
+  background: var(--b01);
+  height: 150px;
+  border-radius: 20px;
+  display: block !important;
+  margin-left: 10px;
+  position: -ms-relative;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.Carrousel__ThumbContainer:hover {
+
+  background: var(--b03);
+
+}
+
+.Carrousel__Title {
+
+  background: var(--b03);
+  width: 150px;
+  min-height: 75px;
+  position: absolute;
+  position: -ms-absolute;
+  bottom: 0px;
+  border-radius: 0px 0px 20px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+
+  font-family: var(--font-SAR);
+  font-size: 16px;
+  color: var(--b08);
+  text-align: center;
+  font-weight: 300;
+
+}
+
+.Icon {
+
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  position: -ms-absolute;
+  top: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+
+}
+
+.Icon_Check {
+
+  width: 80%;
+  height: 22px;
+  top: 9px;
+  text-align: right;
+  position: relative;
+  margin: 0px auto;
+
+}
+
+.Icon_Check_initial{
+
+  width: 80%;
+  height: 22px;
+  top: 9px;
+  text-align: right;
+  position: initial;
+  margin: 0px auto;
+
+}
+
+.IconImg {
+
+  width: 20px;
+
+}
+
+.IconImgMenu {
+
+  width: 40px;
+
+}
+
+.CarrouselMenu__Disabled {
+
+  min-width: 150px !important;
+  background: var(--b01);
+  height: 150px;
+  border-radius: 20px;
+  display: block !important;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: -ms-relative;
+  position: relative;
+  cursor: no-drop;
+  opacity: 0.4;
+  filter: alpha(opacity=50);
+
+}
+
+.CarrouselMenu__Disabled:hover {
+
+  background: var(--b03);
+
+}
+
+.Carrousel__DisabledTitle {
+
+  background: var(--b03);
+  width: 150px;
+  min-height: 75px;
+  position: absolute;
+  position: -ms-absolute;
+  bottom: 0px;
+  border-radius: 0px 0px 20px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: -ms-flexbox;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+
+  font-family: var(--font-SAR);
+  font-size: 16px;
+  color: var(--b08);
+  text-align: center;
+  font-weight: 300;
+
+}
+

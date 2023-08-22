@@ -1,0 +1,93 @@
+/* Main */
+
+/* Styles From Coppel AFORE */
+
+:root {
+
+  --b01: #006CBA;
+  --b02: #224B73;
+  --b03: #065792;
+  --b04: #FFE86F;
+  --b05: #D8D8D8;
+  --b06: #949494;
+  --b07: #edeef2;
+  --b08: #FFFFFF;
+  --b09: rgba(214, 214, 214, 0.8);
+  --b10: #ffefef;
+  --b11: #ff0000;
+  --b12: url("../../img/back_coppel.png");
+  --b13: #FFD200;
+  --b14: #CCCCCC;
+  --b15: #E8E8E8;
+  --b16: #DEDEDE;
+
+/* Styles Background Banner */
+
+  --back: url("../../img/back_coppel.png");
+
+/* Styles Background White */
+
+  --bw: #FFFFFF;
+
+/* Styles Buttons Active */
+
+  --b17: #0066dc;
+  --b18: #0066dc;
+
+/* Styles Buttons Secondary */
+
+  --b19: #0066dc;
+  --b20: #0066dc;
+
+/* Styles Buttons Alert */
+
+  --b21: #ff0000;
+  --b22: #f79292;
+
+/* Styles Buttons Prev */
+
+  --b23: #ffc107;
+  --b24: #e0a800;
+
+/* Styles Buttons Info */
+
+  --b25: #17a2b8;
+  --b26: #138496;
+
+
+  --c01: #0065af;
+  --c02: #0C3741;
+  --c03: #40646D;
+  --c04: #F09A2E;
+  --c04b: #373d3f;
+  --c05: #D8D8D8;
+  --c06: #5d5d5d;
+  --c07: #EDEDED;
+  --c08: #FFFFFF;
+  --c09: #ff0000;
+  --c10: #747373;
+
+  /* Header Elements */
+
+  --bh: 2px solid #11284A; */
+
+  /* Footer Elements */
+
+  --bf: 2px solid #ff8e00;
+
+  /* Styles Type
+
+  --font-SAR: 'Ubuntu', sans-serif;
+
+  /* Styles Logo */
+
+  --lsize: 280px;
+
+/* Styles Color Links Tables */
+
+  --lgtv: #008c00;
+  --lrtc: #ff0000;
+  --lgtc: #808080;
+  --lbtc: #BC9F00;
+
+}

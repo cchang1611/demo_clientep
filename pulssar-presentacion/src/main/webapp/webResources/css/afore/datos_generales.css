@@ -1,0 +1,345 @@
+/* Estilos Pulsar 07/03/2019 */
+
+
+.Container {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.ContainerDatosGenerales {
+
+  width: 100%;
+  max-width: 750px;
+  background: #EDEDED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.ContainerDatosGenerales_DatosError {
+
+  margin-bottom: 5px;
+  width: 90%;
+  height: auto;
+  word-wrap: break-word;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  background: #fff3f3;
+  padding: 5px;
+
+}
+
+.ContainerDatosGenerales__NameError {
+
+  width: 80%;
+  height: auto;
+  margin: 0px auto;
+  display: block;
+  word-wrap: break-word;
+  text-align: center;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  background: #fff3f3;
+  padding: 5px;
+
+}
+
+.ContainerDatosGenerales__Columna1 {
+
+  width: 50%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  color: #868983;
+  text-transform: uppercase;
+
+}
+
+.ContainerDatosGenerales__Img {
+
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+
+}
+
+.ContainerDatosGenerales__Name {
+
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  display: block;
+  word-wrap: break-word;
+  text-align: center;
+
+}
+
+.ContainerDatosGenerales__Columna2 {
+
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #868983;
+  text-transform: uppercase;
+  position: relative;
+
+}
+
+.ContainerDatosGenerales__Columna2:before {
+
+  content: " ";
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid;
+  position: absolute;
+  top: 0px;
+  left: -19px;
+
+}
+
+.ContainerDatosGenerales_Seccion {
+
+  list-style: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.ContainerDatosGenerales_Datos {
+
+  margin-bottom: 5px;
+  width: 96%;
+  height: auto;
+  word-wrap: break-word;
+
+}
+
+.linkRecertificacion {
+
+  text-decoration: underline;
+  color: #72BE0B;
+  font-weight: 500;
+
+}
+
+.linkRecertificacion:hover {
+
+  color: #52960D;
+
+}
+
+.ContainerDatosGeneralesCurp {
+
+  width: 100%;
+  max-width: 750px;
+  margin: 0px auto;
+  background: #E2E2E2;
+
+}
+
+.ContainerDatosGeneralesCurp__Section {
+
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #868983;
+  text-transform: uppercase;
+
+}
+
+.ContainerDatosGeneralesCurp__Table {
+
+  width: 100%;
+
+}
+
+.ContainerDatosGeneralesCurp__Title {
+
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #868983;
+  text-transform: uppercase;
+  background: #52960D;
+  color: white;
+
+}
+
+.ContainerDatosGeneralesCurp__Container {
+
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #868983;
+  text-transform: uppercase;
+  background: #BAB9B9;
+  color: white;
+
+}
+
+.ContainerDatosGeneralesCurp__Container {
+
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #868983;
+  text-transform: uppercase;
+  background: #BAB9B9;
+  color: white;
+
+}
+
+.row2 {
+
+  background: #72BE0B;
+
+}
+
+.Icon__Container {
+
+  width: 90%;
+  padding: 10px;
+  margin: 0px auto;
+
+}
+
+.Icon__Seccion {
+
+    width: 50px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: none;
+    font-weight: bolder;
+    color: #868983;
+    margin-left: 85%;
+
+}
+
+.Icon__Editar {
+    width: 20px;
+}
+
+@media screen and (max-width: 900px) {
+
+  .ContainerDatosGenerales {
+
+    width: 100%;
+    max-width: none;
+
+  }
+
+  .ContainerDatosGeneralesCurp {
+
+    width: 100%;
+    max-width: none;
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .ContainerDatosGenerales {
+
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0px 50px 0px;
+
+  }
+
+  .ContainerDatosGenerales__Columna1 {
+
+    width: 100%;
+
+  }
+
+  .ContainerDatosGenerales__Columna2 {
+
+    width: 90%;
+
+  }
+
+  .ContainerDatosGenerales__Columna2:before {
+
+    display: none;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .ContainerDatosGenerales {
+
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0px 50px 0px;
+
+  }
+
+  .ContainerDatosGenerales__Columna1 {
+
+    width: 100%;
+
+  }
+
+  .ContainerDatosGenerales__Columna2 {
+
+    width: 90%;
+
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .ContainerDatosGenerales {
+
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0px 50px 0px;
+
+  }
+
+  .ContainerDatosGenerales__Columna1 {
+
+    width: 100%;
+
+  }
+
+  .ContainerDatosGenerales__Columna2 {
+
+    width: 90%;
+
+  }
+}

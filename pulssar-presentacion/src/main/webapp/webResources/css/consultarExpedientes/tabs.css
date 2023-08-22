@@ -1,0 +1,789 @@
+/* Styles Tabs */
+
+@import url('main.css');
+
+/* Pestaña Marcas Operativas */
+
+.Pestana {
+
+    width: auto;
+    position: fixed;
+    z-index: 20;
+    top: 170px;
+    right: 0;
+
+}
+
+
+.PestanaContainer {
+
+    display: flex;
+
+}
+
+
+.PestanaTitle {
+
+    width: 15px;
+    min-height: 170px;
+    height: auto;
+    padding: 10px;
+    writing-mode: vertical-lr;
+    -ms-writing-mode:bt-rl;
+    transform: rotate(180deg);
+    background: var(--b01);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font-SAR);
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--c08);
+    border-radius: 0px 5px 5px 0px;
+
+}
+
+.PestanaTitle:hover {
+
+    background: var(--b03);
+
+}
+
+.PestanaTableContainer {
+
+    width: 234px;
+    min-height: 250px;
+    height: auto;
+    text-align: center;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    display: none;
+
+}
+
+.PestanaTitleContainer {
+
+    padding: 20px 10px 20px 10px;
+    background: var(--b06);
+    color: var(--c08);
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+
+}
+
+.Row {
+
+    margin-top: 5px;
+    padding: 10px;
+    background: var(--b07);
+    color: var(--c06);
+    word-wrap: break-word;
+    font-size: 12px;
+
+}
+
+.PestanasCarousel {
+
+    max-height: 463px;
+    min-height: 463px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: var(--b16);
+
+}
+
+/* Pestaña Renapo */
+
+.PestanaRenapo {
+
+    width: auto;
+    position: fixed;
+    z-index: 20;
+    top: 290px;
+    right: 0;
+
+}
+
+
+.PestanaContainerRenapo  {
+
+    display: flex;
+
+}
+
+
+.PestanaTitleRenapo  {
+
+    width: 15px;
+    min-height: 170px;
+    height: auto;
+    padding: 10px;
+    writing-mode: vertical-lr;
+     -ms-writing-mode:bt-rl;
+    background: var(--b01);
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font-SAR);
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--c08);
+    border-radius: 0px 5px 5px 0px;
+
+}
+
+.PestanaTitleRenapo:hover {
+
+    background: var(--b03);
+
+}
+
+.PestanaTableContainerRenapo  {
+
+    width: 260px;
+    min-height: 250px;
+    height: auto;
+    text-align: center;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    display: none;
+
+}
+
+.PestanaTitleContainerRenapo  {
+
+      padding: 20px 10px 20px 10px;
+      color: var(--c08);
+      text-transform: uppercase;
+      -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+      -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+
+}
+
+.ContentRenapo  {
+
+      padding: 10px;
+      background: var(--b07);
+      color: var(--b06);
+      word-wrap: break-word;
+      font-size: 12px;
+
+}
+
+.ContainerDatosGenerales_SeccionRenapo {
+
+      list-style: none;
+      text-align: left;
+      text-transform: uppercase;
+
+}
+
+.TextRenapo {
+
+    color: var(--b01);
+    width: 100%;
+    display: block;
+    line-height: 25px;
+
+}
+
+.ContainerDatosGenerales_DatosRenapo {
+
+      margin-bottom: 5px;
+      width: 96%;
+      height: auto;
+      word-wrap: break-word;
+
+}
+
+.PestanasCarouselRenapo  {
+
+      max-height: 250px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+}
+
+/* Pestaña Curp */
+
+.ContainerCurp {
+
+      margin-top: 4px;
+
+}
+
+.PestanaCurp {
+
+      width: auto;
+      position: fixed;
+      z-index: 20;
+      top: 290px;
+      right: 0;
+      margin-top: 4px;
+
+}
+
+
+.PestanaContainerCurp  {
+
+      display: flex;
+
+}
+
+
+.PestanaTitleCurp  {
+
+      width: 15px;
+      min-height: 170px;
+      height: auto;
+      padding: 10px;
+      writing-mode: vertical-lr;
+      -ms-writing-mode:bt-rl;
+      background: var(--b01);
+      transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: var(--font-SAR);
+      font-weight: 300;
+      font-size: 14px;
+      color: var(--c08);
+      border-radius: 0px 5px 5px 0px;
+
+}
+
+.PestanaTitleCurp:hover {
+
+      background: var(--b03);
+
+}
+
+.PestanaTableContainerCurp  {
+
+      width: 260px;
+      min-height: 250px;
+      height: auto;
+      text-align: center;
+      font-family: var(--font-SAR);
+      font-size: 15px;
+      display: none;
+
+}
+
+.PestanaTitleContainerCurp  {
+
+      padding: 20px 10px 20px 10px;
+      background: var(--b06);
+      color: var(--c08);
+      text-transform: uppercase;
+      -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+      -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+
+}
+
+.ContentCurp  {
+
+      padding: 10px;
+      color: var(--c08);
+      word-wrap: break-word;
+
+}
+
+.ContainerDatosGenerales_SeccionCurp {
+
+      list-style: none;
+      text-align: left;
+      text-transform: uppercase;
+
+}
+
+.Row1 {
+
+      padding: 10px;
+      background: var(--b05);
+      color: var(--c10);
+      font-size: 12px;
+      word-wrap: break-word;
+
+}
+
+.Row2 {
+
+      padding: 10px;
+      background: var(--b07);
+      color: var(--c10);
+      font-size: 12px;
+      word-wrap: break-word;
+
+}
+
+.ContainerDatosGenerales_DatosCurp {
+
+      margin-bottom: 5px;
+      width: 96%;
+      height: auto;
+      word-wrap: break-word;
+
+}
+
+.PestanasCarouselCurp  {
+
+      max-height: 284px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+}
+
+/* --- Styles Pestaña Datos Generales --- */
+
+.Pestanadatos {
+
+      width: auto;
+      position: fixed;
+      z-index: 20;
+      top: 170px;
+
+}
+
+
+.PestanaContainerdatos {
+
+      display: flex;
+
+}
+
+
+.PestanaTitledatos {
+
+      width: 15px;
+      min-height: 170px;
+      height: auto;
+      padding: 10px;
+      background: var(--b01);
+      writing-mode: vertical-lr;
+      -ms-writing-mode: bt-rl;
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: var(--font-SAR);
+      font-weight: 300;
+      font-size: 14px;
+      color: var(--c08);
+      border-radius: 0px 5px 5px 0px;
+
+}
+
+.PestanaTitledatos:hover {
+
+      background: var(--b03);
+
+}
+
+.PestanaTableContainerdatos {
+
+      width: 400px;
+      min-height: 250px;
+      height: auto;
+      text-align: center;
+      font-family: var(--font-SAR);
+      font-size: 15px;
+      display: none;
+
+}
+
+.PestanaTitleContainerdatos {
+
+      padding: 20px 10px 20px 10px;
+      color: var(--c08);
+      text-transform: uppercase;
+      -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+      -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+
+}
+
+.Rowdatos {
+
+    margin-top: 5px;
+    padding: 10px;
+    word-wrap: break-word;
+
+}
+
+.PestanasCarouseldatos {
+
+    max-height: 463px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: var(--b07);
+
+}
+
+
+
+.ContainerDatosGenerales__Columna1 {
+
+    width: 90%;
+    text-align: center;
+    font-family: var(--font-SAR);
+    font-size: 12px;
+    color: var(--c06);
+    text-transform: uppercase;
+    margin: 0px auto;
+    padding-top: 20px;
+
+}
+
+.ContainerDatosGenerales__Img {
+
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+
+}
+
+.ContainerDatosGenerales__Name {
+
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    display: block;
+    word-wrap: break-word;
+    text-align: center;
+
+}
+
+.ContainerDatosGenerales__Columna2 {
+
+    width: 90%;
+    font-family: var(--font-SAR);
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    color: var(--c06);
+    text-transform: uppercase;
+    position: relative;
+    margin: 0px auto;
+    padding-bottom: 1px;
+
+}
+
+.ContainerDatosGenerales_Seccion {
+
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.ContainerDatosGenerales_Datos {
+
+    margin-bottom: 15px;
+    width: 96%;
+    height: auto;
+    word-wrap: break-word;
+
+}
+
+.linkRecertificacion {
+
+    text-decoration: underline;
+    color: var(--c01);
+    font-weight: 500;
+
+}
+
+.linkRecertificacion:hover {
+
+    color: var(--c04b);
+
+}
+
+
+/* Pestaña Indicadores - Trámites SAR - Ratificador */
+
+.ContainerInd {
+
+    width: auto;
+    position: fixed;
+    z-index: 20;
+    top: 365px;
+    right: 0;
+
+}
+
+
+.PestanaContainerInd  {
+
+      display: flex;
+
+}
+
+
+.PestanaTitleInd  {
+
+      width: 15px;
+      min-height: 170px;
+      height: auto;
+      padding: 10px;
+      writing-mode: vertical-lr;
+      -ms-writing-mode:bt-rl;
+      background: var(--b19);
+      transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-family: var(--font-SAR);
+      font-weight: 300;
+      font-size: 14px;
+      color: var(--c08);
+      border-radius: 0px 5px 5px 0px;
+
+}
+
+.PestanaTitleInd:hover {
+
+      background: var(--b20);
+
+}
+
+.PestanaTableContainerInd {
+
+      width: 260px;
+      min-height: 250px;
+      height: auto;
+      text-align: center;
+      font-family: var(--font-SAR);
+      font-size: 15px;
+      display: none;
+
+}
+
+.PestanaTitleContainerInd {
+
+      padding: 20px 10px 20px 10px;
+      background: var(--b01);
+      color: var(--c08);
+      text-transform: uppercase;
+      -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+      -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+      box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+
+}
+
+.ContentInd {
+
+      padding: 10px;
+      color: var(--c08);
+      word-wrap: break-word;
+
+}
+
+.ContainerDatosGenerales_SeccionInd {
+
+      list-style: none;
+      text-align: left;
+      text-transform: uppercase;
+
+}
+
+.ContainerDatosGenerales_DatosInd {
+
+      margin-bottom: 5px;
+      width: 96%;
+      height: auto;
+      word-wrap: break-word;
+
+}
+
+.PestanasCarouselInd {
+
+      max-height: 284px;
+      min-height: 284px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+}
+
+/* Style Tab Links */
+
+.Container_Tabs {
+
+    width: 100%;
+
+}
+
+.tablink {
+
+  background-color: var(--b03);
+  color: var(--c08);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0px;
+  font-size: 11px;
+  width: 25%;
+  font-family: var(--font-SAR);
+
+}
+
+.tablink:hover {
+
+  background-color: var(--b01);
+
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+
+.tabcontent {
+
+  color: var(--c06);
+  display: none;
+  padding: 0px 10px 30px 10px;
+  height: 100%;
+  font-family: var(--font-SAR);
+  font-size: 12px;
+  border: 1px solid var(--b01);
+
+}
+
+#Home {background-color: var(--b27);}
+#News {background-color: var(--b27);}
+#Contact {background-color: var(--b27);}
+#About {background-color: var(--b27);}
+
+/* Style Tab Links2 */
+
+.Container_Tabs2 {
+
+    width: 100%;
+
+}
+
+.tablinkdos {
+
+  background-color: var(--b03);
+  color: var(--c08);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0px;
+  font-size: 10px;
+  width: 30%;
+  font-family: var(--font-SAR);
+
+}
+
+.tablinkdos:hover {
+
+  background-color: var(--b01);
+
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+
+.tabcontentdos {
+
+  color: var(--c06);
+  display: none;
+  padding: 0px 10px 30px 10px;
+  height: 100%;
+  font-family: var(--font-SAR);
+  font-size: 12px;
+
+}
+.tablinkFontSize{
+	font-size:9px;
+}
+.generalesButton{
+	width:15%;
+}
+.renapoButton{
+	width:13%;
+}
+.procanaseButton{
+	width:15%;
+}
+.complementariosButton{
+	width:25%;
+}
+.datosTrabajadorButton{
+     width:32%;	
+}
+
+
+#Uno {background-color: var(--b27);}
+#Dos {background-color: var(--b27);}
+#Tres {background-color: var(--b27);}
+#Cuatro {background-color: var(--b27);}
+
+/* Media Quieries */
+
+@media only screen and (max-width: 1200px) {
+
+  .Pestana {
+
+      top: 250px;
+
+  }
+
+  .Pestanadatos {
+
+      top: 250px;
+
+  }
+
+  .ContainerInd {
+
+      top: 445px;
+
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .Pestana {
+
+      top: 310px;
+
+  }
+
+  .Pestanadatos {
+
+      top: 310px;
+
+  }
+
+  .ContainerInd {
+
+      top: 505px;
+
+  }
+  
+  
+}
+
+@media only screen and (max-width: 1143px){
+	
+	.datosTrabajadorButton{
+	     padding:9px;
+	}
+}

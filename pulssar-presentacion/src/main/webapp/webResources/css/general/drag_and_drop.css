@@ -1,0 +1,107 @@
+
+.Carrusel__Drag {
+
+  display: flex;
+  align-items: center;
+  background: var(--b07);
+  overflow: scroll;
+  margin: 0px auto;
+  width: 100%;
+
+}
+
+
+.dropFileForm {
+
+  min-width: 170px;
+  width: 170px;
+  margin: 7px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+  line-height: 16px;
+  color: var(--c10);
+  font-size: 12px;
+  font-family: var(--font-SAR);
+  border: 2px dotted var(--b14);
+  display: inline-grid;
+}
+
+.dropFileForm .fileLabel {
+  background: var(--b05);
+  display: block;
+  padding: 17px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid var(--b14);
+  height: 140px;
+  margin: 5px;
+  border-radius: 10px;
+  word-break: break-word;
+}
+
+.dropFileForm .fileLabel:hover {
+  background: var(--b07);
+}
+
+.dropFileForm .fileInput {
+  display: none;
+}
+
+.dropFileForm .fileLabel:after,
+.dropFileForm .fileLabel:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: .fff;
+  z-index: -2;
+  border-radius: 8px 8px 0 0;
+}
+
+.fa-download::before {
+
+  content: "";
+  background: url(../../img/descargar.png) center no-repeat;
+  width: 100%;
+  height: 70px;
+  background-size: 70px;
+  display: block;
+
+}
+
+.dropFileForm .fileLabel:before {
+  z-index: -1;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 5%,
+    black 5%,
+    black 10%
+  );
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.dropFileForm:hover .fileHover .fileLabel:before {
+  opacity: 0.25;
+}
+
+.dropFileForm .uploadButton {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  background-color: var(--b01);
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--font-SAR);
+}
+
+.dropFileForm.fileHover {
+  box-shadow: 0 0 16px limeGreen;
+}

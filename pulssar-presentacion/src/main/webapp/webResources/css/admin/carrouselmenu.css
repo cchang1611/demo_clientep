@@ -1,0 +1,213 @@
+/* Estilos Pulsar 07/03/2019 */
+
+/* Menu hojas de estilo Afore Azteca*/
+
+.CarrouselMenu {
+
+  width: 100%;
+  margin: 0px auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+
+}
+
+.CarrouselMenu__Track {
+
+  margin: 0px auto;
+  overflow: hidden;
+
+}
+
+.CarrouselMenu__Thumbnails {
+
+  align-items: center;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0px auto;
+  width: 94%;
+  height: 200px;
+
+}
+
+
+.CarrouselMenu__ThumbContainer {
+
+  min-width: 170px;
+  background: #72BE0B;
+  height: 170px;
+  border-radius: 20px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.32);
+  -moz-box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.32);
+  box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.32);
+
+}
+
+.CarrouselMenu__ThumbContainer:hover {
+
+  background: #52960D;
+
+}
+
+.CarrouselMenu__ThumbContainer-Active {
+
+  width: 150px;
+  background: #52960D;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  text-decoration: none;
+
+}
+
+.CarrouselMenu__Title {
+
+  background: #52960D;
+  width: 100%;
+  min-height: 75px;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+
+}
+
+.CarrouselMenu__Title-Active {
+
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.Icon {
+
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 89px;
+  position: absolute;
+  top: 4px;
+  display: flex;
+
+}
+
+.IconImgMenu {
+
+  width: 45%;
+
+}
+
+.Icon_Check {
+
+  width: 80%;
+  height: 22px;
+  position: absolute;
+  top: 9px;
+  text-align: right;
+
+}
+
+.IconImg {
+
+  width: 20px;
+
+}
+
+
+.Display {
+
+  display: none;
+
+}
+
+.CarrouselMenu__IcnArrowPrevious {
+
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  top: 76px;
+  left: 25%;
+  cursor: pointer;
+
+}
+
+.CarrouselMenu__IcnArrowPrevious:hover {
+
+  opacity: 0.5;
+
+}
+
+.CarrouselMenu__IcnArrowNext {
+
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  top: 76px;
+  right: 25%;
+  cursor: pointer;
+
+}
+
+.CarrouselMenu__IcnArrowNext:hover {
+
+  opacity: 0.5;
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .CarrouselMenu__IcnArrowPrevious {
+
+    display: none;
+
+  }
+
+  .CarrouselMenu__IcnArrowNext {
+
+    display: none;
+
+  }
+
+}
+
+
+@media screen and (max-width: 420px) {
+
+  .CarrouselMenu__IcnArrowPrevious {
+
+    display: none;
+
+  }
+
+  .CarrouselMenu__IcnArrowNext {
+
+    display: none;
+
+  }
+}

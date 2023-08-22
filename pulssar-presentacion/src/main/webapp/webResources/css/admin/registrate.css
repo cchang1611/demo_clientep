@@ -1,0 +1,42 @@
+/* Estilos Pulsar 07/03/2019 */
+/* Inicio hojas de estilo Afore Azteca*/
+
+.ContainerRegistrer {
+
+  width: 100%;
+  background: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+
+.ContainerRegistrer__Colum1 {
+
+  width: 40%;
+
+}
+
+.ContainerRegistrer__Colum2 {
+
+  width: 40%;
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .ContainerRegistrer__Colum1 {
+
+    width: 100%;
+
+  }
+
+  .ContainerRegistrer__Colum2 {
+
+    width: 100%;
+
+  }
+}

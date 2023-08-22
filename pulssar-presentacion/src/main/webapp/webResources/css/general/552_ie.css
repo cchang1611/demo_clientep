@@ -1,0 +1,2109 @@
+/* Main */
+
+/* Styles From Banamex Internet Explorer */
+
+/* Header */
+
+.Header {
+
+    background: #F6F6F6;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 0px solid #ffffff;
+
+}
+
+.Logo {
+
+    width: 400px;
+
+}
+
+.Header__ButtonMenuContainer {
+
+    color: #FFFFFF;
+    background: #056DAE;
+
+}
+
+.Header__ButtonMenuContainer:hover {
+
+    background: #2B3D5F;
+
+}
+
+
+.Header__ButtonClockContainer {
+
+    color: #FFFFFF;
+    background: #1A2E52;
+
+}
+
+.Header__ButtonClockContainer:hover {
+
+    background: #2E7CB6;
+
+}
+
+.Header__UserContainer {
+
+    background: #666666;
+
+}
+
+.Header__UserContainer:hover {
+
+    background: #2E7CB6;
+
+}
+
+.Header__RegistrateLoginText {
+
+    color: #FFFFFF;
+
+}
+
+/* Header Primary */
+
+.Header__OneSection {
+
+    background: #1A2E52;
+
+}
+
+.Header__TwoSection {
+
+    background: #666666;
+
+}
+
+.Header__TwoSection:hover {
+
+    background: #2B3D5F;
+
+}
+
+.Header__TwoSection__Link {
+
+    color: #FFFFFF;
+
+}
+
+.Header__TwoSection__Link:hover {
+
+    color: #FFFFFF;
+
+}
+
+.Header__TwoSection__Text {
+
+    color: #FFFFFF;
+
+}
+
+/* Dropdown */
+
+.dropdown {
+
+    background: #CCCCCC;
+
+}
+
+.dropdown {
+
+    background: #CCCCCC;
+
+}
+
+.dropdown:hover {
+
+    background: #CCCCCC;
+
+}
+
+.dropbtn {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #F6F6F6;
+
+}
+
+.dropdown-content {
+
+    background-color: #CCCCCC;
+
+}
+
+.dropdown-content a {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.dropdown a:hover {
+
+    background-color: #666666;
+
+}
+
+.HeaderButton__Loginxl {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+/* Header PAPERLESS */
+
+.HeaderPaperless {
+
+    background: #F6F6F6;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 2px solid #ffffff;
+
+}
+
+.LogoPaperless {
+
+    width: 150px;
+
+}
+
+.HeaderPaperless__ButtonMenuContainer {
+
+    color: #FFFFFF;
+    background: #056DAE;
+
+}
+
+.HeaderPaperless__ButtonMenuContainer:hover {
+
+    background: #1A2E52;
+
+}
+
+.HeaderPaperless__ButtonClockContainer {
+
+    color: #FFFFFF;
+    background: #1A2E52;
+
+}
+
+.HeaderPaperless__ButtonClockContainer:hover {
+
+    background: #056DAE;
+
+}
+
+.HeaderPaperless__UserContainer {
+
+    background: #666666;
+
+}
+
+.HeaderPaperless__UserContainer:hover {
+
+    background: #056DAE;
+
+}
+
+.HeaderPaperless__RegistrateLoginText {
+
+    color: #FFFFFF;
+
+}
+
+/* Termina Header PAPERLESS */
+
+/* Dropdown PAPERLESS */
+
+.ButtonPaperless {
+
+  font-family: 'Ubuntu', sans-serif;
+  color: #F6F6F6;
+  background: #1A2E52;
+
+}
+
+.dropdownPaperless-content {
+
+    background-color: #056DAE;
+
+}
+
+.dropdownPaperless-content a {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.dropdownPaperless a:hover {
+
+    background-color: #1A2E52;
+
+}
+
+.HeaderButtonPaperless__Loginxl {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+/* Termina Dropdown PAPERLESS */
+
+/* Menu */
+
+.Menu__Title {
+
+    color: #1A2E52;
+    font-family: 'Ubuntu', sans-serif;
+    background: #EDEDED;
+
+}
+
+
+.Menu__Folio {
+
+    background: #CCCCCC;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* Títulos CSS */
+
+.Title__Container {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #666666;
+
+}
+
+/* Acordion */
+
+.accordion-header,
+.accordion-body {
+
+    background: #F6F6F6;
+
+}
+
+.accordion-header {
+
+      background: #2E7CB6;
+      color: #FFFFFF;
+      font-family: 'Ubuntu', sans-serif;
+      border-bottom: 1px solid #FFFFFF;
+
+}
+
+.accordion-header:hover {
+
+      background: #1A2E52;
+
+}
+
+.accordion-body {
+
+      background: #EDEDED;
+      color: #1A2E52;
+
+}
+
+.accordion-body__contents {
+
+      font-family: 'Ubuntu', sans-serif;
+
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+
+    border-bottom: 1px solid #FFFFFF;
+
+}
+
+.accordion__item.active .accordion-header {
+
+    background: #666666;
+
+}
+
+.accordion__item .accordion__item .accordion-header {
+
+      background: #1A2E52;
+      color: #FFFFFF;
+
+}
+
+.accordion__item .accordion__item .accordion-header:hover {
+
+      background: #666666;
+      color: #FFFFFF;
+
+}
+
+.accordion__item .accordion__item.active .accordion-header {
+
+      background: #666666;
+      color: #FFFFFF;
+
+}
+
+.accordion_link {
+
+      color: #747373;
+      background: #DEDEDE;
+
+}
+
+.accordion_link:hover {
+
+      color: #747373;
+      background: #E8E8E8;
+
+}
+
+.accordion_linksecond {
+
+      background: url('../../img/back_banamex.png'); center no-repeat;
+      color: #1A2E52;
+
+}
+
+.accordion_linksecond:hover {
+
+      color: #1A2E52;
+      background: #EDEDED;
+
+}
+
+/* Footer */
+
+.Footer {
+
+	width: 100%;
+    height: 230px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background: #1A2E52;
+    position: relative;
+    bottom: 0px;
+    border-top: 0px solid #ffffff;;
+
+}
+
+.Footer__Container {
+
+    display: flex;
+
+}
+
+.Footer__Title {
+
+	display: flex;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #FFFFFF;
+
+}
+
+.Footer__Services {
+
+	width: 50%;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Footer__Suport {
+
+	width: 50%;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Footer__Legacy {
+
+    background: #666666;
+    padding: 20px 0px 20px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: auto;
+}
+
+.Footer__LegacyLink {
+
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.Footer__LegacyLink:hover {
+
+    color: #949494;
+
+}
+
+.FooterLink {
+
+	
+	text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    margin-left: 20px;
+    line-height: 25px;
+
+}
+
+.FooterLink:hover {
+
+    color: #949494;
+
+}
+
+/* Container */
+
+.Icon__Seccion {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.Icon__Seccion:hover {
+
+  color: #b9b9b9;
+
+}
+
+.Title {
+
+    background: #1A2E52;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.Line {
+
+    background:#1A2E52;
+
+}
+
+.Datos_Container {
+
+    background: #EDEDED;
+
+}
+
+.Datos_ContainerColumn {
+
+    background: #EDEDED;
+
+}
+
+.Datos_ContainerColumn02 {
+
+    background: #666666;
+
+}
+
+.Datos_ContainerColumn03 {
+
+    background: #666666;
+
+}
+
+.Datos_ContainerColumn04 {
+
+    background: #EDEDED;
+
+}
+
+.Datos {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.Datosxl {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.Datosxxl {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.DatosBack {
+
+    background: #ff0000;
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.DatosBack_Scroll {
+
+    background: #ff0000;
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.Datos_Error {
+
+    color: #ff0000;
+
+}
+
+.button_agregar {
+
+    color: #FFFFFF;
+
+}
+
+.button_agregar:hover {
+
+    color: #1A2E52;
+
+}
+
+.button_eliminar {
+
+    color: #FFFFFF;
+
+}
+
+.button_eliminar:hover {
+
+    color: #1A2E52;
+
+}
+
+/* Section copyright */
+
+.Copyright {
+
+  background: #056DAE;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+.Copyright_Icon {
+
+  color: #FFFFFF;
+  background: #056DAE;
+
+}
+
+.Copyright_Icon:hover {
+
+  background: #666666;
+  color: #FFFFFF;
+
+}
+
+.Copyright_text {
+
+  color: #FFFFFF;
+
+}
+
+/* Class Section "Tipo de Retiros" */
+
+.Title_OneOption {
+
+    background: #1A2E52;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+
+}
+
+.Title_OneOption:hover {
+
+    background: #2B3D5F;
+
+}
+
+.Title_TowOption {
+
+    background: #666666;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+
+}
+
+.Title_TowOption:hover {
+
+    background: #CCCCCC;
+
+}
+
+.Container_One {
+
+    font-family: 'Ubuntu', sans-serif;
+    background: #EDEDED;
+
+}
+
+.Container_Two {
+
+    font-family: 'Ubuntu', sans-serif;
+    background: #EDEDED;
+
+}
+
+.Container_Three {
+
+    font-family: 'Ubuntu', sans-serif;
+    background: #EDEDED;
+
+}
+
+.Container_Section {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #1A2E52;
+    background: #EDEDED;
+
+}
+
+/* Seccion Banners  */
+
+
+.Banner__TextContainer {
+
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFFFFF;
+  background: url('../../img/back_banamex.png');
+
+}
+
+/* Section Denied Acces */
+
+.Accessdenied__ColTwo {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #1A2E52;
+
+}
+
+.Accessdenied__Title {
+
+    color: #ff0000;
+
+}
+
+/* Section Footprints */
+
+.Footprints_Section {
+
+  background: #F6F6F6;
+
+}
+
+/* Section copyright */
+
+.Copyright {
+
+  background: #056DAE;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+.Copyright_Icon {
+
+  color: #FFFFFF;
+  background: #056DAE;
+
+}
+
+.Copyright_Icon:hover {
+
+  background: #666666;
+  color: #FFFFFF;
+
+}
+
+.Copyright_text {
+
+  color: #FFFFFF;
+
+}
+
+/* Datos Generales */
+
+.ContainerDatosGenerales {
+
+    background: #EDEDED;
+
+}
+
+.ContainerDatosGenerales__ColOne {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.ContainerDatosGenerales__NameError {
+
+    border: 1px solid #ff0000;
+
+}
+
+.ContainerDatosGenerales__ColTwo {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.ContainerDatosGenerales_DateError {
+
+    border: 1px solid #ff0000;
+
+}
+
+.linkRecertificacion {
+
+    color: #1A2E52;
+
+}
+
+.linkRecertificacion:hover {
+
+    color: #666666;
+
+}
+
+.Icon__Seccion {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+/* Index */
+
+.Title {
+
+    color: #1A2E52;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Description {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.Login {
+
+    background: #EDEDED;
+
+}
+
+/* Modal Window */
+
+.Modal {
+
+    background-color: url('../../img/back_banamex.png'); center no-repeat;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+/*     transition: all 1s; */
+    z-index: 22;
+
+}
+
+.ModalContainer {
+
+    background-color: white;
+    border-radius: 10px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0px auto;
+    top: 50px;
+    position: relative;
+    padding-bottom: 2%;
+
+}
+
+.ModalContainerpdf {
+
+    background-color: #F6F6F6;
+
+}
+
+.ModalHeader {
+
+    background: #1A2E52;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+
+}
+
+.ModalFooter {
+
+      text-align: center;
+      width: 100%;
+      padding-top: 10px;
+
+}
+
+
+.ModalTitle {
+
+    width: 92%;
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.ModalButton {
+
+	width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #056DAE;
+    border-radius: 50px;
+
+}
+
+.ModalButton:hover {
+
+    background: #2B3D5F;
+
+}
+
+.ModalText {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.Modal__Text {
+
+	width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #949494;
+
+}
+
+.Modal__AlertText {
+
+      font-family: 'Ubuntu', sans-serif;
+      color: #949494;
+      font-size: 20px;
+	  text-transform: uppercase;
+	  text-align: center;
+	  width: 75%;
+	  padding: 10px;
+	  display: inline-block;
+	  vertical-align: middle;
+
+}
+
+.Modal__AlertTextOk {
+
+      font-family: 'Ubuntu', sans-serif;
+      color: #1A2E52;
+
+}
+
+.Modal__AlertTextError {
+
+      font-family: 'Ubuntu', sans-serif;
+      color: #ff0000;
+
+}
+
+.Modal__Hora {
+
+      font-family: 'Ubuntu', sans-serif;
+      color: #949494;
+
+}
+
+/* Styles Forms */
+
+.Inputxxl {
+
+    border: 1px solid #ff0000;
+    font-family: 'Ubuntu', sans-serif;
+    color: #1A2E52;
+
+}
+
+input::-webkit-input-placeholder {
+
+    color: #b9b9b9;
+
+}
+
+input:-moz-placeholder {
+
+    color: #b9b9b9;
+
+}
+
+input:-ms-input-placeholder {
+
+    color: #b9b9b9;
+
+}
+
+.InputEdit {
+
+    border: 1px solid #ff0000;
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.Input_small {
+
+    border: 1px solid #F6F6F6;
+    font-family: 'Ubuntu', sans-serif;
+    color: #1A2E52;
+
+}
+
+input::-webkit-input-placeholder {color: #949494;}
+input:-moz-placeholder {color: #949494;}
+input:-ms-input-placeholder {color: #949494;}
+
+
+.Inputerror {
+
+    border: 1px solid #ff0000;
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+    background: #ffefef;
+
+}
+
+.Select {
+
+    border: 1px solid #949494;
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.Submit {
+
+	width: 170px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0px;
+    font-size: 18px;
+    color: #F6F6F6;
+    background: #666666;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    text-align:center;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    -ms-transition: .5s all ease;
+    transition: .5s all ease;
+
+}
+
+
+.Submit:hover {
+
+    background: #056DAE;
+	-webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.Submit_disabled {
+
+    color: #F6F6F6;
+    background: url('../../img/back_banamex.png'); center no-repeat;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Submit_second {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #056DAE;
+
+}
+
+.Submit_second:hover {
+
+    background: #666666;
+
+}
+
+.Submit_alert {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ff0000;
+
+}
+
+.Submit_alert:hover {
+
+    background: #f79292;
+
+}
+
+.Submit_prev {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ffc107;
+
+}
+
+.Submit_prev:hover {
+
+    background: #e0a800;
+
+}
+
+.Submit_info {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #17a2b8;
+
+}
+
+.Submit_info:hover {
+
+    background: #138496;
+
+}
+
+.Submitxl {
+
+    background: #666666;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Submitxl:hover {
+
+    background: #056DAE;
+
+}
+
+.Submitxl_disabled {
+
+    background: url('../../img/back_banamex.png'); center no-repeat;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Submitxl_alert {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ff0000;
+
+}
+
+.Submitxl_alert:hover {
+
+    background: #f79292;
+
+}
+
+.Submitxl_prev {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ffc107;
+
+}
+
+.Submitxl_prev:hover {
+
+    background: #e0a800;
+
+}
+
+.Submitxl_info {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #17a2b8;
+
+}
+
+.Submitxl_info:hover {
+
+    background: #138496;
+
+}
+
+.Submitx {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #666666;
+
+}
+
+.Submitx:hover {
+
+    background: #056DAE;
+
+}
+
+.Submitx_disabled {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: url('../../img/back_banamex.png'); center no-repeat;
+
+}
+
+.Submitx_alert {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ff0000;
+
+}
+
+.Submitx_alert:hover {
+
+    background: #f79292;
+
+}
+
+.Submitx_prev {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ffc107;
+
+}
+
+.Submitx_prev:hover {
+
+    background: #e0a800;
+
+}
+
+.Submitx_info {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #17a2b8;
+
+}
+
+.Submitx_info:hover {
+
+    background: #138496;
+
+}
+
+.Title__Label {
+
+	margin: 0px auto;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #1A2E52;
+    text-transform: uppercase;
+
+}
+
+.LabelText {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #1A2E52;
+
+}
+
+.LabelTextEdit {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #747373;
+
+}
+
+.Labeltexterror {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #ff0000;
+
+}
+
+.Captcha {
+
+    background: #666666;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.Container__RadioButtons {
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    color: #1A2E52;
+
+}
+
+/* Time Picker */
+
+.timepicker {
+
+    border: 1px solid #F6F6F6;
+    color: #949494;
+    background: #EDEDED;
+
+}
+
+.timepicker::-webkit-input-placeholder {
+
+    color: #949494;
+
+}
+
+.timepicker::-moz-placeholder {
+
+    color: #949494;
+
+}
+
+.timepicker::-ms-input-placeholder {
+
+    color: #949494;
+
+}
+
+/* Styles Tables */
+
+table {
+
+	overflow-x: auto;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+	margin: 0px auto;
+	
+}
+
+.Table {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.RowHeader {
+
+    background: #1A2E52;
+    color: #FFFFFF;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    
+
+}
+
+.Row1 {
+
+    background: #E8E8E8;
+    color: #1A2E52;
+
+}
+
+.Row2 {
+
+    background: #DEDEDE;
+    color: #949494;
+
+}
+
+th {
+
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+td {
+
+    text-align: center;
+    font-size: 11px;
+    word-wrap: break-word;
+    max-width: 110px;
+    padding: 10px;
+
+}
+
+.Row__1 {
+
+    background: #E8E8E8;
+    color: #1A2E52;
+    text-transform: uppercase;
+
+}
+
+.Row__2 {
+
+    background: #DEDEDE;
+    color: #949494;
+    text-transform: uppercase;
+
+}
+
+.Row__3 {
+
+    background: #E8E8E8;
+    color: #1A2E52;
+    text-transform: uppercase;
+
+}
+
+.Row__4 {
+
+    background: #DEDEDE;
+    color: #949494;
+    text-transform: uppercase;
+
+}
+
+
+.Row__1:hover {
+
+    background: #c0c0c0;
+	cursor:pointer;
+}
+
+.Row__2:hover {
+
+    background: #c0c0c0;
+    cursor:pointer;
+
+}
+
+
+.Linkproceso {
+
+    color: #808080;
+
+}
+
+.Linkretraso {
+
+    color: #ff0000;
+
+}
+
+.Linkconcluido {
+
+    color: #808080;
+
+}
+
+.Linkpausado {
+
+    color: #BC9F00;
+
+}
+
+.Link_blue {
+
+  color: #1A2E52;
+
+}
+
+.Link_blue:hover {
+
+  color: #1A2E52;
+
+}
+
+.Link_gray {
+
+  color: #949494;
+
+}
+
+.Link_gray:hover {
+
+  color: #949494;
+
+}
+
+/* Styles Checkpoints */
+
+.Table_Check {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Table_CheckPoints {
+
+	background: var(--bw);
+	color: #1A2E52;
+
+}
+
+/* Styles Tabs */
+
+/* Pestaña Marcas Operativas */
+
+.PestanaTitle {
+
+    background: #1A2E52;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.PestanaTitle:hover {
+
+    background: #666666;
+
+}
+
+.PestanaTableContainer {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.PestanaTitleContainer {
+
+    background: #CCCCCC;
+    color: #FFFFFF;
+
+}
+
+.Row {
+
+    background: #EDEDED;
+    color: #949494;
+
+}
+
+.PestanasCarousel {
+
+    background: #DEDEDE;
+
+}
+
+/* Pestaña Renapo */
+
+.PestanaTitleRenapo  {
+
+    background: #1A2E52;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.PestanaTitleRenapo:hover {
+
+    background: #666666;
+
+}
+
+.PestanaTableContainerRenapo  {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.PestanaTitleContainerRenapo  {
+
+      color: #FFFFFF;
+
+}
+
+.ContentRenapo  {
+
+      background: #EDEDED;
+      color: #CCCCCC;
+
+}
+
+.TextRenapo {
+
+    color: #1A2E52;
+
+}
+
+/* Pestaña Curp */
+
+.PestanaTitleCurp  {
+
+      background: #1A2E52;
+      font-family: 'Ubuntu', sans-serif;
+      color: #FFFFFF;
+
+}
+
+.PestanaTitleCurp:hover {
+
+      background: #666666;
+
+}
+
+.PestanaTableContainerCurp  {
+
+      font-family: 'Ubuntu', sans-serif;
+
+}
+
+.PestanaTitleContainerCurp  {
+
+      background: #CCCCCC;
+      color: #FFFFFF;
+
+}
+
+.ContentCurp  {
+
+      color: #FFFFFF;
+
+}
+
+.Row1 {
+
+      background: #666666;
+      color: #747373;
+
+}
+
+.Row2 {
+
+      background: #EDEDED;
+      color: #747373;
+
+}
+
+/* --- Styles Pestaña Datos Generales --- */
+
+.PestanaTitledatos {
+
+      background: #1A2E52;
+      font-family: 'Ubuntu', sans-serif;
+      color: #FFFFFF;
+
+}
+
+.PestanaTitledatos:hover {
+
+      background: #666666;
+
+}
+
+.PestanaTableContainerdatos {
+
+      font-family: 'Ubuntu', sans-serif;
+
+}
+
+.PestanaTitleContainerdatos {
+
+      color: #FFFFFF;
+
+}
+
+.PestanasCarouseldatos {
+
+    background: #EDEDED;
+
+}
+
+.ContainerDatosGenerales__Columna1 {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.ContainerDatosGenerales__Columna2 {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #949494;
+
+}
+
+.linkRecertificacion {
+
+    color: #1A2E52;
+
+}
+
+.linkRecertificacion:hover {
+
+    color: #666666;
+
+}
+
+/* Styles Templeates */
+
+.Aside__Col01 {
+
+    background: #EDEDED;
+
+}
+
+.Aside__Col02 {
+
+    background: #EDEDED;
+
+}
+
+/* Slick Carrousel  */
+
+.slick-next::before, .slick-prev::before {
+
+  color: #2B3D5F !important;
+
+}
+
+.Carrousel__ThumbContainer {
+
+  background: #1A2E52;
+
+}
+
+.Carrousel__ThumbContainer:hover {
+
+  background: #666666;
+
+}
+
+.Carrousel__Title {
+
+  background: #666666;
+  font-family: 'Ubuntu', sans-serif;
+  color: #F6F6F6;
+
+}
+
+/* Slick Carrousel Administrador */
+
+.CarrouselMenu__ThumbContainer {
+
+  background: #1A2E52;
+
+}
+
+.CarrouselMenu__ThumbContainer:hover {
+
+  background: #666666;
+
+}
+
+.CarrouselMenu__Title {
+
+  background: #666666;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFFFFF;
+
+}
+
+.CarrouselMenu__TitlePrimary {
+
+  background: #666666;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFFFFF;
+
+}
+
+/* SLIDER */
+
+
+p {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+
+.heading-section h2 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.home-account a {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.cart-info {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.main-menu a {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+/*-- Timeline --*/
+
+.timeline-caption h4 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.timeline-caption p {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+#product-heading h2 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+#filters span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.label-text span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.send button {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.info li {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.recent-post-info h6 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.recent-post-info span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.slider-caption {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.slider-caption h1 {
+
+  text-shadow: 1px 1px #FFFFFF;
+  color: #1A2E52;
+
+}
+
+.slider-caption p {
+
+  color: #FFFFFF;
+  background: url('../../img/back_banamex.png'); center no-repeat;
+
+}
+
+.slider-caption a {
+
+  background-color: #1A2E52;
+  color: #F6F6F6;
+
+}
+
+.slider-caption a:hover {
+
+  background-color: #056DAE;
+
+}
+
+/*-- Services --*/
+
+.service-item h4 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+/*-- Latest Posts --*/
+
+.content-show a {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+/*--Footer--*/
+
+.social-bottom span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.subscribe-form span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.footer-title {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.recent-post-info h6 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.recent-post-info span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.more-info li {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+
+.Text__DarkOrange {
+
+    color: #FF8c00;
+
+}
+
+.Text__Green {
+
+    color: #32CD32;
+
+}
+
+
+.Text__red {
+
+    color: #ff0000;
+
+}
+
+
+.Text__black {
+
+    color: #000000;
+
+}
+
+
+.spanColor {
+	
+	color: #FF0000;
+
+}
+
+Modal__IconAlert {
+
+      width: 100px;
+      height: auto;
+      border-radius: 14px;
+      margin-top: 10px;
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      padding: 10px;
+      background: rgba(199,30,0,1);
+      background: -moz-linear-gradient(left, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,30,0,1)), color-stop(100%, rgba(255,21,0,1)));
+      background: -webkit-linear-gradient(left, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      background: -o-linear-gradient(left, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      background: -ms-linear-gradient(left, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      background: linear-gradient(to right, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c71e00', endColorstr='#ff1500', GradientType=1 );
+
+}
+
+.Modal__IconAlertOK {
+
+      width: 100px;
+      height: auto;
+      border-radius: 14px;
+      margin-top: 10px;
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      padding: 10px;
+      background: rgba(210,255,82,1);
+      background: -moz-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(210,255,82,1)), color-stop(100%, rgba(145,232,66,1)));
+      background: -webkit-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+      background: -o-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+      background: -ms-linear-gradient(top, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+      background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=0 );
+
+}
+
+
+.Modal__IconAlert {
+
+      width: 100px;
+      height: auto;
+      border-radius: 14px;
+      margin-top: 10px;
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      padding: 10px;
+      background: rgba(199,30,0,1);
+      background: -moz-linear-gradient(left, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(199,30,0,1)), color-stop(100%, rgba(255,21,0,1)));
+      background: -webkit-linear-gradient(left, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      background: -o-linear-gradient(left, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      background: -ms-linear-gradient(left, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      background: linear-gradient(to right, rgba(199,30,0,1) 0%, rgba(255,21,0,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c71e00', endColorstr='#ff1500', GradientType=1 );
+
+}
+
+/* ESTILOS BOTÓN CURP */
+.curpFaltante {
+
+    border: 1px solid #FFFFFF;
+    color: #949494;
+    background: #eaeaea;
+
+}
+
+.curpFaltante::-webkit-input-placeholder {
+
+    color: #949494;
+
+}
+
+.curpFaltante::-moz-placeholder {
+
+    color: #949494;
+
+}
+
+.curpFaltante::-ms-input-placeholder {
+
+    color: #949494;
+
+}
+
+/* Styles Carrousel Visor */
+
+.prev, .next {
+
+  color: #FFFFFF;
+  background: #666666;
+
+}
+
+.magnify-modal {
+
+    background-color: #1A2E52;
+
+}

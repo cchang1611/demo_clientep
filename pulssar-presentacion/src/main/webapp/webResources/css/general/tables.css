@@ -1,0 +1,246 @@
+/* Styles Tables */
+
+.Row_Yellow {
+
+    background: #fafbcb;
+    color: var(--c06);
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+
+table {
+
+    border-spacing: 0px;
+    overflow-x: auto;
+    width: 100%;
+    font-family: var(--font-SAR);
+    margin: 0px auto;
+
+}
+
+.Table {
+
+    border-spacing: 0px;
+    width: 1000px;
+    font-family: var(--font-SAR);
+    margin: 0px auto;
+
+}
+
+/* Styles Checkpoints */
+
+.Table_Check {
+
+    border-spacing: 0px;
+    width: 1000px;
+    font-family: var(--font-SAR);
+    margin: 0px auto;
+
+}
+
+.Table_CheckPoints {
+
+	width: 740px;
+	background: var(--bw);
+	font-size: 10px;
+	color: var(--c02);
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+.img_check {
+
+	width: 28px;
+
+}
+
+.img_checkpoints {
+
+	width: 80px;
+
+}
+
+.td_checkpoints {
+
+    font-size: 11px;
+    word-wrap: break-word;
+    padding: 0px !important;
+
+}
+
+/* -------- */
+
+th {
+
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+td {
+
+    text-align: center;
+    font-size: 11px;
+    word-wrap: break-word;
+    max-width: 110px;
+    padding: 10px !important;
+
+}
+
+.RowHeader {
+
+    background: var(--b01);
+    color: var(--c08);
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: var(--font-SAR);
+    text-transform: uppercase;
+
+}
+
+.Row1 {
+
+    background: var(--b15);
+    color: var(--c01);
+    text-transform: uppercase;
+
+}
+
+.Row2 {
+
+    background: var(--b16);
+    color: var(--c06);
+    text-transform: uppercase;
+
+}
+
+.TableLinks {
+
+    text-decoration: none;
+    color: #626262;
+
+}
+
+.Linkproceso {
+
+    color: var(--lgtv);
+    font-weight: bold;
+
+}
+
+.Linkretaso {
+
+    color: var(--lrtc);
+    font-weight: bold;
+
+}
+
+.Linkconcluido {
+
+    color: var(--lgtc);
+    font-weight: bold;
+
+}
+
+.Linkpausado {
+
+    color: var(--lbtc);
+    font-weight: bold;
+
+}
+
+.Link_blue {
+
+  color: var(--c01);
+  text-decoration: none;
+
+}
+
+.Link_blue:hover {
+
+  color: var(--c01);
+  text-decoration: underline;
+
+}
+
+.Link_gray {
+
+  color: var(--c06);
+  text-decoration: none;
+
+}
+
+.Link_gray:hover {
+
+  color: var(--c06);
+  text-decoration: underline;
+
+}
+
+.icon_table_ok {
+
+    width: 40px;
+
+}
+
+.icon_table_error {
+
+    width: 40px;
+
+}
+
+.resaltarRow tr:hover {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.filaSelecionada {
+    font-weight: 900;
+}
+
+.back01{
+
+  background: #32cd32;
+
+}
+
+.back02{
+
+  background: #adff2f;
+
+}
+
+.back03{
+
+  background: yellow;
+
+}
+
+.back04{
+
+  background: orange;
+
+}
+
+.back05{
+
+  background: #ff0000;
+
+}
+
+.RowHeader02 {
+
+    background: var(--b02);
+    color: var(--c08);
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: var(--font-SAR);
+    text-transform: uppercase;
+
+}

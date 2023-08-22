@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Alta de Usuario</title>
+
+<style type="text/css">
+body {font-family:Verdana, Geneva, sans-serif; font-size:12px; color:#404041;}
+a {color:#0e75bc;}
+a:hover {text-decoration:none;}
+.fecha {font-size:13px; font-weight:bold;}
+.mensaje {line-height:20px;text-align: justify;}
+.bluetitle {color:#0260ac}
+.verde {color:#0b9444; font-weight:bold; text-align:center; font-size:13px;}
+.verdeImportante {color:#0b9444; font-weight:bold; text-align:left; font-size:16px;}
+.verdeCUS {color:#0b9444; font-weight:bold; text-align:center; font-size:16px;}
+.footer {font-size:10px; color:#6c6e71}
+.footer a {color:#6c6e71; text-decoration:none; font-weight:bold;}
+.footer a:hover {text-decoration:underline;}
+.folio {text-align: right;font-weight: normal;}
+</style>
+
+</head>
+
+<body>
+<table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="20" height="70">&nbsp;</td>
+    <td width="560"><img src='cid:cidAfore' width="147" height="55" alt="afore" /></td>
+    <td width="20">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20">&nbsp;</td>
+    <td align="right" valign="top" class="fecha">{fechaHora}</td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td height="130">&nbsp;</td>
+    <td valign="top" style="padding-top: 20px;"><p><strong>Hola {nombre}</strong></p>
+		<p class="mensaje">Se dio de alta el usuario {usuario}</p>
+      <p class="mensaje">Para que puedas acceder al Portal de Servicios, es necesario activar tu usuario:</p>
+	  <ol>
+		<li>Haz clic sobre la siguiente liga:
+			<p class="mensaje"><a href="http://192.168.7.225:8080/pulssar/public/activacionUsuario.do?urlKey={urlServicio}">https://www.tramitesar.com.mx/public/activacionUsuario.do</a></p>
+		</li>
+		<li>Cuando accedas a la liga, ingresa tu usuario y genera una contraseña.</li>
+		<li>Además ingresa el código de confirmación que recibiste vía SMS.</li>
+	  </ol>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+   <tr>
+    <td height="60" style="padding-top: 20px;">&nbsp;</td>
+    <td valign="top"><p class="mensaje">Gracias, <br />Portal de Servicios.</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+                
+                <WatchedResource>WEB-INF/web.xml</WatchedResource>
+                
+                               
+                    <Resource name="jdbc/O262_SI_TRX_PORTAL_SERVICIOS"
+                              username="UTCPOD1"
+                              password="utc1POD1#_$03"
+                              url="jdbc:oracle:thin:@172.21.50.1:1540:DDBOPOSE" 
+                              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+                              jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState; org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+                              initSQL="ALTER SESSION SET current_schema=PROCPSERD" 
+                              type="javax.sql.DataSource"
+                              initialSize="1" 
+                              maxWait="1" 
+                              maxActive="1"
+                              maxWaitMillis="-1" maxTotal="1"
+                              maxIdle="1" 
+                              driverClassName="oracle.jdbc.OracleDriver" 
+                              auth="Container"/>
+                              
+                             <Resource 
+                              
+		 name="jdbc/O158_TC_TRX_SOL_CONST_IMPL"
+		username="UPULSD1"
+		password="upu19LSD1#_$01"
+		url="jdbc:oracle:thin:@172.21.50.1:1540:DDBONSAR" 
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		jdbcInterceptors="org.apache.tomcat.jdbc.pool.interceptor.ConnectionState; org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+		initSQL="ALTER SESSION SET current_schema=PROCNSARD" 
+		type="javax.sql.DataSource"
+		initialSize="1" 
+		maxWait="1" 
+		maxActive="1"
+		maxWaitMillis="-1" maxTotal="1"
+		maxIdle="1" 
+		driverClassName="oracle.jdbc.OracleDriver" 
+		auth="Container" />                             
+                               
+</Context> 

@@ -1,0 +1,1076 @@
+/* Header */
+.Container__Fixed {
+
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    top: 0px;
+
+}
+
+.Header {
+
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--b08);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+    position: relative;
+    z-index: 22;
+    font-family: var(--font-SAR);
+    text-transform: uppercase;
+    border-bottom: var(--bh);
+
+}
+
+/* Header */
+
+.Header__LogoContainer {
+
+    width: 55%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Logo {
+
+    width: var(--lsize);
+
+}
+
+
+.Header__MenuContainer {
+
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Header__ButtonMenuContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+    color: var(--c08);
+    background: var(--b13);
+
+}
+
+.Header__ButtonMenuContainer:hover {
+
+    background: var(--b04);
+
+}
+
+.Header__ButtonMenuIcon {
+
+    width: 20px;
+    margin-bottom: 5px;
+
+}
+
+
+.Header__ButtonClockContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+    color: var(--c08);
+    background: var(--b01);
+
+}
+
+.Header__ButtonClockContainer:hover {
+
+    background: var(--b02);
+
+}
+
+.Header__ButtonClockIcon {
+
+    width: 20px;
+    margin-bottom: 5px;
+
+}
+
+
+.IconHeader {
+
+    width: 20px;
+    margin-bottom: 5px;
+
+}
+
+.Header__UserContainer {
+
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background: var(--b03);
+    cursor: pointer;
+
+}
+
+.Header__UserContainer:hover {
+
+    background: var(--b02);
+
+}
+
+.Header__UserImageContainer {
+
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Header__UserImage {
+
+    width: 50px;
+
+}
+
+.Header__UserImg {
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+
+}
+
+.Header__RegistrateLoginText {
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    color: var(--c08);
+
+}
+
+.Header__RegistrateLoginTitle {
+
+    font-size: 15px;
+    text-align: center;
+
+}
+
+/* Header PAPERLESS */
+
+.HeaderPaperless {
+
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--b08);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+    position: relative;
+    z-index: 22;
+    font-family: var(--font-SAR);
+    text-transform: uppercase;
+    border-bottom: var(--bh);
+
+}
+
+
+.HeaderPaperless__LogoContainer {
+
+    width: 45%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.LogoPaperless {
+
+    width: var(--lsize);
+
+}
+
+
+.HeaderPaperless__MenuContainer {
+
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.HeaderPaperless__ButtonMenuContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+    color: var(--c08);
+    background: var(--b13);
+
+}
+
+.HeaderPaperless__ButtonMenuContainer:hover {
+
+    background: var(--b04);
+
+}
+
+.HeaderPaperless__ButtonMenuIcon {
+
+    width: 20px;
+    margin-bottom: 5px;
+
+}
+
+.HeaderPaperless__ButtonMenuPaperless {
+	width:25px;
+	margin-bottom:5px;
+	overflow:hidden;
+}
+
+
+.HeaderPaperless__ButtonClockContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+    color: var(--c08);
+    background: var(--b01);
+
+}
+
+.HeaderPaperless__ButtonClockContainer:hover {
+
+    background: var(--b02);
+
+}
+
+.HeaderPaperless__ButtonClockIcon {
+
+    width: 20px;
+    margin-bottom: 5px;
+
+}
+
+
+.IconHeaderPaperless {
+
+    width: 20px;
+    margin-bottom: 5px;
+
+}
+
+.HeaderPaperless__UserContainer {
+
+    width: 20%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    background: var(--b03);
+    cursor: pointer;
+
+}
+
+.HeaderPaperless__UserContainer:hover {
+
+    background: var(--b02);
+
+}
+
+.HeaderPaperless__UserImageContainer {
+
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.HeaderPaperless__UserImage {
+
+    width: 50px;
+
+}
+
+.HeaderPaperless__UserImg {
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+
+}
+
+.HeaderPaperless__RegistrateLoginText {
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    color: var(--c08);
+
+}
+
+.HeaderPaperless__RegistrateLoginTitle {
+
+    font-size: 15px;
+    text-align: center;
+
+}
+
+/* Termina Header PAPERLESS */
+
+/* Dropdown PAPERLESS */
+
+.dropdownPaperless {
+
+    width: 10%;
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdownPaperless:hover {
+
+    background: var(--b02);
+
+}
+
+.dropbtnPaperless {
+
+   width: 100%;
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.ButtonPaperless {
+
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  flex-direction: column;
+  font-family: var(--font-SAR);
+  text-align: center;
+  color: var(--b08);
+  font-size: 11px;
+  text-decoration: none;
+  background: var(--b01);
+  position: absolute;
+  z-index: -1;
+
+}
+
+
+.dropdownPaperless-content {
+
+    display: none;
+    position: absolute;
+    background-color: var(--b02);
+    min-width: 158px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0px;
+
+}
+
+.dropdownPaperless-content a {
+
+    color: var(--c08);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--font-SAR);
+
+}
+
+.dropdownPaperless a:hover {
+
+    background-color: var(--b01);
+
+}
+
+.showPaperless {display: block;}
+
+.HeaderButtonPaperless__Loginxl {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--font-SAR);
+    color: var(--c08);
+    text-decoration: none;
+    background: #72BE0B;
+
+}
+
+.HeaderButtonPaperless__Loginxl:hover {
+
+    background: #8aca34;
+
+}
+
+
+/* Termina Dropdown PAPERLESS */
+
+/* Header Primary */
+
+.Header__LogoSection {
+
+    width: 60%;
+    height: 70px;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -ms-flex-align: center;
+
+}
+
+
+.Header__OneSection {
+
+    width: 20%;
+    height: 70px;
+    background: var(--b01);
+
+}
+
+.Header__TwoSection {
+
+    width: 20%;
+    height: 70px;
+    background: var(--b03);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.Header__TwoSection:hover {
+
+    background: var(--b04);
+
+}
+
+.Header__TwoSection__Link {
+
+    color: var(--c08);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 70px;
+
+}
+
+.Header__TwoSection__Link:hover {
+
+    color: var(--c08);
+    align-items: center;
+    display: flex;
+
+}
+
+.Header__TwoSection__Icon {
+
+    width: 30px;
+
+}
+
+.Header__TwoSection__Text {
+
+    width: 60px;
+    text-align: center;
+    color: var(--c08);
+
+}
+
+/* Dropdown */
+
+.dropdown {
+
+    width: 5%;
+    position: relative;
+    display: inline-block;
+    background: var(--b06);
+    cursor: pointer;
+
+}
+
+.dropdown {
+
+    width: 5%;
+    position: relative;
+    display: inline-block;
+    background: var(--b06);
+
+}
+
+.dropdown:hover {
+
+    background: var(--b14);
+
+}
+
+.dropbtn {
+
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: var(--font-SAR);
+    text-align: center;
+    color: var(--b08);
+    font-size: 11px;
+    text-decoration: none;
+    cursor: pointer;
+    background: url(../../img/icon_config.png) center center no-repeat;
+    background-size: 40px;
+
+}
+
+.dropbtn:hover {
+
+    background: url(../../img/icon_config.png) center center no-repeat;
+    background-size: 40px;
+
+}
+
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: var(--b06);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0px;
+
+}
+
+.dropdown-content a {
+
+    color: var(--c08);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--font-SAR);
+
+}
+
+.dropdown a:hover {
+
+    background-color: var(--b05);
+
+}
+
+.show {display: block;}
+
+.HeaderButton__Loginxl {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--font-SAR);
+    color: var(--c08);
+    text-decoration: none;
+    background: #72BE0B;
+
+}
+
+.HeaderButton__Loginxl:hover {
+
+    background: #8aca34;
+
+}
+
+
+/* Menu */
+
+.Menu__Container {
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.Menu__Title {
+
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--c01);
+    font-family: var(--font-SAR);
+    text-transform: uppercase;
+    background: var(--b07);
+
+}
+
+
+.Menu__Folio {
+
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--b06);
+    font-size: 15px;
+    color: var(--c08);
+    font-family: var(--font-SAR);
+
+}
+
+/* Títulos CSS */
+
+.Title__Container {
+
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    font-family: var(--font-SAR);
+    font-size: 24px;
+    text-align: center;
+    color: var(--c04b);
+
+}
+
+/* Acordion */
+
+.accordion {
+
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+    z-index: 21;
+
+}
+
+.accordion-header,
+.accordion-body {
+
+    background: var(--b08);
+
+}
+
+.accordion-header {
+
+      padding: 10px 30px 10px 30px;
+      background: var(--b02);
+      text-transform: uppercase;
+      color: var(--c08);
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: .1em;
+      transition: all .3s;
+      font-family: var(--font-SAR);
+      border-bottom: 1px solid var(--c08);
+      position: relative;
+      z-index: 5;
+
+}
+
+.accordion-header:hover {
+
+      background: var(--b01);
+
+}
+
+.accordion-header02 {
+
+      padding: 10px 30px 10px 30px;
+      background: var(--b02);
+      text-transform: uppercase;
+      color: var(--c08);
+      cursor: pointer;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 500;
+      letter-spacing: .1em;
+      transition: all .3s;
+      font-family: var(--font-SAR);
+      border-bottom: 1px solid var(--c08);
+      position: relative;
+      z-index: 5;
+
+}
+
+.accordion-header02:hover {
+
+      background: var(--b01);
+
+}
+
+.accordion-body {
+
+      background: var(--b07);
+      color: var(--c01);
+      display: none;
+
+}
+
+.accordion-body__contents {
+
+      font-size: .85em;
+      font-family: var(--font-SAR);
+      text-transform: uppercase;
+
+}
+
+.accordion__item.active:last-child .accordion-header {
+
+    border-radius: none;
+
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+
+    border-bottom: 1px solid var(--c08);
+
+}
+
+.accordion__item > .accordion-header:after {
+
+      content: "\f3d0";
+      font-family: IonIcons;
+      font-size: 1.2em;
+      float: right;
+      position: relative;
+      top: -2px;
+      transition: .3s all;
+      transform: rotate(0deg);
+
+}
+
+.accordion__item.active > .accordion-header:after {
+
+      transform: rotate(-180deg);
+
+}
+
+.accordion__item > .accordion-header02:after {
+
+      content: "\f3d0";
+      font-family: IonIcons;
+      font-size: 1.2em;
+      float: right;
+      position: relative;
+      top: -2px;
+      transition: .3s all;
+      transform: rotate(0deg);
+
+}
+
+.accordion__item.active > .accordion-header02:after {
+
+      transform: rotate(-180deg);
+
+}
+
+.accordion__item.active .accordion-header {
+
+    background: var(--b03);
+
+}
+
+.accordion__item .accordion__item .accordion-header {
+
+      background: var(--b01);
+      color: var(--c08);
+
+}
+
+.accordion__item .accordion__item .accordion-header:hover {
+
+      background: var(--b03);
+      color: var(--c08);
+
+}
+
+.accordion__item .accordion__item.active .accordion-header {
+
+      background: var(--b03);
+      color: var(--c08);
+
+}
+
+.accordion_link {
+
+      text-decoration: none;
+      color: var(--c10);
+      background: var(--b16);
+      display: block;
+      padding: 10px;
+
+}
+
+.accordion_link:hover {
+
+      color: var(--c10);
+      background: var(--b15);
+
+}
+
+.accordion_linksecond {
+
+      text-decoration: none;
+      background: var(--b12);
+      color: var(--c03);
+      display: block;
+      padding: 10px;
+
+}
+
+.accordion_linksecond:hover {
+
+      color: var(--c03);
+      background: var(--b07);
+
+}
+
+/* Media Querys CSS */
+
+@media screen and (max-width: 1200px) {
+
+  .Header__LogoContainer {
+
+      width: 100%;
+
+  }
+
+  .Header__MenuContainer {
+
+      width: 45%;
+
+  }
+
+  .Header__UserContainer {
+
+      width: 45%;
+
+  }
+
+  .dropdown {
+
+    width: 10%;
+
+  }
+  
+  /* Media Querys Header PAPERLESS CSS */
+
+  .HeaderPaperless__LogoContainer {
+
+      width: 22%;
+
+  }
+  
+  .dropdownPaperless {
+
+    width: 15%;
+
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .Menu__Title {
+
+        width: 60%;
+        font-size: 15px;
+
+  }
+
+
+  .Menu__Folio {
+
+        width: 40%;
+        font-size: 12px;
+
+  }
+  
+  /* Media Querys Header PAPERLESS CSS */
+
+  .HeaderPaperless__LogoContainer {
+
+      width: 22%;
+
+  }
+  
+  .dropdownPaperless {
+
+    width: 15%;
+
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .Header__MenuContainer {
+
+      width: 100%;
+
+   }
+
+   .Header__UserContainer {
+
+       width: 50%;
+
+  }
+
+  .dropdown {
+
+      width: 50%;
+
+  }
+
+  .Header__LogoSection {
+
+      width: 100%;
+
+    }
+
+    .Header__OneSection {
+
+      width: 50%;
+
+    }
+
+    .Header__TwoSection {
+
+      width: 50%;
+
+    }
+    
+    /* Media Querys Header PAPERLESS CSS */
+
+  .HeaderPaperless__LogoContainer {
+
+      width: 100%;
+
+  }
+  
+  .dropdownPaperless {
+
+    width: 50%;
+
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .Menu__Title {
+
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+
+  }
+
+  .Menu__Folio {
+
+    width: 50%;
+    font-size: 12px;
+
+  }
+  
+  /* Media Querys Header PAPERLESS CSS */
+
+  .HeaderPaperless__LogoContainer {
+
+      width: 100%;
+
+  }
+  
+  .dropdownPaperless {
+
+    width: 100%;
+
+  }
+
+}
+

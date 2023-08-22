@@ -1,0 +1,33 @@
+/* Estilos Pulsar 07/03/2019 */
+
+
+.Container {
+
+  width: 100%;
+  margin: 0px auto;
+
+}
+
+.TableContainer {
+
+  width: 90%;
+  margin: 0px auto;
+
+}
+
+
+.Title {
+
+  background: #72BE0B;
+  width: 100%;
+  height: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+
+}

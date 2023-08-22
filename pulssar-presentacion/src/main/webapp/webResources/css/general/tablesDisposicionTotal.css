@@ -1,0 +1,79 @@
+/* Styles Tables */
+
+.Row_Yellow {
+
+    background: #fafbcb;
+    color: var(--c06);
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+
+table {
+
+    border-spacing: 0px;
+    overflow-x: auto;
+    width: 100%;
+    font-family: var(--font-SAR);
+    margin: 0px auto;
+
+}
+
+.Table {
+
+    border-spacing: 0px;
+    width: 1000px;
+    font-family: var(--font-SAR);
+    margin: 0px auto;
+
+}
+
+
+
+.th_tabla {
+
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+.td_tabla {
+
+    text-align: center;
+    font-size: 11px;
+    word-wrap: break-word;
+    max-width: 110px;
+    padding: 10px !important;
+
+}
+
+.RowHeader {
+
+    background: var(--b01);
+    color: var(--c08);
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: var(--font-SAR);
+    text-transform: uppercase;
+
+}
+
+.Row1 {
+
+    background: var(--b15);
+    color: var(--c01);
+    text-transform: uppercase;
+
+}
+
+.Row2 {
+
+    background: var(--b16);
+    color: var(--c06);
+    text-transform: uppercase;
+
+}
+

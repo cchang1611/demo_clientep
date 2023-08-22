@@ -1,0 +1,14 @@
+
+.Container {
+
+  width: 100%;
+
+}
+
+.MenuContainer {
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+
+}

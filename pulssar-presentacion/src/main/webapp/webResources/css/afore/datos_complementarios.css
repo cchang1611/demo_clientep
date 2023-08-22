@@ -1,0 +1,184 @@
+/* Estilos Pulsar 07/03/2019 */
+
+.Container {
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+  margin-top: 20px;
+  background: #EDEDED;
+
+}
+
+.Icon__Container {
+
+  width: 100%;
+  background: white;
+
+}
+
+.icono_editar {
+
+  width: 22px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+
+}
+
+.Icon__Seccion {
+
+  width: 50px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #868983;
+
+}
+
+.Icon__Seccion:hover {
+
+  color: #c1c1c1;
+
+}
+
+.Icon__Editar {
+
+  width: 20px;
+
+}
+
+.Title {
+
+  background: #72BE0B;
+  width: 98%;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  padding: 10px;
+  text-transform: uppercase;
+
+}
+
+
+
+.Datos_Container {
+
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #868983;
+  text-transform: uppercase;
+  padding: 10px;
+
+}
+
+.Datos_ContainerColumn {
+
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #868983;
+  text-transform: uppercase;
+  padding: 10px;
+  vertical-align: middle;
+  display: inline-block;
+
+}
+
+.row_container {
+
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.Datos {
+
+  max-width: 235px;
+  width: 100%;
+  line-height: 20px;
+  word-wrap: break-word;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: auto;
+
+}
+
+.Datosxl {
+
+  max-width: 320px;
+  width: 100%;
+  line-height: 20px;
+  word-wrap: break-word;
+  margin-left: 5px;
+  margin-bottom: 5px;
+
+}
+
+.Correo {
+
+  text-transform: lowercase;
+
+}
+
+.button_agregar {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+.button_agregar:hover {
+
+  color: #558E06;
+
+}
+
+.icono_agregar {
+
+  width: 15px;
+  padding: 5px;
+
+}
+
+.button_eliminar {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+.button_eliminar:hover {
+
+  color: #558E06;
+
+}
+
+.icono_eliminar {
+
+  width: 15px;
+  padding: 5px;
+
+}

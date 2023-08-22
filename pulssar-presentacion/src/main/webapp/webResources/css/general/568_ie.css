@@ -1,0 +1,1839 @@
+/* Main */
+
+/* Styles From Coppel Internet Explorer */
+
+/* Header */
+
+.Header {
+
+    background: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 2px solid #11284A;
+
+}
+
+.Logo {
+
+    width: 280px;
+
+}
+
+.Header__ButtonMenuContainer {
+
+    color: #FFFFFF;
+    background: #FFD200;
+
+}
+
+.Header__ButtonMenuContainer:hover {
+
+    background: #FFE86F;
+
+}
+
+
+.Header__ButtonClockContainer {
+
+    color: #FFFFFF;
+    background: #006CBA;
+
+}
+
+.Header__ButtonClockContainer:hover {
+
+    background: #224B73;
+
+}
+
+.Header__UserContainer {
+
+    background: #065792;
+
+}
+
+.Header__UserContainer:hover {
+
+    background: #224B73;
+
+}
+
+.Header__RegistrateLoginText {
+
+    color: #FFFFFF;
+
+}
+
+/* Header Primary */
+
+.Header__OneSection {
+
+    background: #006CBA;
+
+}
+
+.Header__TwoSection {
+
+    background: #065792;
+
+}
+
+.Header__TwoSection:hover {
+
+    background: #FFE86F;
+
+}
+
+.Header__TwoSection__Link {
+
+    color: #FFFFFF;
+
+}
+
+.Header__TwoSection__Link:hover {
+
+    color: #FFFFFF;
+
+}
+
+.Header__TwoSection__Text {
+
+    color: #FFFFFF;
+
+}
+
+/* Dropdown */
+
+.dropdown {
+
+    background: #949494;
+
+}
+
+.dropdown {
+
+    background: #949494;
+
+}
+
+.dropdown:hover {
+
+    background: #CCCCCC;
+
+}
+
+.dropbtn {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.dropdown-content {
+
+    background-color: #949494;
+
+}
+
+.dropdown-content a {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.dropdown a:hover {
+
+    background-color: #D8D8D8;
+
+}
+
+.HeaderButton__Loginxl {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+/* Header PAPERLESS */
+
+.HeaderPaperless {
+
+    background: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 2px solid #11284A;
+
+}
+
+.LogoPaperless {
+
+    width:  150px;
+
+}
+
+.HeaderPaperless__ButtonMenuContainer {
+
+    color: #FFFFFF;
+    background: #FFD200;
+
+}
+
+.HeaderPaperless__ButtonMenuContainer:hover {
+
+    background:  #FFE86F;
+
+}
+
+.HeaderPaperless__ButtonClockContainer {
+
+    color: #FFFFFF;
+    background: #006CBA;
+
+}
+
+.HeaderPaperless__ButtonClockContainer:hover {
+
+    background: #224B73;
+
+}
+
+.HeaderPaperless__UserContainer {
+
+    background: #065792;
+
+}
+
+.HeaderPaperless__UserContainer:hover {
+
+    background: #224B73;
+
+}
+
+.HeaderPaperless__RegistrateLoginText {
+
+    color: #FFFFFF;
+
+}
+
+/* Termina Header PAPERLESS */
+
+/* Dropdown PAPERLESS */
+
+.ButtonPaperless {
+
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFFFFF;
+  background: #006CBA;
+
+}
+
+.dropdownPaperless-content {
+
+    background-color: #224B73;
+
+}
+
+.dropdownPaperless-content a {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.dropdownPaperless a:hover {
+
+    background-color: #006CBA;
+
+}
+
+.HeaderButtonPaperless__Loginxl {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+/* Termina Dropdown PAPERLESS */
+
+/* Menu */
+
+.Menu__Title {
+
+    color: #0065af;
+    font-family: 'Ubuntu', sans-serif;
+    background: #edeef2;
+
+}
+
+
+.Menu__Folio {
+
+    background: #949494;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* Títulos CSS */
+
+.Title__Container {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #373d3f;
+
+}
+
+/* Acordion */
+
+.accordion-header,
+.accordion-body {
+
+    background: #FFFFFF;
+
+}
+
+.accordion-header {
+
+      background: #224B73;
+      color: #FFFFFF;
+      font-family: 'Ubuntu', sans-serif;
+      border-bottom: 1px solid #FFFFFF;
+
+}
+
+.accordion-header:hover {
+
+      background: #006CBA;
+
+}
+
+.accordion-header02 {
+
+      background: #224B73;
+      color: #FFFFFF;
+      font-family: 'Ubuntu', sans-serif;
+      border-bottom: 1px solid #FFFFFF;
+
+}
+
+.accordion-header02:hover {
+
+      background: #006CBA;
+
+}
+
+.accordion-body {
+
+      background: #edeef2;
+      color: #0065af;
+
+}
+
+.accordion-body__contents {
+
+      font-family: 'Ubuntu', sans-serif;
+
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+
+    border-bottom: 1px solid #FFFFFF;
+
+}
+
+.accordion__item.active .accordion-header {
+
+    background: #065792;
+
+}
+
+.accordion__item .accordion__item .accordion-header {
+
+      background: #006CBA;
+      color: #FFFFFF;
+
+}
+
+.accordion__item .accordion__item .accordion-header:hover {
+
+      background: #065792;
+      color: #FFFFFF;
+
+}
+
+.accordion__item .accordion__item.active .accordion-header {
+
+      background: #065792;
+      color: #FFFFFF;
+
+}
+
+.accordion_link {
+
+      color: #747373;
+      background: #DEDEDE;
+
+}
+
+.accordion_link:hover {
+
+      color: #747373;
+      background: #E8E8E8;
+
+}
+
+.accordion_linksecond {
+
+      background: url("../../img/back_coppel.png");
+      color: #40646D;
+
+}
+
+.accordion_linksecond:hover {
+
+      color: #40646D;
+      background: #edeef2;
+
+}
+
+/* Footer */
+
+.Footer {
+
+    background: #006CBA;
+    border-top: 2px solid #ff8e00;
+
+}
+
+.Footer__Title {
+
+    color: #FFFFFF;
+
+}
+
+.Footer__Services {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Footer__Suport {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Footer__Legacy {
+
+    background: #065792;
+
+}
+
+.Footer__LegacyLink {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Footer__LegacyLink:hover {
+
+    color: #5d5d5d;
+
+}
+
+.FooterLink {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.FooterLink:hover {
+
+    color: #5d5d5d;
+
+}
+
+/* Container */
+
+.Icon__Seccion {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.Icon__Seccion:hover {
+
+  color: #D8D8D8;
+
+}
+
+.Title {
+
+    background: #006CBA;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.Line {
+
+    background:#006CBA;
+
+}
+
+.Datos_Container {
+
+    background: #edeef2;
+
+}
+
+.Datos_ContainerColumn {
+
+    background: #edeef2;
+
+}
+
+.Datos_ContainerColumn02 {
+
+    background: #D8D8D8;
+
+}
+
+.Datos_ContainerColumn03 {
+
+    background: #D8D8D8;
+
+}
+
+.Datos_ContainerColumn04 {
+
+    background: #edeef2;
+
+}
+
+.Datos {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.Datosxl {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.Datosxxl {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.DatosBack {
+
+    background: rgba(214, 214, 214, 0.8);
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.DatosBack_Scroll {
+
+    background: rgba(214, 214, 214, 0.8);
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.Datos_Error {
+
+    color: #ff0000;
+
+}
+
+.button_agregar {
+
+    color: #FFFFFF;
+
+}
+
+.button_agregar:hover {
+
+    color: #40646D;
+
+}
+
+.button_eliminar {
+
+    color: #FFFFFF;
+
+}
+
+.button_eliminar:hover {
+
+    color: #40646D;
+
+}
+
+/* Section copyright */
+
+.Copyright {
+
+  background: #224B73;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+.Copyright_Icon {
+
+  color: #FFFFFF;
+  background: #FFD200;
+
+}
+
+.Copyright_Icon:hover {
+
+  background: #065792;
+  color: #FFFFFF;
+
+}
+
+.Copyright_text {
+
+  color: #FFFFFF;
+
+}
+
+/* Class Section "Tipo de Retiros" */
+
+.Title_OneOption {
+
+    background: #006CBA;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.Title_OneOption:hover {
+
+    background: #FFE86F;
+
+}
+
+.Title_TowOption {
+
+    background: #065792;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+
+}
+
+.Title_TowOption:hover {
+
+    background: #949494;
+
+}
+
+.Container_One {
+
+    font-family: 'Ubuntu', sans-serif;
+    background: #edeef2;
+
+}
+
+.Container_Two {
+
+    font-family: 'Ubuntu', sans-serif;
+    background: #edeef2;
+
+}
+
+.Container_Three {
+
+    font-family: 'Ubuntu', sans-serif;
+    background: #edeef2;
+
+}
+
+.Container_Section {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #006CBA;
+    background: #edeef2;
+
+}
+
+/* Seccion Banners  */
+
+
+.Banner__TextContainer {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+    background: url("../../img/back_coppel.png");
+
+}
+
+/* Section Denied Acces */
+
+.Accessdenied__ColTwo {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #0065af;
+
+}
+
+.Accessdenied__Title {
+
+    color: #ff0000;
+
+}
+
+/* Section Footprints */
+
+.Footprints_Section {
+
+  background: #FFFFFF;
+
+}
+
+/* Section copyright */
+
+.Copyright {
+
+  background: #224B73;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+.Copyright_Icon {
+
+  color: #FFFFFF;
+  background: #FFD200;
+
+}
+
+.Copyright_Icon:hover {
+
+  background: #065792;
+  color: #FFFFFF;
+
+}
+
+.Copyright_text {
+
+  color: #FFFFFF;
+
+}
+
+/* Datos Generales */
+
+.ContainerDatosGenerales {
+
+    background: #edeef2;
+
+}
+
+.ContainerDatosGenerales__ColOne {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.ContainerDatosGenerales__NameError {
+
+    border: 1px solid #ff0000;
+
+}
+
+.ContainerDatosGenerales__ColTwo {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.ContainerDatosGenerales_DateError {
+
+    border: 1px solid #ff0000;
+
+}
+
+.linkRecertificacion {
+
+    color: #0065af;
+
+}
+
+.linkRecertificacion:hover {
+
+    color: #373d3f;
+
+}
+
+.Icon__Seccion {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+/* Index */
+
+.Title {
+
+    color: #0065af;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Description {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.Login {
+
+    background: #edeef2;
+
+}
+
+/* Modal Window */
+
+.Modal {
+
+    background-color: url("../../img/back_coppel.png");
+
+}
+
+.ModalContainerpdf {
+
+    background-color: #FFFFFF;
+
+}
+
+.ModalHeader {
+
+    background: #006CBA;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.ModalButton {
+
+    color: #FFFFFF;
+    background: #FFD200;
+
+}
+
+.ModalButton:hover {
+
+    background: #FFE86F;
+
+}
+
+.ModalText {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.Modal__Text {
+
+      font-family: 'Ubuntu', sans-serif;
+      color: #5d5d5d;
+
+}
+
+.Modal__AlertText {
+
+      font-family: 'Ubuntu', sans-serif;
+      color: #5d5d5d;
+
+}
+
+.Modal__AlertTextOk {
+
+      font-family: 'Ubuntu', sans-serif;
+      color: #006CBA;
+
+}
+
+.Modal__AlertTextError {
+
+      font-family: 'Ubuntu', sans-serif;
+      color: #ff0000;
+
+}
+
+.Modal__Hora {
+
+      font-family: 'Ubuntu', sans-serif;
+      color: #5d5d5d;
+
+}
+
+/* Styles Forms */
+
+.Inputxxl {
+
+    border: 1px solid rgba(214, 214, 214, 0.8);
+    font-family: 'Ubuntu', sans-serif;
+    color: #40646D;
+
+}
+
+input::-webkit-input-placeholder {
+
+    color: #D8D8D8;
+
+}
+
+input:-moz-placeholder {
+
+    color: #D8D8D8;
+
+}
+
+input:-ms-input-placeholder {
+
+    color: #D8D8D8;
+
+}
+
+.InputEdit {
+
+    border: 1px solid rgba(214, 214, 214, 0.8);
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.Input_small {
+
+    border: 1px solid #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    color: #40646D;
+
+}
+
+input::-webkit-input-placeholder {color: #5d5d5d;}
+input:-moz-placeholder {color: #5d5d5d;}
+input:-ms-input-placeholder {color: #5d5d5d;}
+
+
+.Inputerror {
+
+    border: 1px solid #ff0000;
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+    background: #ffefef;
+
+}
+
+.Select {
+
+    border: 1px solid #5d5d5d;
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.Submit {
+
+    color: #FFFFFF;
+    background: #0066dc;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+.Submit:hover {
+
+    background: #0066dc;
+
+}
+
+.Submit_disabled {
+
+    color: #FFFFFF;
+    background: url("../../img/back_coppel.png");
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Submit_second {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #0066dc;
+
+}
+
+.Submit_second:hover {
+
+    background: #0066dc;
+
+}
+
+.Submit_alert {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ff0000;
+
+}
+
+.Submit_alert:hover {
+
+    background: #f79292;
+
+}
+
+.Submit_prev {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ffc107;
+
+}
+
+.Submit_prev:hover {
+
+    background: #e0a800;
+
+}
+
+.Submit_info {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #17a2b8;
+
+}
+
+.Submit_info:hover {
+
+    background: #138496;
+
+}
+
+.Submitxl {
+
+    background: #0066dc;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Submitxl:hover {
+
+    background: #0066dc;
+
+}
+
+.Submitxl_disabled {
+
+    background: url("../../img/back_coppel.png");
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Submitxl_alert {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ff0000;
+
+}
+
+.Submitxl_alert:hover {
+
+    background: #f79292;
+
+}
+
+.Submitxl_prev {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ffc107;
+
+}
+
+.Submitxl_prev:hover {
+
+    background: #e0a800;
+
+}
+
+.Submitxl_info {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #17a2b8;
+
+}
+
+.Submitxl_info:hover {
+
+    background: #138496;
+
+}
+
+.Submitx {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #0066dc;
+
+}
+
+.Submitx:hover {
+
+    background: #0066dc;
+
+}
+
+.Submitx_disabled {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: url("../../img/back_coppel.png");
+
+}
+
+.Submitx_alert {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ff0000;
+
+}
+
+.Submitx_alert:hover {
+
+    background: #f79292;
+
+}
+
+.Submitx_prev {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ffc107;
+
+}
+
+.Submitx_prev:hover {
+
+    background: #e0a800;
+
+}
+
+.Submitx_info {
+
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    background: #17a2b8;
+
+}
+
+.Submitx_info:hover {
+
+    background: #138496;
+
+}
+
+.Title__Label {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #0065af;
+
+}
+
+.LabelText {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #0065af;
+
+}
+
+.LabelTextEdit {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #747373;
+
+}
+
+.Labeltexterror {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #ff0000;
+
+}
+
+.Captcha {
+
+    background: #D8D8D8;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.Container__RadioButtons {
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    color: #0065af;
+
+}
+
+/* Time Picker */
+
+.timepicker {
+
+    border: 1px solid #FFFFFF;
+    color: #5d5d5d;
+    background: #edeef2;
+
+}
+
+.timepicker::-webkit-input-placeholder {
+
+    color: #5d5d5d;
+
+}
+
+.timepicker::-moz-placeholder {
+
+    color: #5d5d5d;
+
+}
+
+.timepicker::-ms-input-placeholder {
+
+    color: #5d5d5d;
+
+}
+
+/* Styles Tables */
+
+table {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Table {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* Styles Checkpoints */
+
+.Table_Check {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Table_CheckPoints {
+
+	background: #FFFFFF;
+	color: #0C3741;
+
+}
+
+.RowHeader {
+
+    background: #006CBA;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.RowHeader02 {
+
+    background: #224B73;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.Row1 {
+
+    background: #E8E8E8;
+    color: #0065af;
+
+}
+
+.Row2 {
+
+    background: #DEDEDE;
+    color: #5d5d5d;
+
+}
+
+.TableLinks {
+
+    color: #626262;
+
+}
+
+.Linkproceso {
+
+    color: #008c00;
+
+}
+
+.Linkretraso {
+
+    color: #ff0000;
+
+}
+
+.Linkconcluido {
+
+    color: #808080;
+
+}
+
+.Linkpausado {
+
+    color: #BC9F00;
+
+}
+
+.Link_blue {
+
+  color: #0065af;
+
+}
+
+.Link_blue:hover {
+
+  color: #0065af;
+
+}
+
+.Link_gray {
+
+  color: #5d5d5d;
+
+}
+
+.Link_gray:hover {
+
+  color: #5d5d5d;
+
+}
+
+/* Styles Tabs */
+
+/* Pestaña Marcas Operativas */
+
+.PestanaTitle {
+
+    background: #006CBA;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.PestanaTitle:hover {
+
+    background: #065792;
+
+}
+
+.PestanaTableContainer {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.PestanaTitleContainer {
+
+    background: #949494;
+    color: #FFFFFF;
+
+}
+
+.Row {
+
+    background: #edeef2;
+    color: #5d5d5d;
+
+}
+
+.PestanasCarousel {
+
+    background: #DEDEDE;
+
+}
+
+/* Pestaña Renapo */
+
+.PestanaTitleRenapo  {
+
+    background: #006CBA;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+
+}
+
+.PestanaTitleRenapo:hover {
+
+    background: #065792;
+
+}
+
+.PestanaTableContainerRenapo  {
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.PestanaTitleContainerRenapo  {
+
+      color: #FFFFFF;
+
+}
+
+.ContentRenapo  {
+
+      background: #edeef2;
+      color: #949494;
+
+}
+
+.TextRenapo {
+
+    color: #006CBA;
+
+}
+
+/* Pestaña Curp */
+
+.PestanaTitleCurp  {
+
+      background: #006CBA;
+      font-family: 'Ubuntu', sans-serif;
+      color: #FFFFFF;
+
+}
+
+.PestanaTitleCurp:hover {
+
+      background: #065792;
+
+}
+
+.PestanaTableContainerCurp  {
+
+      font-family: 'Ubuntu', sans-serif;
+
+}
+
+.PestanaTitleContainerCurp  {
+
+      background: #949494;
+      color: #FFFFFF;
+
+}
+
+.ContentCurp  {
+
+      color: #FFFFFF;
+
+}
+
+.Row1 {
+
+      background: #D8D8D8;
+      color: #747373;
+
+}
+
+.Row2 {
+
+      background: #edeef2;
+      color: #747373;
+
+}
+
+/* --- Styles Pestaña Datos Generales --- */
+
+.PestanaTitledatos {
+
+      background: #006CBA;
+      font-family: 'Ubuntu', sans-serif;
+      color: #FFFFFF;
+
+}
+
+.PestanaTitledatos:hover {
+
+      background: #065792;
+
+}
+
+.PestanaTableContainerdatos {
+
+      font-family: 'Ubuntu', sans-serif;
+
+}
+
+.PestanaTitleContainerdatos {
+
+      color: #FFFFFF;
+
+}
+
+.PestanasCarouseldatos {
+
+    background: #edeef2;
+
+}
+
+.ContainerDatosGenerales__Columna1 {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.ContainerDatosGenerales__Columna2 {
+
+    font-family: 'Ubuntu', sans-serif;
+    color: #5d5d5d;
+
+}
+
+.linkRecertificacion {
+
+    color: #0065af;
+
+}
+
+.linkRecertificacion:hover {
+
+    color: #373d3f;
+
+}
+
+/* Styles Templeates */
+
+.Aside__Col01 {
+
+    background: #edeef2;
+
+}
+
+.Aside__Col02 {
+
+    background: #edeef2;
+
+}
+
+/* Slick Carrousel  */
+
+.slick-next::before, .slick-prev::before {
+
+  color: #FFE86F;
+
+}
+
+.Carrousel__ThumbContainer {
+
+  background: #006CBA;
+
+}
+
+.Carrousel__ThumbContainer:hover {
+
+  background: #065792;
+
+}
+
+.Carrousel__Title {
+
+  background: #065792;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFFFFF;
+
+}
+
+/* Slick Carrousel Administrador */
+
+.CarrouselMenu__ThumbContainer {
+
+  background: #006CBA;
+
+}
+
+.CarrouselMenu__ThumbContainer:hover {
+
+  background: #065792;
+
+}
+
+.CarrouselMenu__Title {
+
+  background: #065792;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFFFFF;
+
+}
+
+.CarrouselMenu__TitlePrimary {
+
+  background: #065792;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFFFFF;
+
+}
+
+/* SLIDER */
+
+
+p {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+
+.heading-section h2 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.home-account a {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.cart-info {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.main-menu a {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+/*-- Timeline --*/
+
+.timeline-caption h4 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.timeline-caption p {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+#product-heading h2 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+#filters span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.label-text span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.send button {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.info li {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.recent-post-info h6 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.recent-post-info span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.slider-caption {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.slider-caption h1 {
+
+  text-shadow: 1px 1px #FFFFFF;
+  color: #0065af;
+
+}
+
+.slider-caption p {
+
+  color: #FFFFFF;
+  background: url("../../img/back_coppel.png");
+
+}
+
+.slider-caption a {
+
+  background-color: #006CBA;
+  color: #FFFFFF;
+
+}
+
+.slider-caption a:hover {
+
+  background-color: #FFD200;
+
+}
+
+/*-- Services --*/
+
+.service-item h4 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+/*-- Latest Posts --*/
+
+.content-show a {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+/*--Footer--*/
+
+.social-bottom span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.subscribe-form span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.footer-title {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.recent-post-info h6 {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.recent-post-info span {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+.more-info li {
+
+  font-family:  'Ubuntu', sans-serif;
+
+}
+
+/* Drag and Drop Component */
+
+#dropFileForm {
+
+  display: inline-inline-block;
+  vertical-align: middle;
+
+}
+
+/* ESTILOS BOTÓN CURP */
+
+.curpFaltante {
+
+    border: 1px solid #FFFFFF;
+    color: #949494;
+    background: #eaeaea;
+
+}
+
+.curpFaltante::-webkit-input-placeholder {
+
+    color: #949494;
+
+}
+
+.curpFaltante::-moz-placeholder {
+
+    color: #949494;
+
+}
+
+.curpFaltante::-ms-input-placeholder {
+
+    color: #949494;
+
+}
+
+/* Styles Carrousel Visor */
+
+.prev, .next {
+
+  color: #FFFFFF;
+  background: #006CBA;
+
+}
+
+.magnify-modal {
+
+    background-color: #006CBA;
+
+}

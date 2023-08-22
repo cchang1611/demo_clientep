@@ -1,0 +1,243 @@
+/*
+ * Archivo CSS destinado a contener los estilos predeterminados para la aplicacion
+ * 
+ * @autor Edgar Alberto Pérez Villegas (eaperezv@inet.procesar.com.mx)
+ * @version 1.0  
+ */
+ 
+ /* SmartPhone */
+@media ( max-width : 767px) {
+	.minerva-navbar-nav {
+		width: 100% !important;
+	}
+}
+
+/* Tablet */
+@media ( min-width : 768px) and (max-width: 979px) {
+	.minerva-navbar-nav {
+		width: 87% !important;
+	}
+}
+
+/* Small PC */
+@media ( min-width : 980px) and (max-width: 1999px) {
+	.minerva-navbar-nav {
+		width: 90% !important;
+	}
+}
+
+/* Big PC */
+@media ( min-width : 1200px) {
+	.minerva-navbar-nav {
+		width: 92% !important;
+	}
+}
+
+.minerva-float-right {
+	float: right !important;
+}
+
+.minerva-navbar {
+	margin-bottom: 0px;
+}
+
+/* All Devices */
+.minerva-clear-padding-right {
+	padding-right: 0px;
+}
+
+.minerva-menu-height {
+	min-height: 70px;
+}
+
+.minerva-all-width {
+	width: 100% !important;
+}
+
+.minerva-all-width-menu {
+	width: 94% !important;
+	padding-left: 17px;
+}
+
+.minerva-login-label-width {
+	width: 100px;
+}
+
+.minerva-login-middle {
+	margin-top: 10%;
+}
+
+.minerva-col-md-clear {
+	padding-left: 1px;
+	padding-right: 0px;
+}
+
+.minerva-inner-padding {
+	padding: 15px;
+}
+
+.modal-header-minerva {
+	background-color: #00395A;
+	color: #fff;
+	border-color: #337ab7;
+}
+
+.minerva-traza-error h1 {
+	font-size: 1em;
+	font-weight:bold;
+}
+
+.minerva-traza-error h3 {
+	font-size: 1em;
+}
+
+/*
+ * Label de error
+ */
+.error {
+	color: #A94442;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+.minerva-align-center {
+	text-align: center;
+}
+
+.minerva-error {
+	color: #A94442;
+	font-size: 11px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.form-horizontal {
+	padding: 15px 15px 15px 15px;
+}
+
+/* Bootstrap Override */
+.panel-body {
+	padding: 0px;
+}
+
+.panel-primary>.panel-heading {
+	background-color: #00395A;
+}
+
+.minerva-table table thead {
+	text-align: center;
+	font-weight: bold;
+	border-bottom: solid 3px #d9d9d9;
+	color:#fff;
+	background-color:#00395A;
+}
+
+.minerva-td{
+	
+	background-color:#fff;
+	
+}
+
+.minerva-table nav {
+	text-align: center;
+}
+
+.navbar-nav {
+	float: none;
+}
+
+.body-public{
+	margin-left: 8%;
+	margin-right: -8%;
+}
+
+.header-public-center {
+	width: 84.6%;
+	left: -0.8%;
+	padding-left: 0px;
+}
+
+.footer-public-center {
+	padding-left: 0px;
+	width: 84.3%;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+.minerva-required {
+	color: red;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.minerva-row {
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 60px;
+}
+
+.minerva-parrafo {
+	text-align: center;
+	font-weight: bold;
+}
+
+.minerva-total {
+	font-weight: bold;
+}
+
+.minerva-titulo {
+	text-align: left;
+	font-weight: bold;
+}
+
+.titulo-tabla {
+	font-weight: bold;
+}
+
+.minerva-warning-text {
+	color: red;
+}
+
+.minerva-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  text-align: center
+}
+
+.contendorCentrar {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.textcifDetales {
+       font-size: 0.8em;
+       color:#fff; 
+       background-color:#00395A; 
+       height: 20px; 
+       white-space: nowrap;
+}
+
+.containerDetalles {
+    padding: 20px 28px 19px 0px;
+}
+
+.alturaDetalles {
+    margin-top: -71px;
+}
+
+#fechaInicio::-ms-clear, #fechaFin::-ms-clear{
+       display: none;
+}

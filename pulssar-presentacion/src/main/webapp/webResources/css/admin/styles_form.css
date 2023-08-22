@@ -1,0 +1,341 @@
+/* Estilos Pulsar 07/03/2019 */
+/* Inicio hojas de estilo Afore Azteca*/
+
+
+/*Estilos Input*/
+.Inputxxl {
+
+  width: 90%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #A3A2A2;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin: 0px auto;
+  font-family: 'Roboto', sans-serif;
+  color: #626262;
+  display: block;
+
+}
+
+.Inputxxl:focus { outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #C3C3C3;
+  text-transform: uppercase;
+}
+input:-moz-placeholder {
+  color: #C3C3C3;
+  text-transform: uppercase;
+}
+input:-ms-input-placeholder {
+  color: #C3C3C3;
+  text-transform: uppercase;
+}
+
+.Input {
+
+  width: 100%;
+  max-width: 430px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #72BE0B;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #626262;
+
+}
+
+.Input:focus { outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #C3C3C3;
+}
+input:-moz-placeholder {
+  color: #C3C3C3;
+}
+input:-ms-input-placeholder {
+  color: #C3C3C3;
+}
+
+.Input_vaz {
+
+  width: 330px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #72BE0B;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #626262;
+
+}
+
+.Input_xl:focus { outline: none; }
+
+.Input_xl {
+
+  width: 100px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #72BE0B;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #626262;
+
+}
+
+.Input_xl:focus { outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #C3C3C3;
+}
+input:-moz-placeholder {
+  color: #C3C3C3;
+}
+input:-ms-input-placeholder {
+  color: #C3C3C3;
+}
+
+.Input_small {
+
+  width: 50px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #72BE0B;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #626262;
+
+}
+
+.Input_small:focus { outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #C3C3C3;
+}
+input:-moz-placeholder {
+  color: #C3C3C3;
+}
+input:-ms-input-placeholder {
+  color: #C3C3C3;
+}
+
+.Inputerror {
+
+  width: 90%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid red;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin: 0px auto;
+  font-family: 'Roboto', sans-serif;
+  color: #626262;
+  display: block;
+  background: #fffafa;
+
+}
+
+.Inputerror:focus { outline: none; }
+
+
+.Registrer__Text {
+
+  width: 90%;
+  padding: 5px;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  color: #5FA31A;
+  text-align: left;
+  margin: 0px auto;
+
+}
+
+.Select {
+
+  width: 90%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #A3A2A2;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 0px auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #C3C3C3;
+  margin: 0px auto;
+  display: block;
+
+}
+
+.option {
+
+    font-size: 15px !important;
+    text-align: center !important;
+    width: 90% !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    background: red !important;
+}
+
+.Select:focus { outline: none; }
+
+.Submit {
+
+  width: 170px;
+  height: 40px;
+  border-radius: 3px;
+  border: 0px;
+  font-size: 18px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: #72BE0B;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+
+}
+
+.Submit:hover {
+
+  background: #558E06;
+
+}
+
+.Submit:focus { outline: none; }
+
+
+.ContainerButtons {
+
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+
+}
+
+.ContainerButtons2 {
+
+  width: 90%;
+  margin: 0px auto;
+
+}
+
+
+
+.LabelText {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: #72BE0B;
+  text-transform: uppercase;
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  padding-bottom: 7px;
+  padding-top: 7px;
+
+}
+
+.Labeltexterror {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  color: red;
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  padding-bottom: 7px;
+  padding-top: 7px;
+
+}
+
+.Captcha {
+
+  width: 100%;
+  max-width: 323px;
+  border-radius: 3px;
+  background: #D3D3D3;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  color: #626262;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: block;
+
+}
+
+.Form__Captcha {
+
+  width: 90%;
+  margin: 0px auto;
+
+}
+
+.Checkbox {
+
+  height: 16px;
+
+}
+
+.Checkbox__Area {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #727272;
+    text-transform: uppercase;
+    text-align: left;
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 7px;
+    padding-top: 7px;
+
+}
+
+.Checkbox__List {
+
+  list-style: none;
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  padding: 10px;
+
+}
+
+.Checkbox__Li {
+
+  margin-bottom: 10px;
+
+}
+
+.Invalid_data {
+    border: 1px solid #FE2E2E;
+}

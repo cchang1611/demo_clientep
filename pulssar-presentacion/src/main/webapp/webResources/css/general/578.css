@@ -1,0 +1,92 @@
+/* Main */
+
+/* Styles From ISSSTE */
+
+:root {
+
+  --b01: #0C231E; /* Styles ISSSTE */
+  --b02: #2c2c2b; /* Styles ISSSTE */
+  --b03: #1C5A4F; /* Styles ISSSTE */
+  --b04: #000000; /* Styles ISSSTE */
+  --b05: #CCCCCC; /* Styles ISSSTE */
+  --b06: #949494; /* Styles ISSSTE */
+  --b07: #F8F8F8; /* Styles ISSSTE */
+  --b08: #FFFFFF; /* Styles ISSSTE */
+  --b09: rgba(214, 214, 214, 0.8); /* Styles ISSSTE */
+  --b10: #ffefef; /* Styles ISSSTE */
+  --b11: #b50202; /* Styles ISSSTE */
+  --b12: url("../../img/back_issste.png"); /* Styles ISSSTE */
+  --b13: #1C5A4F; /* Styles ISSSTE */
+  --b14: #CCCCCC; /* Styles ISSSTE */
+  --b15: #E8E8E8; /* Styles ISSSTE */
+  --b16: #DEDEDE; /* Styles ISSSTE */
+
+/* Styles Background Banner */
+
+  --back: url("../../img/back_issste.png");
+
+/* Styles Background White */
+
+  --bw: #FFFFFF;
+
+/* Styles Buttons Active */
+
+  --b17: #545454; /* Styles ISSSTE */
+  --b18: #b50202; /* Styles ISSSTE */
+
+  /* Styles Buttons Secondary */
+
+    --b19: #b50202;
+    --b20: #ea8a8a;
+
+  /* Styles Buttons Alert */
+
+    --b21: #ff0000;
+    --b22: #f79292;
+
+  /* Styles Buttons Prev */
+
+    --b23: #ffc107;
+    --b24: #e0a800;
+
+  /* Styles Buttons Info */
+
+    --b25: #17a2b8;
+    --b26: #138496;
+
+  --c01: #1C5A4F; /* Styles ISSSTE */
+  --c02: #0C3741;
+  --c03: #393b3c; /* Styles ISSSTE */
+  --c04: #F09A2E;
+  --c04b:#2c2c2b; /* Styles ISSSTE */
+  --c05: #D8D8D8; /* Styles ISSSTE */
+  --c06: #949494; /* Styles ISSSTE */
+  --c07: #EDEDED;
+  --c08: #FFFFFF; /* Styles ISSSTE */
+  --c09: #b50202; /* Styles ISSSTE */
+  --c10: #747373; /* Styles ISSSTE */
+
+  /* Header Elements */
+
+  --bh: 2px solid #0C231E;
+
+  /* Footer Elements */
+
+  --bf: 2px solid #C9AF8D;
+
+  /* Styles Type */
+
+  --font-SAR: 'Open Sans', Helvetica, Arial, sans-serif;
+
+  /* Styles Logo */
+
+  --lsize: 360px;
+
+/* Styles Color Links Tables */
+
+  --lgtc: #008c00;
+  --lrtc: #ff0000;
+  --lgtc: #808080;
+  --lbtc: #BC9F00;
+
+}

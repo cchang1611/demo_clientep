@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
+    http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+
+	<named-native-query name="findUsuarios" result-set-mapping="findUsuarioMapping">
+		<query>SELECT USUARIO.* FROM PSER_TR_USUARIO_PULSSAR USUARIO 
+			INNER JOIN PSER_TR_USER_ROL_PULSSAR USERROL ON USUARIO.ID_USUARIO_PULSSAR = USERROL.ID_USUARIO_PULSSAR 
+			INNER JOIN PSER_TC_ROL_PULSSAR ROL ON ROL.ID_ROL_PULSSAR = USERROL.ID_ROL_PULSSAR 
+			WHERE USUARIO.CV_ORGANIZACION = ?1 AND USUARIO.CH_ESTATUS = ?2 AND ROL.CV_ROL_PULSSAR = ?3 AND USERROL.NU_ESTATUS = ?4
+		</query>
+	</named-native-query>
+	
+	<named-native-query name="buscarTurnosRegistrados" result-set-mapping="buscarTurnosRegistradosMapping">
+		<query>
+		    SELECT
+		        T.CH_FOLIO_SERVICIO,
+		        T.NOMBRE_COMPLETO_TRAB,
+		        T.HORA_REGISTRO,
+		        T.TIEMPO_ESPERA_MIN,
+		        T.TIEMPO_ESPERA_HORAS
+		    FROM (
+		        SELECT 
+		            T1.CH_FOLIO_SERVICIO               AS CH_FOLIO_SERVICIO,
+		            TRIM(T1.CH_NOMBRE_TRAB) || ' ' || 
+		            TRIM(T1.CH_APELLIDO_PATERNO_TRAB) || ' ' || 
+		            TRIM(T1.CH_APELLIDO_MATERNO_TRAB)
+		                                               AS NOMBRE_COMPLETO_TRAB,
+		            TO_CHAR(T1.FC_REGISTRO, 'HH24:MI') AS HORA_REGISTRO,
+		            TO_CHAR(CAST(
+                        (SYSDATE - T1.FC_REGISTRO) * 60 * 24           --&gt; Calculo para los minutos entre la fecha
+                        AS VARCHAR2(4 CHAR)                            --&gt; de registro y la fecha actual
+                    ), 'fm9999999990')              AS TIEMPO_ESPERA_MIN,
+                    CAST(
+                        (SYSDATE - T1.FC_REGISTRO) * 24                --&gt; Calculo para los horas entre la fecha
+                        AS VARCHAR2(4 CHAR)                            --&gt; de registro y la fecha actual
+                    )                                  AS TIEMPO_ESPERA_HORAS
+			    FROM
+				    PSER_TR_TURNO                    T1
+				    INNER JOIN PSER_TC_TURNO_ESTATUS T2 ON T1.CV_TURNO_ESTATUS = T2.CV_TURNO_ESTATUS
+				    INNER JOIN PSER_TR_FOLIO_PULSSAR T3 ON T1.ID_FOLIO_PULSSAR = T3.ID_FOLIO_PULSSAR
+			    WHERE
+			        T1.CH_INDICADOR_CITA =  ?1
+			        AND T1.FC_REGISTRO   >= ?2
+			        AND T3.CH_SUCURSAL   =  ?3
+			        AND T2.CV_TURNO_ESTATUS = '01'                     --&gt; Turno con valor de estatus registrado o inicial
+			) T
+			ORDER BY T.HORA_REGISTRO DESC
+		</query>
+	</named-native-query>
+	
+	<named-native-query name="getTipoReporteGenerico"
+		result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.ReporteGenerico">
+		<query>
+			SELECT ID_REPORTE_GENERICO ,
+			  ID_SUBPROCESO ,
+			  ID_TIPO_REPORTE ,
+			  UPPER(CH_NOMBRE_REPORTE) AS CH_NOMBRE_REPORTE,
+			  NU_ACTIVO ,
+			  CH_CONSULTA ,
+			  UPPER(CH_ESQUEMA)    AS CH_ESQUEMA,
+			  UPPER(CH_ENCABEZADO) AS CH_ENCABEZADO,
+			  NU_FILTRO_NSS ,
+			  NU_FILTRO_CURP ,
+			  NU_FILTRO_RANGO_FC ,
+			  NU_FILTRO_ID_PROCESAR ,
+			  FC_CONTROL ,
+			  CH_USUARIO_MODIFICADOR,
+			  CH_URL
+			FROM PSER_TC_REPORTE_GENERICO
+			WHERE NU_ACTIVO = 1
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%UPDATE%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%DELETE%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%INSERT%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%SELECT *%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%;%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%--%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%GRANT%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%TRUNCATE%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%DROP%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%ALTER%')
+			AND UPPER(CH_CONSULTA) NOT LIKE ('%ENABLE%')
+			AND UPPER(CH_CONSULTA) LIKE ('%WHERE%')
+			ORDER BY CH_NOMBRE_REPORTE ASC
+		</query>
+	</named-native-query>
+
+	<named-native-query name="getListReporteBySubprocesoAndTipoReporte"
+		result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.ReporteGenerico">
+		<query>
+			SELECT rg.ID_REPORTE_GENERICO ,
+			rg.ID_SUBPROCESO ,
+			rg.ID_TIPO_REPORTE ,
+			UPPER(rg.CH_NOMBRE_REPORTE) AS CH_NOMBRE_REPORTE,
+			rg.NU_ACTIVO ,
+			rg.CH_CONSULTA ,
+			UPPER(rg.CH_ESQUEMA) AS CH_ESQUEMA,
+			UPPER(rg.CH_ENCABEZADO) AS CH_ENCABEZADO,
+			rg.NU_FILTRO_NSS ,
+			rg.NU_FILTRO_CURP ,
+			rg.NU_FILTRO_RANGO_FC ,
+			rg.NU_FILTRO_ID_PROCESAR ,
+			rg.FC_CONTROL ,
+			rg.CH_USUARIO_MODIFICADOR,
+			rg.ID_REPORTE_GENERICO_PADRE,
+			rg.NU_ORDEN,
+			rg.CH_NOMBRE_ARCHIVO_REPORTE,
+			rg.CH_URL     
+			FROM PSER_TC_MODULO_REPORTE mod
+			JOIN PSER_TC_PROCESO_NEGOCIO pro on mod.ID_MODULO_REPORTE=pro.ID_MODULO_REPORTE
+			JOIN PSER_TC_SUBPROCESO sp on pro.ID_PROCESO_NEGOCIO=sp.ID_PROCESO_NEGOCIO
+			JOIN PSER_TC_REPORTE_GENERICO rg on rg.ID_SUBPROCESO=sp.ID_SUBPROCESO
+			JOIN PSER_TC_TIPO_REPORTE tr on tr.ID_TIPO_REPORTE=rg.ID_TIPO_REPORTE
+			AND rg.ID_REPORTE_GENERICO IN (SELECT DISTINCT(ID_REPORTE_GENERICO) FROM PSER_TR_ROL_REPORTE WHERE CV_ROL_PULSSAR = ?4 AND NU_ACTIVO =?5)       
+			AND (?3 IS NULL OR tr.NU_BATCH_LINEA = ?3)
+			     AND (?2 = 0 OR tr.ID_TIPO_REPORTE = ?2)
+			         WHERE rg.NU_ACTIVO = ?5
+			AND rg.ID_SUBPROCESO =  ?1			
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%UPDATE%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%DELETE%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%INSERT%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%SELECT *%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%;%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%--%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%GRANT%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%TRUNCATE%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%DROP%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%ALTER%')
+			AND UPPER(rg.CH_CONSULTA) NOT LIKE ('%ENABLE%')
+			--AND UPPER(rg.CH_CONSULTA) LIKE ('%WHERE%')
+            ORDER BY rg.ID_REPORTE_GENERICO ASC
+		</query>
+	</named-native-query>
+	
+	<named-native-query name="recuperarDetalleSolicitudId"
+		result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.DetalleSolicitud">
+		<query>
+			SELECT 
+			     R.ID_SOLICITUD_REPORTE
+			    ,R.CH_NUMERO_SOLICITUD_REPORTE
+			    ,R.ID_REPORTE_GENERICO
+			    ,G.CH_NOMBRE_REPORTE
+			    ,R.ID_ESTADO_SOLICITUD
+			    ,S.CH_DESC_ESTADO_SOLICITUD
+			    ,R.FC_ENVIO
+			    ,R.FC_PROCESO
+			    ,R.CH_RUTA_ARCHIVO_SOLICITUD
+			    ,R.CH_NOMBRE_ARCHIVO_SOLICITUD
+			    ,R.CH_RUTA_ARCHIVO_RESPUESTA
+			    ,R.CH_NOMBRE_ARCHIVO_RESPUESTA
+			    ,R.FC_CONTROL
+			    ,R.CH_USUARIO_MODIFICADOR 
+          		,B.NU_EXPORT_REPORTE
+			FROM PSER_TR_SOLICITUD_REPORTE R
+				JOIN PSER_TC_ESTADO_SOLICITUD S ON S.ID_ESTADO_SOLICITUD = R.ID_ESTADO_SOLICITUD
+				JOIN PSER_TC_REPORTE_GENERICO G ON G.ID_REPORTE_GENERICO = R.ID_REPORTE_GENERICO
+	      		JOIN PSER_TB_BITACORA_REPORTE B ON B.ID_BITACORA_REPORTE = R.ID_BITACORA_REPORTE
+	      		INNER JOIN PSER_TC_SUBPROCESO SUB ON SUB.ID_SUBPROCESO = G.ID_SUBPROCESO
+				INNER JOIN PSER_TC_PROCESO_NEGOCIO PROC ON PROC.ID_PROCESO_NEGOCIO = SUB.ID_PROCESO_NEGOCIO
+				INNER JOIN PSER_TC_MODULO_REPORTE MO ON MO.ID_MODULO_REPORTE = PROC.ID_MODULO_REPORTE
+				AND MO.ID_MODULO_REPORTE = ?3
+			WHERE 1 = 1 
+				AND R.ID_SOLICITUD_REPORTE = COALESCE(CAST(?1 AS INT) , R.ID_SOLICITUD_REPORTE)
+				AND R.ID_ESTADO_SOLICITUD  = COALESCE(CAST(?2 AS INT) , R.ID_ESTADO_SOLICITUD)
+			ORDER BY ID_SOLICITUD_REPORTE DESC
+		</query>
+	</named-native-query>
+	
+	<named-native-query name="recuperarDetalleSolicitudFechas"
+		result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.DetalleSolicitud">
+		<query>
+			SELECT 
+			     R.ID_SOLICITUD_REPORTE
+			    ,R.CH_NUMERO_SOLICITUD_REPORTE
+			    ,R.ID_REPORTE_GENERICO
+			    ,G.CH_NOMBRE_REPORTE
+			    ,R.ID_ESTADO_SOLICITUD
+			    ,S.CH_DESC_ESTADO_SOLICITUD
+			    ,R.FC_ENVIO
+			    ,R.FC_PROCESO
+			    ,R.CH_RUTA_ARCHIVO_SOLICITUD
+			    ,R.CH_NOMBRE_ARCHIVO_SOLICITUD
+			    ,R.CH_RUTA_ARCHIVO_RESPUESTA
+			    ,R.CH_NOMBRE_ARCHIVO_RESPUESTA
+			    ,R.FC_CONTROL
+			    ,R.CH_USUARIO_MODIFICADOR 
+          		,B.NU_EXPORT_REPORTE
+			FROM PSER_TR_SOLICITUD_REPORTE R
+				JOIN PSER_TC_ESTADO_SOLICITUD S ON S.ID_ESTADO_SOLICITUD = R.ID_ESTADO_SOLICITUD
+				JOIN PSER_TC_REPORTE_GENERICO G ON G.ID_REPORTE_GENERICO = R.ID_REPORTE_GENERICO
+	      		JOIN PSER_TB_BITACORA_REPORTE B ON B.ID_BITACORA_REPORTE = R.ID_BITACORA_REPORTE
+	      		INNER JOIN PSER_TC_SUBPROCESO SUB ON SUB.ID_SUBPROCESO = G.ID_SUBPROCESO
+				INNER JOIN PSER_TC_PROCESO_NEGOCIO PROC ON PROC.ID_PROCESO_NEGOCIO = SUB.ID_PROCESO_NEGOCIO
+				INNER JOIN PSER_TC_MODULO_REPORTE MO ON MO.ID_MODULO_REPORTE = PROC.ID_MODULO_REPORTE
+				AND MO.ID_MODULO_REPORTE = ?5
+			WHERE 1 = 1 
+				AND R.ID_SOLICITUD_REPORTE = COALESCE(CAST(?1 AS INT) , R.ID_SOLICITUD_REPORTE)
+				AND R.ID_ESTADO_SOLICITUD  = COALESCE(CAST(?2 AS INT) , R.ID_ESTADO_SOLICITUD)
+				AND FC_ENVIO BETWEEN ?3 AND ?4
+			ORDER BY ID_SOLICITUD_REPORTE DESC
+		</query>
+	</named-native-query>
+
+	<named-native-query name="solicitudesReporteTopten"
+		result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.SolicitudReporte">
+		<query>
+			SELECT R.ID_SOLICITUD_REPORTE ,
+			  R.CH_NUMERO_SOLICITUD_REPORTE ,
+			  R.ID_REPORTE_GENERICO ,
+			  R.ID_ESTADO_SOLICITUD ,
+			  R.FC_ENVIO ,
+			  R.FC_PROCESO ,
+			  R.CH_RUTA_ARCHIVO_SOLICITUD ,
+			  R.CH_NOMBRE_ARCHIVO_SOLICITUD ,
+			  R.CH_RUTA_ARCHIVO_RESPUESTA ,
+			  R.CH_NOMBRE_ARCHIVO_RESPUESTA ,
+			  R.FC_CONTROL ,
+			  R.CH_USUARIO_MODIFICADOR,
+			  R.ID_BITACORA_REPORTE
+			FROM PSER_TR_SOLICITUD_REPORTE R
+			JOIN PSER_TC_REPORTE_GENERICO G ON G.ID_REPORTE_GENERICO = R.ID_REPORTE_GENERICO
+			INNER JOIN PSER_TC_SUBPROCESO SUB ON SUB.ID_SUBPROCESO = G.ID_SUBPROCESO
+			INNER JOIN PSER_TC_PROCESO_NEGOCIO PROC ON PROC.ID_PROCESO_NEGOCIO = SUB.ID_PROCESO_NEGOCIO
+			INNER JOIN PSER_TC_MODULO_REPORTE MO ON MO.ID_MODULO_REPORTE   = PROC.ID_MODULO_REPORTE
+			AND MO.ID_MODULO_REPORTE           = ?1
+			WHERE FC_ENVIO BETWEEN SYSDATE-30 AND SYSDATE
+			ORDER BY ID_SOLICITUD_REPORTE DESC
+		</query>
+	</named-native-query>
+
+	<named-native-query name="contadorejecucionConsultaPorUsuario">
+		<query>
+			SELECT COUNT(1) 
+			FROM PSER_TB_BITACORA_REPORTE 
+			WHERE TRUNCATE(FC_EJECUCION, 10) = TRUNCATE(SYSDATE, 10) 
+			AND ID_REPORTE_GENERICO = ?1
+			AND CH_USUARIO = ?2
+		</query>
+	</named-native-query>
+	
+	<named-native-query name="consultaPorRangoFechas" result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.ReporteBitacora">
+		<query>
+			SELECT bitacora.ID_BITACORA_REPORTE, reporte.CH_NOMBRE_REPORTE, bitacora.ID_REPORTE_GENERICO, bitacora.CH_USUARIO,bitacora.FC_EJECUCION,bitacora.CH_PARAMETRO,DECODE(bitacora.NU_EXPORT_REPORTE,1,'SI',0,'NO') as NU_EXPORT_REPORTE,bitacora.FC_CONTROL,bitacora.CH_USUARIO_MODIFICADOR,bitacora.CH_IP_ORIGEN 
+			FROM PSER_TB_BITACORA_REPORTE bitacora INNER JOIN PSER_TC_REPORTE_GENERICO reporte ON bitacora.ID_REPORTE_GENERICO =  reporte.ID_REPORTE_GENERICO
+			WHERE bitacora.FC_EJECUCION BETWEEN PARSEDATETIME(?1, 'dd/MM/yyyy') and PARSEDATETIME(?2, 'dd/MM/yyyy')
+			ORDER BY bitacora.FC_EJECUCION DESC
+		</query>
+	</named-native-query>
+
+	<named-native-query name="consultaPorTipoReporte" result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.ReporteBitacora">
+		<query>
+			SELECT bitacora.ID_BITACORA_REPORTE, reporte.CH_NOMBRE_REPORTE, bitacora.ID_REPORTE_GENERICO, bitacora.CH_USUARIO,bitacora.FC_EJECUCION,bitacora.CH_PARAMETRO,DECODE(bitacora.NU_EXPORT_REPORTE,1,'SI',0,'NO') as NU_EXPORT_REPORTE,bitacora.FC_CONTROL,bitacora.CH_USUARIO_MODIFICADOR,bitacora.CH_IP_ORIGEN 
+			FROM PSER_TB_BITACORA_REPORTE bitacora INNER JOIN PSER_TC_REPORTE_GENERICO reporte ON bitacora.ID_REPORTE_GENERICO =  reporte.ID_REPORTE_GENERICO
+			WHERE bitacora.ID_REPORTE_GENERICO = ?1
+			ORDER BY bitacora.FC_EJECUCION DESC
+		</query>
+	</named-native-query>
+	
+	<named-native-query name="consultaModuloPorIdRol" result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.RolReporte">
+		<query>
+			SELECT DISTINCT mod.ID_MODULO_REPORTE, mod.CH_NOMBRE_MODULO_REP FROM PSER_TC_MODULO_REPORTE mod
+            JOIN PSER_TC_PROCESO_NEGOCIO pro ON mod.ID_MODULO_REPORTE=pro.ID_MODULO_REPORTE
+            JOIN PSER_TC_SUBPROCESO sp ON pro.ID_PROCESO_NEGOCIO=sp.ID_PROCESO_NEGOCIO
+            JOIN PSER_TC_REPORTE_GENERICO rg ON rg.ID_SUBPROCESO=sp.ID_SUBPROCESO 
+            JOIN PSER_TC_TIPO_REPORTE tr ON tr.ID_TIPO_REPORTE=rg.ID_TIPO_REPORTE
+            AND rg.ID_REPORTE_GENERICO IN (SELECT DISTINCT(ID_REPORTE_GENERICO) FROM PSER_TR_ROL_REPORTE WHERE CV_ROL_PULSSAR = ?1 AND NU_ACTIVO = ?2)
+            AND tr.NU_ACTIVO = ?2
+		</query>
+	</named-native-query>
+	
+	<named-native-query name="consultaTipoReportePorIdRolYidSubProceso" result-set-mapping="consultaTipoReportePorIdRolYidSubProcesoMapping">
+		<query>
+			SELECT DISTINCT tr.ID_TIPO_REPORTE AS idTipoReporte, tr.CH_DESCRIPCION AS nombreTipoReporte
+			FROM PSER_TC_MODULO_REPORTE mod
+			JOIN PSER_TC_PROCESO_NEGOCIO pro ON mod.ID_MODULO_REPORTE=pro.ID_MODULO_REPORTE
+			JOIN PSER_TC_SUBPROCESO sp ON pro.ID_PROCESO_NEGOCIO=sp.ID_PROCESO_NEGOCIO
+			JOIN PSER_TC_REPORTE_GENERICO rg ON rg.ID_SUBPROCESO=sp.ID_SUBPROCESO 
+			JOIN PSER_TC_TIPO_REPORTE tr ON tr.ID_TIPO_REPORTE=rg.ID_TIPO_REPORTE
+			AND rg.ID_REPORTE_GENERICO IN (SELECT DISTINCT(ID_REPORTE_GENERICO) FROM PSER_TR_ROL_REPORTE WHERE CV_ROL_PULSSAR = ?1 AND NU_ACTIVO=?3) 
+			AND sp.ID_SUBPROCESO=?2 AND tr.NU_ACTIVO = ?3
+		</query>
+	</named-native-query>
+	
+	<named-native-query name="consultaSubProcesoPorIdRolYidProceso" result-set-mapping="consultaSubProcesoPorIdRolYidProcesoMapping">
+		<query>
+			SELECT DISTINCT sp.ID_SUBPROCESO AS idSubProceso, sp.CH_NOMBRE_SUBPROCESO  AS nombreSubProceso
+			FROM PSER_TC_MODULO_REPORTE mod
+			JOIN PSER_TC_PROCESO_NEGOCIO pro ON mod.ID_MODULO_REPORTE=pro.ID_MODULO_REPORTE
+			JOIN PSER_TC_SUBPROCESO sp ON pro.ID_PROCESO_NEGOCIO=sp.ID_PROCESO_NEGOCIO
+			JOIN PSER_TC_REPORTE_GENERICO rg ON rg.ID_SUBPROCESO=sp.ID_SUBPROCESO 
+			JOIN PSER_TC_TIPO_REPORTE tr ON tr.ID_TIPO_REPORTE=rg.ID_TIPO_REPORTE
+			AND rg.ID_REPORTE_GENERICO IN (SELECT DISTINCT(ID_REPORTE_GENERICO) FROM PSER_TR_ROL_REPORTE WHERE CV_ROL_PULSSAR = ?1 AND NU_ACTIVO=?3) 
+			AND pro.ID_PROCESO_NEGOCIO = ?2 AND rg.NU_ACTIVO = ?3
+		</query>
+	</named-native-query>
+	
+	<named-native-query name="consultaProcesoPorIdReporteYidModulo" result-set-mapping="consultaProcesoPorIdReporteYidModuloMapping">
+		<query>
+			SELECT DISTINCT pro.ID_PROCESO_NEGOCIO AS idProcesoNegocio, pro.CH_NOMBRE_PROCESO AS nombreProceso
+			FROM PSER_TC_MODULO_REPORTE mod
+			JOIN PSER_TC_PROCESO_NEGOCIO pro ON mod.ID_MODULO_REPORTE=pro.ID_MODULO_REPORTE
+			JOIN PSER_TC_SUBPROCESO sp ON pro.ID_PROCESO_NEGOCIO=sp.ID_PROCESO_NEGOCIO
+			JOIN PSER_TC_REPORTE_GENERICO rg ON rg.ID_SUBPROCESO=sp.ID_SUBPROCESO 
+			JOIN PSER_TC_TIPO_REPORTE tr ON tr.ID_TIPO_REPORTE=rg.ID_TIPO_REPORTE
+			AND rg.ID_REPORTE_GENERICO IN (SELECT DISTINCT(ID_REPORTE_GENERICO) from PSER_TR_ROL_REPORTE WHERE CV_ROL_PULSSAR = ?1 AND NU_ACTIVO=?3) 
+			AND mod.ID_MODULO_REPORTE=?2 AND tr.NU_ACTIVO = ?3
+		</query>
+	</named-native-query>
+
+	<named-native-query name="consultaPorUsuario" result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.ReporteBitacora">
+		<query>
+			SELECT bitacora.ID_BITACORA_REPORTE, reporte.CH_NOMBRE_REPORTE, bitacora.ID_REPORTE_GENERICO, bitacora.CH_USUARIO,bitacora.FC_EJECUCION,bitacora.CH_PARAMETRO,DECODE(bitacora.NU_EXPORT_REPORTE,1,'SI',0,'NO') as NU_EXPORT_REPORTE,bitacora.FC_CONTROL,bitacora.CH_USUARIO_MODIFICADOR,bitacora.CH_IP_ORIGEN 
+			FROM PSER_TB_BITACORA_REPORTE bitacora INNER JOIN PSER_TC_REPORTE_GENERICO reporte ON bitacora.ID_REPORTE_GENERICO =  reporte.ID_REPORTE_GENERICO
+			WHERE UPPER(bitacora.CH_USUARIO) = UPPER(?1)  
+			ORDER BY bitacora.FC_EJECUCION DESC
+		</query>
+	</named-native-query>
+
+	<named-native-query name="consultaPorIpUsuario" result-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.ReporteBitacora">
+		<query>
+			SELECT bitacora.ID_BITACORA_REPORTE, reporte.CH_NOMBRE_REPORTE, bitacora.ID_REPORTE_GENERICO, bitacora.CH_USUARIO,bitacora.FC_EJECUCION,bitacora.CH_PARAMETRO,DECODE(bitacora.NU_EXPORT_REPORTE,1,'SI',0,'NO') as NU_EXPORT_REPORTE,bitacora.FC_CONTROL,bitacora.CH_USUARIO_MODIFICADOR,bitacora.CH_IP_ORIGEN 
+			FROM PSER_TB_BITACORA_REPORTE bitacora INNER JOIN PSER_TC_REPORTE_GENERICO reporte ON bitacora.ID_REPORTE_GENERICO =  reporte.ID_REPORTE_GENERICO
+			WHERE bitacora.CH_IP_ORIGEN = ?1
+			ORDER BY bitacora.FC_EJECUCION DESC
+		</query>
+	</named-native-query>
+	
+	
+	<sql-result-set-mapping name="findUsuarioMapping">
+		<constructor-result target-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.UsuarioPulssar">
+			<column name="CH_NOMBRE" class="java.lang.String"/>
+			<column name="CH_APELLIDO_PATERNO" class="java.lang.String"/>
+			<column name="CH_APELLIDO_MATERNO" class="java.lang.String"/>
+			<column name="CH_EMAIL"  class="java.lang.String"/>
+		</constructor-result>
+	</sql-result-set-mapping>
+	
+	<sql-result-set-mapping name="buscarTurnosRegistradosMapping">
+		<constructor-result target-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.modelo.TurnoRegistrado">
+			<column name="CH_FOLIO_SERVICIO"    class="java.lang.String"/>
+			<column name="NOMBRE_COMPLETO_TRAB" class="java.lang.String"/>
+			<column name="HORA_REGISTRO"        class="java.lang.String"/>
+			<column name="TIEMPO_ESPERA_MIN"    class="java.lang.String"/>
+			<column name="TIEMPO_ESPERA_HORAS"  class="java.lang.String"/>
+		</constructor-result>
+	</sql-result-set-mapping>
+	<sql-result-set-mapping name="consultaProcesoPorIdReporteYidModuloMapping">
+		<constructor-result target-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.RolReporteProceso">
+			<column name="idProcesoNegocio"    class="java.lang.Long"/>
+			<column name="nombreProceso" class="java.lang.String"/>
+		</constructor-result>
+	</sql-result-set-mapping>
+	<sql-result-set-mapping name="consultaSubProcesoPorIdRolYidProcesoMapping">
+		<constructor-result target-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.RolReporteSubProceso">
+			<column name="idSubProceso"    class="java.lang.Long"/>
+			<column name="nombreSubProceso" class="java.lang.String"/>
+		</constructor-result>
+	</sql-result-set-mapping>
+	<sql-result-set-mapping name="consultaTipoReportePorIdRolYidSubProcesoMapping">
+		<constructor-result target-class="mx.com.procesar.aplicaciones.traspasos.pulssar.persistencia.entidades.RolReporteTipo">
+			<column name="idTipoReporte"    class="java.lang.Long"/>
+			<column name="nombreTipoReporte" class="java.lang.String"/>
+		</constructor-result>
+	</sql-result-set-mapping>	
+</entity-mappings>

@@ -1,0 +1,139 @@
+/* Estilos Pulsar 07/03/2019 */
+
+/* Footer hojas de estilo Afore Azteca*/
+
+
+.Footerlogin__Container {
+
+    background: #A3A2A2;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+
+}
+
+.Footerlogin__Title {
+
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+
+}
+
+.Footerlogin__Container {
+
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+
+}
+
+.Footerlogin__Section1 {
+
+  width: 20%;
+  margin-left: 30px;
+
+}
+
+.Footerlogin__Section2 {
+
+  width: 80%;
+
+}
+
+.Footerlogin__Link {
+
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 30px;
+
+}
+
+.Footerlogin__Link:hover {
+
+  color: #626262;
+
+}
+
+.Footerlogin__Legacy {
+
+  width: 100%;
+  background: #A3A2A2;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+
+}
+
+.Footerlogin__LinkLegacy {
+
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 30px;
+  cursor: pointer;
+
+}
+
+.Footerlogin__LinkLegacy:hover {
+
+  color: #626262;
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .Footerlogin__Container {
+
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px 0px 0px;
+
+  }
+
+  .Footerlogin__Section1 {
+
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+
+  }
+
+  .Footerlogin__Section2 {
+
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .Footerlogin__Container {
+
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px 0px 0px;
+
+  }
+
+  .Footerlogin__Section1 {
+
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+
+  }
+
+  .Footerlogin__Section2 {
+
+    width: 100%;
+    text-align: center;
+
+  }
+}

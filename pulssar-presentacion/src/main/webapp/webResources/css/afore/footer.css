@@ -1,0 +1,49 @@
+/* Estilos Pulsar 07/03/2019 */
+
+/* Footer hojas de estilo Afore Azteca*/
+
+
+.Footer__Container {
+
+    background: #A3A2A2;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+
+}
+
+.Footer__Link {
+
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  margin-left: 20px;
+
+}
+
+.Footer__Link:hover {
+
+  color: #626262;
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .Footer__Container {
+
+      height: auto;
+
+    }
+
+    .Footer__Link {
+
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 13px;
+      margin-left: 0px
+
+      }
+}

@@ -1,0 +1,365 @@
+/* Estilos Pulsar 07/03/2019 */
+
+.ContainerAfore {
+
+  width: 100%;
+  background: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.ContainerAfore__Colum1 {
+
+  width: 40%;
+
+}
+
+.ContainerBaja {
+
+  width: 100%;
+  background: #F2F2F2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+
+.Seccion01 {
+
+  width: 90%;
+  margin: 0px auto;
+  padding-bottom: 20px;
+}
+
+.SeccionTable {
+
+  width: 90%;
+  margin: 0px auto;
+
+}
+
+.Seccion02 {
+
+  width: 90%;
+  margin: 0px auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+
+}
+
+.form {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+}
+
+.Block {
+
+  width: 30%;
+  display: block;
+
+}
+
+.Search {
+
+  width: 100px !important;
+  margin-bottom: 0px !important;
+
+}
+
+.Clear {
+
+  width: 100px !important;
+  margin-bottom: 0px !important;
+
+}
+
+.SearchInput {
+
+  height: 29px !important;
+
+}
+
+.Display_Select {
+
+  display: none;
+
+}
+
+.LabelSection {
+
+  width: 70px;
+
+}
+
+.SelectSection {
+
+  width: 300px;
+
+}
+
+
+.SelectSection2 {
+
+  min-width: 40%;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  display: inline-block;
+
+}
+
+.SelectSection3 {
+
+  min-width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+
+}
+
+.Buttons2 {
+
+  margin-left: 5px;
+  width: 200px !important;
+
+}
+
+.InputSection {
+
+  width: 300px;
+
+}
+
+.ButtonSection {
+
+  width: 100px;
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .ContainerAfore__Colum1 {
+
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .LabelSection {
+
+    width: 100%;
+
+  }
+
+  .SelectSection {
+
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+
+  .InputSection {
+
+    width: 96%;
+    margin-bottom: 10px;
+
+  }
+
+  .ButtonSection {
+
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .LabelSection {
+
+    width: 100%;
+
+  }
+
+  .SelectSection {
+
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+
+  .InputSection {
+
+    width: 96%;
+    margin-bottom: 10px;
+
+  }
+
+  .ButtonSection {
+
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .LabelSection {
+
+    width: 100%;
+
+  }
+
+  .SelectSection {
+
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+
+  .InputSection {
+
+    width: 96%;
+    margin-bottom: 10px;
+
+  }
+
+  .ButtonSection {
+
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .LabelSection {
+
+    width: 100%;
+
+  }
+
+  .SelectSection {
+
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+
+  .InputSection {
+
+    width: 96%;
+    margin-bottom: 10px;
+
+  }
+
+  .ButtonSection {
+
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .LabelSection {
+
+    width: 100%;
+
+  }
+
+  .SelectSection {
+
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+
+  .InputSection {
+
+    width: 96%;
+    margin-bottom: 10px;
+
+  }
+
+  .ButtonSection {
+
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .LabelSection {
+
+    width: 100%;
+
+  }
+
+  .SelectSection {
+
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+
+  .InputSection {
+
+    width: 96%;
+    margin-bottom: 10px;
+
+  }
+
+  .ButtonSection {
+
+    width: 100%;
+    text-align: center;
+
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .LabelSection {
+
+    width: 100%;
+
+  }
+
+  .SelectSection {
+
+    width: 100%;
+    margin-bottom: 10px;
+
+  }
+
+  .InputSection {
+
+    width: 96%;
+    margin-bottom: 10px;
+
+  }
+
+  .ButtonSection {
+
+    width: 100%;
+    text-align: center;
+
+  }
+}
+}

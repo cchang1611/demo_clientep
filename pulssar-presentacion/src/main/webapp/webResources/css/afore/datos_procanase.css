@@ -1,0 +1,50 @@
+/* Estilos Pulsar 07/03/2019 */
+
+.Container {
+
+  width: 100%;
+  max-width: 700px;
+  margin: 0px auto;
+  margin-top: 20px;
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .Container {
+
+    width: 100%;
+    max-width: none;
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .Container {
+
+    width: 100%;
+    max-width: none;
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .Container {
+
+    width: 100%;
+    max-width: none;
+
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .Container {
+
+    width: 100%;
+    max-width: none;
+
+  }
+}

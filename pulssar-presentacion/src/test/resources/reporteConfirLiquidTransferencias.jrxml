@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteDetalleTransferIMSSXLS" pageWidth="3600" pageHeight="1000000000" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="3580" leftMargin="20" rightMargin="0" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" isIgnorePagination="true" uuid="aed1ff6d-7691-46b5-8b9f-f655917a60e2">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="969"/>
+	<property name="ireport.y" value="0"/>
+	<property name="net.sf.jasperreports.export.xls.one.page.per.sheet" value="false"/>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DATA_REPORTE_A" class="net.sf.jasperreports.engine.data.JsonDataSource"/>
+	<parameter name="SUBREPORT_DATA_REPORTE_B" class="net.sf.jasperreports.engine.data.JsonDataSource" isForPrompting="false"/>
+	<parameter name="SUBREPORT_DATA_REPORTE_BRJP" class="net.sf.jasperreports.engine.data.JsonDataSource"/>
+	<parameter name="SUBREPORT_DATA_REPORTE_C" class="net.sf.jasperreports.engine.data.JsonDataSource"/>
+	<parameter name="SUBREPORT_DATA_REPORTE_U" class="net.sf.jasperreports.engine.data.JsonDataSource"/>
+	<parameter name="fecha" class="java.lang.String"/>
+	<field name="nuRet97Tra" class="java.math.BigDecimal"/>
+	<field name="nuCvCuotaEstaTra" class="java.math.BigDecimal"/>
+	<field name="nuCuotaSoTra" class="java.math.BigDecimal"/>
+	<field name="nuRet92ImssTra" class="java.math.BigDecimal"/>
+	<field name="nuViv97Tra" class="java.math.BigDecimal"/>
+	<field name="nuPartViv97Inf" class="java.math.BigDecimal"/>
+	<field name="nuMontoRetiro97" class="java.math.BigDecimal"/>
+	<field name="nuMontoCv" class="java.math.BigDecimal"/>
+	<field name="nuMontoCuotaSocial" class="java.math.BigDecimal"/>
+	<field name="nuMontoRetiro92" class="java.math.BigDecimal"/>
+	<field name="nuMontoVivienda97" class="java.math.BigDecimal"/>
+	<field name="nuPartViv97InfMov" class="java.math.BigDecimal"/>
+	<field name="chAfore" class="java.lang.String"/>
+	<group name="grupoTipo_A" keepTogether="true">
+		<groupHeader>
+			<band height="111" splitType="Immediate">
+				<staticText>
+					<reportElement x="0" y="53" width="1600" height="16" uuid="db716558-badf-406d-ad87-543de157e9d7"/>
+					<textElement textAlignment="Center">
+						<font size="11" isBold="true"/>
+					</textElement>
+					<text><![CDATA[]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="30" width="1600" height="20" uuid="65d2a80d-e55e-4a9c-9a7a-3419a5fbbc49"/>
+					<textElement textAlignment="Center">
+						<font size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Fecha de Registro de Movimiento de Liquidación
+]]></text>
+				</staticText>
+				<subreport>
+					<reportElement x="0" y="71" width="38" height="38" uuid="78eb9271-459a-46c9-a6b3-d75048ebdeb0"/>
+					<subreportParameter name="tipoReporte">
+						<subreportParameterExpression><![CDATA["Tipo de Retiro A"]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[$P{SUBREPORT_DATA_REPORTE_A}]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subreportes/subReporteConfirLiquidTransferencias.jasper"]]></subreportExpression>
+				</subreport>
+				<image>
+					<reportElement x="15" y="3" width="100" height="24" uuid="cf6afa68-0c8c-438d-8f6e-3340f42a57eb"/>
+					<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement x="751" y="54" width="100" height="15" uuid="35c02317-aad3-4793-978b-f9e359fcee82"/>
+					<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="grupoTipo_B" keepTogether="true">
+		<groupHeader>
+			<band height="43" splitType="Immediate">
+				<subreport>
+					<reportElement x="0" y="3" width="38" height="38" uuid="78eb9271-459a-46c9-a6b3-d75048ebdeb0"/>
+					<subreportParameter name="logo"/>
+					<subreportParameter name="tipoReporte">
+						<subreportParameterExpression><![CDATA[" Tipo de Retiro B"]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[$P{SUBREPORT_DATA_REPORTE_B}]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subreportes/subReporteConfirLiquidTransferencias.jasper"]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="grupoTipo_BRJP" isReprintHeaderOnEachPage="true" keepTogether="true">
+		<groupHeader>
+			<band height="43" splitType="Immediate">
+				<subreport>
+					<reportElement x="0" y="3" width="38" height="39" uuid="4c0cd1e8-c02f-4b0a-b511-c62638c0e966"/>
+					<subreportParameter name="tipoReporte">
+						<subreportParameterExpression><![CDATA["Tipo de Retiro B (RJP)"]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[$P{SUBREPORT_DATA_REPORTE_BRJP}]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subreportes/subReporteConfirLiquidTransferencias.jasper"]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="grupoTipo_C" isReprintHeaderOnEachPage="true" keepTogether="true">
+		<groupHeader>
+			<band height="43" splitType="Immediate">
+				<subreport>
+					<reportElement x="0" y="3" width="38" height="38" uuid="5a783808-21a5-43c5-a9e5-9654ba7121dd"/>
+					<subreportParameter name="tipoReporte">
+						<subreportParameterExpression><![CDATA["Tipo de Retiro C"]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[$P{SUBREPORT_DATA_REPORTE_C}]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subreportes/subReporteConfirLiquidTransferencias.jasper"]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="grupoTipo_U" isReprintHeaderOnEachPage="true" keepTogether="true">
+		<groupHeader>
+			<band height="43" splitType="Immediate">
+				<subreport>
+					<reportElement x="0" y="4" width="38" height="38" uuid="4c0cd1e8-c02f-4b0a-b511-c62638c0e966"/>
+					<subreportParameter name="tipoReporte">
+						<subreportParameterExpression><![CDATA["Tipo de Retiro U"]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[$P{SUBREPORT_DATA_REPORTE_U}]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "subreportes/subReporteConfirLiquidTransferencias.jasper"]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+</jasperReport>

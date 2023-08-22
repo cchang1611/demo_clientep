@@ -1,0 +1,97 @@
+
+.HomeContainer {
+
+  width: 100%;
+  margin: 0px auto;
+  background: #F2F2F2;
+
+}
+
+.Home {
+
+  width: 50%;
+  margin: 0px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
+
+.Title__Name {
+
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #52960D;
+  text-transform: uppercase;
+
+}
+
+.Form_Label {
+
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #52960D;
+  text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .Home {
+
+    width: 60%;
+
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .Home {
+
+    width: 70%;
+
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .Home {
+
+    width: 80%;
+
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+
+  .Home {
+
+    width: 90%;
+
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .Home {
+
+    width: 90%;
+    text-align: center;
+
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  .Home {
+
+    width: 90%;
+    text-align: center;
+
+  }
+
+}

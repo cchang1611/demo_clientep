@@ -1,0 +1,86 @@
+/* Main */
+
+/* Styles From Banamex */
+
+:root {
+
+  --b01: #1A2E52; /* Banamex Hexadecimal */
+  --b02: #056DAE; /* Banamex Hexadecimal */
+  --b03: #666666; /* Banamex Hexadecimal */
+  --b04: #1A2E52; /* Banamex Hexadecimal */
+  --b05: #666666; /* Banamex Hexadecimal */
+  --b06: #CCCCCC; /* Banamex Hexadecimal */
+  --b07: #EDEDED;
+  --b08: #F6F6F6;
+  --b09: rgba(214, 214, 214, 0.8);
+  --b009: rgba(214, 214, 214, 0.0);
+  --b10: #ffefef;
+  --b11: #ff0000;
+  --b12: url('../../img/back_banamex.png');
+  --b13: #056DAE; /* Banamex Hexadecimal */
+  --b14: #CCCCCC;
+  --b15: #E8E8E8;
+  --b16: #DEDEDE;
+
+/* Styles Buttons Active */
+
+  --b17: #666666;
+  --b18: #056DAE;
+
+  /* Styles Buttons Secondary */
+
+    --b19: #056DAE;
+    --b20: #666666;
+
+  /* Styles Buttons Alert */
+
+    --b21: #ff0000;
+    --b22: #f79292;
+
+  /* Styles Buttons Prev */
+
+    --b23: #ffc107;
+    --b24: #e0a800;
+
+  /* Styles Buttons Info */
+
+    --b25: #17a2b8;
+    --b26: #138496;
+
+
+  --c01: #1A2E52; /* Banamex Hexadecimal */
+  --c02: #1A2E52; /* Banamex Hexadecimal */
+  --c03: #1A2E52; /* Banamex Hexadecimal */
+  --c04: #FFFFFF;
+  --c04b: #666666;
+  --c05: #b9b9b9;
+  --c06: #949494;
+  --c07: #FFFFFF;
+  --c08: #FFFFFF;
+  --c09: #ff0000;
+  --c10: #747373;
+
+  /* Header Elements */
+
+  --bh: 0px solid #ffffff;
+
+  /* Footer Elements */
+
+  --bf: 0px solid #ffffff;
+
+  /* Styles Type */
+
+  --font-SAR: 'Ubuntu', sans-serif;
+
+  /* Styles Logo */
+
+  --lsize: 400px;
+
+/* Styles Color Links Tables */
+
+  --lgtv: #008c00;
+  --lrtc: #ff0000;
+  --lgtc: #808080;
+  --lbtc: #BC9F00;
+
+}

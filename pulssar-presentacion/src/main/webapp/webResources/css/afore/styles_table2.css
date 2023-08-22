@@ -1,0 +1,91 @@
+/* Estilos Pulsar 07/03/2019 */
+
+Table {
+
+  border-spacing: 0px;
+  overflow-x: auto;
+  width: 1160px;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px auto;
+
+}
+
+th {
+
+  padding: 5px;
+  text-align: center;
+
+}
+
+  td {
+
+    text-align: center;
+    font-size: 11px;
+    word-wrap: break-word;
+    max-width: 110px;
+    padding: 10px;
+
+}
+
+.RowHeader {
+
+  background: #72BE0B;
+  color: white;
+  height: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+
+}
+
+.Row1 {
+
+  background: #ECECEE;
+  color: #626262;
+  text-transform: uppercase;
+
+}
+
+.Row2 {
+
+  background: #D9E6C6;
+  color: #626262;
+  text-transform: uppercase;
+
+}
+
+.TableLinks {
+
+  text-decoration: none;
+  color: #626262;
+
+}
+
+.Linkproceso {
+
+  color: green;
+  font-weight: bold;
+
+}
+
+.Linkretaso {
+
+  color: red;
+  font-weight: bold;
+
+}
+
+.Linkconcluido {
+
+  color: gray;
+  font-weight: bold;
+
+}
+
+.Linkpausado {
+
+  color: #BC9F00;
+  font-weight: bold;
+
+}

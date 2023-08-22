@@ -1,0 +1,561 @@
+/* Estilos Pulsar 07/03/2019 */
+/* Inicio hojas de estilo Afore Azteca*/
+
+
+/*Estilos Input*/
+.Inputxxl {
+
+  width: 90%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #A3A2A2;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin: 0px auto;
+  font-family: 'Roboto', sans-serif;
+  color: #626262;
+  display: block;
+
+}
+
+.Inputxxl:focus { outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #C3C3C3;
+  text-transform: uppercase;
+}
+input:-moz-placeholder {
+  color: #C3C3C3;
+  text-transform: uppercase;
+}
+input:-ms-input-placeholder {
+  color: #C3C3C3;
+  text-transform: uppercase;
+}
+
+.InputEdit {
+
+    width: 90%;
+    height: 15px;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 5px;
+    text-align: left;
+    font-size: 15px;
+    margin: 0px auto;
+    font-family: 'Roboto', sans-serif;
+    color: #626262;
+    display: block;
+
+}
+
+.InputEdit:focus { outline: none; }
+
+.Input {
+
+  width: 100%;
+  max-width: 430px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #72BE0B;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #626262;
+
+}
+
+.Input:focus { outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #C3C3C3;
+}
+input:-moz-placeholder {
+  color: #C3C3C3;
+}
+input:-ms-input-placeholder {
+  color: #C3C3C3;
+}
+
+.Input_vaz {
+
+  width: 330px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #72BE0B;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #626262;
+
+}
+
+.Input_xl:focus { outline: none; }
+
+.Input_xl {
+
+  width: 100px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #72BE0B;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #626262;
+
+}
+
+.Input_xl:focus { outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #C3C3C3;
+}
+input:-moz-placeholder {
+  color: #C3C3C3;
+}
+input:-ms-input-placeholder {
+  color: #C3C3C3;
+}
+
+.Input_small {
+
+  width: 50px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #72BE0B;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #626262;
+
+}
+
+.Input_small:focus { outline: none; }
+
+input::-webkit-input-placeholder {
+  color: #C3C3C3;
+}
+input:-moz-placeholder {
+  color: #C3C3C3;
+}
+input:-ms-input-placeholder {
+  color: #C3C3C3;
+}
+
+.Inputerror {
+
+  width: 90%;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid red;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin: 0px auto;
+  font-family: 'Roboto', sans-serif;
+  color: #626262;
+  display: block;
+  background: #fffafa;
+
+}
+
+.Inputerror:focus { outline: none; }
+
+
+.Registrer__Text {
+
+  width: 90%;
+  padding: 5px;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  color: #5FA31A;
+  text-align: left;
+  margin: 0px auto;
+
+}
+
+.Select {
+
+  width: 90%;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #A3A2A2;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 0px auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #626262;
+  margin: 0px auto;
+  display: block;
+
+}
+
+.option {
+
+    font-size: 15px !important;
+    text-align: center !important;
+    width: 90% !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    background: red !important;
+}
+
+.Select:focus { outline: none; }
+
+.Submit {
+
+  width: 170px;
+  height: 40px;
+  border-radius: 3px;
+  border: 0px;
+  font-size: 18px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: #72BE0B;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+
+}
+
+.Submit:hover {
+
+  background: #558E06;
+
+}
+
+.Submitxl {
+
+  width: 80%;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 0px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: #72BE0B;
+  cursor: pointer;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+
+}
+
+
+.SubmitDisabledxl {
+
+  width: 80%;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 0px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: #A3A2A2;
+  cursor: pointer;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+
+}
+
+.Submitxl:hover {
+
+  background: #558E06;
+
+}
+
+.Submit:focus { outline: none; }
+
+
+.ContainerButtons {
+
+  width: 90%;
+  margin: 0px auto;
+
+}
+
+.LabelTextN {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  padding-bottom: 7px;
+  padding-top: 7px;
+
+}
+
+.LabelText {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: #72BE0B;
+  text-transform: uppercase;
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  padding-bottom: 7px;
+  padding-top: 7px;
+
+}
+
+.LabelTextEdit {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    color: gray;
+    text-transform: uppercase;
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    padding-bottom: 7px;
+    padding-top: 7px;
+
+}
+
+.Labeltexterror {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  color: red;
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  padding-bottom: 7px;
+  padding-top: 7px;
+
+}
+
+.Captcha {
+
+  width: 100%;
+  max-width: 323px;
+  border-radius: 3px;
+  background: #D3D3D3;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  color: #626262;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: block;
+
+}
+
+.Form__Captcha {
+
+  width: 90%;
+  margin: 0px auto;
+
+}
+
+.Checkbox {
+
+  height: 16px;
+
+}
+
+.Checkbox__List {
+
+  list-style: none;
+  max-width: 80%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  padding: 10px;
+
+}
+
+.Checkbox__Li {
+
+  margin-bottom: 10px;
+
+}
+
+.Container__RadioButtons {
+
+  width: 90%;
+  margin: 0px auto;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #626262;
+
+}
+
+.radiobuttons {
+
+  margin-left: 10px;
+
+}
+
+.Secction__DisplayNone {
+
+  display: none;
+
+}
+
+.timepicker {
+
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  background: #a3a2a2;
+
+}
+
+.timepicker::-webkit-input-placeholder {
+  font-size: 40px;
+  color: white;
+}
+.timepicker::-moz-placeholder {
+  font-size: 40px;
+  color: white;
+}
+.timepicker::-ms-input-placeholder {
+  font-size: 40px;
+  color: white;
+}
+
+.Invalid_data {
+    border: 1px solid #FE2E2E;
+}
+
+.IconHora {
+
+  width: 10%;
+  margin-right: 10px;
+
+}
+
+.IconClock {
+
+  width: 60px;
+
+}
+
+.LabeltexterrorInicio {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: red;
+    display: block;
+    width: 57%;
+    margin: 0px auto;
+    padding-top: 7px;
+    text-align: left;
+}
+
+footer{
+	border:0px;
+	margin:0px;
+}
+
+.Submitx {
+  width: 80%;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border: 0px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: #72BE0B;
+  cursor: pointer;
+  margin: 0px auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.48);
+}
+
+.Submitx:hover {
+
+  background: #558E06;
+
+}
+
+.width150 {
+  display: inline !important;
+  width: 150px !important;
+}
+
+.ContainerButtonsCenter {
+	margin-top: 10px !important;
+	text-align: center;
+}
+
+.curpFaltante {
+
+  height: 60px;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  background: #a3a2a2;
+}
+
+.curpFaltante::-webkit-input-placeholder {
+  font-size: 40px;
+  color: white;
+}
+.curpFaltante::-moz-placeholder {
+  font-size: 40px;
+  color: white;
+}
+.curpFaltante::-ms-input-placeholder {
+  font-size: 40px;
+  color: white;
+}

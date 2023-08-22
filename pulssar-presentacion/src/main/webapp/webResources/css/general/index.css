@@ -1,0 +1,104 @@
+/* Index */
+
+.Text__Logo {
+
+  width: 250px;
+
+}
+
+
+.Text {
+
+    width: 50%;
+    padding: 50px 0px 50px 0px;
+
+}
+
+
+.Title_Index {
+
+    color: var(--c01);
+    font-size: 40px;
+    font-family: var(--font-SAR);
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    width: 80%;
+    margin: 0px auto;
+
+}
+
+
+
+.Description {
+
+    font-family: var(--font-SAR);
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 5%;
+    text-align: justify;
+    color: var(--c06);
+
+}
+
+
+.Login {
+
+    width: 50%;
+    background: var(--b07);
+    padding: 50px 0px 50px 0px;
+
+}
+
+.Container_Form {
+
+    width: 450px;
+    max-width: 100%;
+    margin: 0px auto;
+
+}
+
+.Login__Parrafo {
+
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 992px) {
+
+  .Text {
+
+    width: 100%;
+
+  }
+
+  .Login {
+
+    width: 100%;
+
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .Text {
+
+    width: 100%;
+
+  }
+
+  .Login {
+
+    width: 100%;
+
+  }
+
+}

@@ -1,0 +1,452 @@
+/* Estilos Pulsar 07/03/2019 */
+
+/* Header hojas de estilo Afore Azteca*/
+
+.Header__Container {
+
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+  position: relative;
+  z-index: 10;
+
+}
+
+
+.Header__Logo {
+
+  width: 60%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Logo {
+
+  width: 128px;
+
+}
+
+
+.HeaderButton__LoginContainer {
+
+  width: 20%;
+  height: 70px;
+  background: #72BE0B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.HeaderButton__Login {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 70px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-decoration: none;
+
+}
+
+.HeaderButton__Login:hover {
+
+  background: #8aca34;
+
+}
+
+.HeaderButton__LoginMenu {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 70px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-decoration: none;
+  background: #3D6505;
+
+}
+
+.HeaderButton__LoginMenu:hover {
+
+  background: #558E06;
+
+}
+
+.IconHeader {
+
+  width: 20px;
+  margin-bottom: 5px;
+
+}
+
+
+.HeaderButton__LoginClock {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 70px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-decoration: none;
+
+}
+
+.HeaderButton__LoginClock:hover {
+
+  background: #8aca34;
+
+}
+
+.Header__Registrate {
+
+  width: 20%;
+  height: 70px;
+  background:#558E06;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+.Header__RegistrateLogin {
+
+  width: 20%;
+  height: 70px;
+  background: #558E06;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 11px;
+
+}
+
+.Header__RegistrateLoginText {
+
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.Header__ImageContainer {
+
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.Header__Image {
+
+  width: 50px;
+
+}
+
+.Header__Img {
+
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+
+}
+
+.Header__RegistrateLoginTitle {
+
+  font-size: 15px;
+
+}
+
+.Link {
+
+  color: white;
+  text-decoration: none;
+  background: url(../img/icon_registrate.png) left center no-repeat;
+  background-size: 25px;
+  height: 40px;
+  padding-left: 33px;
+  align-items: center;
+  display: flex;
+
+}
+
+.Link:hover {
+
+  color: #65B406;
+  background: url(../img/icon_registrate_hover.png) left center no-repeat;
+  background-size: 25px;
+  height: 40px;
+  padding-left: 33px;
+  align-items: center;
+  display: flex;
+
+}
+
+.Link__Inicio {
+
+  color: white;
+  text-decoration: none;
+  background: url(../img/icon_home.png) left center no-repeat;
+  background-size: 25px;
+  height: 40px;
+  padding-left: 33px;
+  align-items: center;
+  display: flex;
+
+}
+
+.Link__Inicio:hover {
+
+  color: #65B406;
+  background: url(../img/icon_home_hover.png) left center no-repeat;
+  background-size: 25px;
+  height: 40px;
+  padding-left: 33px;
+  align-items: center;
+  display: flex;
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+  .Header__Logo {
+
+    width: 100%;
+
+  }
+
+  .Header__Button {
+
+    width: 50%;
+
+  }
+
+  .HeaderButton__LoginContainer {
+
+    width: 50%;
+
+  }
+
+
+  .Header__Registrate {
+
+    width: 50%;
+
+  }
+
+  .Header__RegistrateLogin {
+
+    width: 50%;
+
+  }
+
+  .Header__ImageContainer {
+
+    width: 20%;
+
+ }
+
+ .Header__RegistrateLoginText {
+
+    width: 40%;
+
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .Header__ImageContainer {
+
+    width: 20%;
+
+ }
+
+ .Header__RegistrateLoginText {
+
+    width: 40%;
+
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .Header__ImageContainer {
+
+    width: 20%;
+
+ }
+
+ .Header__RegistrateLoginText {
+
+    width: 70%;
+
+  }
+
+}
+
+
+@media screen and (max-width: 420px) {
+
+  .Header__Logo {
+
+    width: 100%;
+
+  }
+
+  .Header__Button {
+
+    width: 100%;
+    height: 5px;
+
+  }
+
+  .HeaderButton__LoginContainer {
+
+    width: 100%;
+
+  }
+
+
+  .Header__Registrate {
+
+    width: 100%;
+
+  }
+
+  .Header__RegistrateLogin {
+
+    width: 100%;
+
+  }
+
+  .Inicio__Title {
+
+    font-size: 79px;
+
+  }
+
+  .Inicio__Title_02 {
+
+    font-size: 90px;
+
+  }
+
+  .Inicio__Description {
+    font-size: 14px;
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .Header__ImageContainer {
+
+    width: 20%;
+
+ }
+
+ .Header__RegistrateLoginText {
+
+    width: 50%;
+
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .Header__Logo {
+
+    width: 100%;
+
+  }
+
+  .Header__Button {
+
+    width: 100%;
+    height: 5px;
+
+  }
+
+  .HeaderButton__LoginContainer {
+
+    width: 100%;
+
+  }
+
+
+  .Header__Registrate {
+
+    width: 100%;
+
+  }
+
+  .Header__RegistrateLogin {
+
+    width: 100%;
+
+  }
+
+  .Inicio__Title {
+
+    font-size: 79px;
+
+  }
+
+  .Inicio__Title_02 {
+
+    font-size: 90px;
+
+  }
+
+  .Inicio__Description {
+    font-size: 14px;
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .Header__ImageContainer {
+
+    width: 20%;
+
+ }
+
+ .Header__RegistrateLoginText {
+
+    width: 50%;
+
+  }
+}

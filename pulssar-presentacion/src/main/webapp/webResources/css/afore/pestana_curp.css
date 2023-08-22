@@ -1,0 +1,139 @@
+/* Estilos Pulsar 07/03/2019 */
+
+.ContainerCurp {
+
+  margin-top: 4px;
+
+}
+
+.PestanaCurp {
+
+  width: auto;
+  position: fixed;
+  z-index: 20;
+  top: 290px;
+  right: 0;
+  margin-top: 4px;
+
+}
+
+
+.PestanaContainerCurp  {
+
+  display: flex;
+
+}
+
+
+.PestanaTitleCurp  {
+
+  width: 15px;
+  min-height: 170px;
+  height: auto;
+  padding: 10px;
+  writing-mode: vertical-lr;
+  -ms-writing-mode:bt-rl;
+  background: #6CAC13;
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+  border-radius: 0px 5px 5px 0px;
+
+}
+
+.PestanaTitleCurp:hover {
+
+  background: #558E06;
+
+}
+
+.PestanaTableContainerCurp  {
+
+  width: 260px;
+  min-height: 250px;
+  height: auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  display: none;
+
+}
+
+.PestanaTitleContainerCurp  {
+
+  padding: 20px 10px 20px 10px;
+  background: #747373;
+  color: white;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+
+}
+
+.ContentCurp  {
+
+  padding: 10px;
+  background: #f9f9f9;
+  color: #898888;
+  word-wrap: break-word;
+
+}
+
+.ContainerDatosGenerales_SeccionCurp {
+
+  list-style: none;
+  text-align: left;
+  text-transform: uppercase;
+
+}
+
+.TextCurp {
+
+  color: #5FA31A;
+
+}
+
+.Row1 {
+
+  margin-top: 5px;
+  padding: 10px;
+  background: #BAB9B9;
+  color: white;
+  word-wrap: break-word;
+
+}
+
+.Row2 {
+
+  margin-top: 5px;
+  padding: 10px;
+  background: #72BE0B;
+  color: white;
+  word-wrap: break-word;
+
+}
+
+.ContainerDatosGenerales_DatosCurp {
+
+  margin-bottom: 5px;
+  width: 96%;
+  height: auto;
+  word-wrap: break-word;
+
+}
+
+.PestanasCarouselCurp  {
+
+  max-height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}

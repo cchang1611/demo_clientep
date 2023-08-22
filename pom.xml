@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>mx.com.procesar.aplicaciones</groupId>
+		<artifactId>pom-aplicaciones</artifactId>
+		<version>1.4.1</version>
+	</parent>
+	
+	<groupId>mx.com.procesar.aplicaciones.traspasos</groupId>
+	<artifactId>pulssar</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+
+	<name>pulssar</name>
+	<description>POM raiz para proyecto pulssar</description>
+	
+	<!-- modulos -->
+	<modules>
+		<module>pulssar-persistencia</module>
+		<module>pulssar-servicios</module>
+		<module>pulssar-exposicion</module>
+		<module>pulssar-presentacion</module>
+	</modules> 
+	
+	<properties>
+		<project.version>1.0</project.version>
+	</properties>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>mx.com.procesar.aplicaciones.traspasos.pulssar</groupId>
+				<artifactId>pulssar-persistencia</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>mx.com.procesar.aplicaciones.traspasos.pulssar</groupId>
+				<artifactId>pulssar-servicios</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	
+</project>

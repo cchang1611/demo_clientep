@@ -1,0 +1,698 @@
+/* Container */
+
+.Icon__Container {
+
+    width: 100%;
+
+}
+
+.Icon__Seccion {
+
+    width: 50px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-family: var(--font-SAR);
+    font-size: 12px;
+    color: var(--c06);
+
+}
+
+.Icon__Seccion:hover {
+
+  color: var(--c05);
+
+}
+
+.Icon__Editar {
+
+    width: 20px;
+
+}
+
+
+
+.Title {
+
+    background: var(--b01);
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    color: var(--c08);
+    font-weight: 300;
+    padding: 15px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.TitleMenuDesplegable {
+
+    background: #00303C;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding: 15px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.TitleMenuDesplegable:hover {
+	background: #1C5A4F;	
+}
+
+
+.Line {
+
+    background:var(--b01);
+    height: 5px;
+
+}
+
+.Datos_Container {
+
+    padding: 20px 0px 10px 0px;
+    background: var(--b07);
+
+}
+
+.Datos_ContainerColumn {
+
+    width: 100%;
+    background: var(--b07);
+
+}
+
+.Datos_ContainerColumn02 {
+
+    width: 100%;
+    background: var(--b05);
+
+}
+
+.Datos_ContainerColumn03 {
+
+    width: 100%;
+    background: var(--b05);
+    display: flex;
+    justify-content: center;
+
+}
+
+.Datos_ContainerColumn04 {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--b07);
+
+}
+
+.row_container {
+
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.row_container03 {
+
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+
+}
+
+.Datos {
+
+    max-width: 235px;
+    width: 100%;
+    word-wrap: break-word;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    height: auto;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--c06);
+    text-transform: uppercase;
+    line-height: 20px;
+
+}
+
+.Datos03 {
+
+    max-width: 290px;
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+
+}
+
+.Datoscheck {
+
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9%;
+
+}
+
+.Datosxl {
+
+    max-width: 300px;
+    width: 100%;
+    word-wrap: break-word;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--c06);
+    text-transform: uppercase;
+    line-height: 20px;
+
+}
+
+.Datosxxl {
+
+    width: 235px;
+    width: 100%;
+    word-wrap: break-word;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    height: auto;
+    font-family: var(--font-SAR);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--c06);
+    text-transform: uppercase;
+    line-height: 20px;
+
+}
+
+.DatosBack {
+
+    width: 90%;
+    margin: 0px auto;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: var(--b09);
+    padding: 10px;
+    font-family: var(--font-SAR);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--c06);
+    text-transform: uppercase;
+
+}
+
+ .DatosBackReporteria {
+
+    width: 90%;
+    margin: 0px auto;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: var(--b009);
+    padding: 10px;
+    font-family: var(--font-SAR);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--c06);
+    text-transform: uppercase;
+
+}
+
+
+
+.Datos_Error {
+
+    color: var(--c09);
+
+}
+
+.Correo {
+
+    text-transform: lowercase;
+
+}
+
+.button_agregar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--c08);
+    font-weight: bold;
+
+}
+
+.button_agregar:hover {
+
+    color: var(--c03);
+
+}
+
+.icono_agregar {
+
+    width: 15px;
+    padding: 5px;
+
+}
+
+.button_eliminar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--c08);
+    font-weight: bold;
+
+}
+
+.button_eliminar:hover {
+
+    color: var(--c03);
+
+}
+
+.icono_eliminar {
+
+    width: 15px;
+    padding: 5px;
+
+}
+
+.button_editar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--c08);
+    font-weight: bold;
+
+}
+
+.button_editar:hover {
+
+    color: var(--c03);
+
+}
+
+.icono_editar {
+
+    width: 15px;
+    padding: 5px;
+
+}
+
+/* Class Section "Tipo de Retiros" */
+
+.Title_OneOption {
+
+    background: var(--b01);
+    width: auto;
+    font-family: var(--font-SAR);
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+	display: flex;
+}
+
+.Title_OneOption:hover {
+
+    background: var(--b04);
+
+}
+
+.Title_TowOption {
+
+    background: var(--b03);
+    width: auto;
+    font-family: var(--font-SAR);
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+	display: flex;
+
+}
+
+.Title_TowOption:hover {
+
+    background: var(--b06);
+
+}
+
+.Section_Tree {
+
+    display: none;
+
+}
+
+.Section_Four {
+
+    display: none;
+
+}
+
+.Container_One {
+
+    width: 100%;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: var(--b07);
+    display: none;
+
+}
+
+.Container_Two {
+
+    width: 100%;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: var(--b07);
+    display: none;
+
+}
+
+.Container_Three {
+
+    width: 100%;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: var(--b07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px 20px 0px;
+
+}
+
+.Container_Four {
+
+    width: 100%;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: var(--b07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 0px;
+
+}
+
+.row_containerfloat {
+
+    width: 100%;
+    max-width: 380px;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+.row_containerfloatOne {
+
+    width: 100%;
+    max-width: 580px;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+.row_containerfloatOneWitoutMaxWidth {
+
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+.row_containerbox {
+
+  padding: 30px 0px 30px 0px;
+
+}
+
+.Container_Section {
+
+    width: 100%;
+    font-family: var(--font-SAR);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--b01);
+    text-transform: uppercase;
+    background: var(--b07);
+    display: block;
+
+}
+
+strong {
+
+    font-weight: bold !important;
+
+}
+
+.ButtonGuardar {
+
+    width: 100%;
+    text-align: center;
+    display: none;
+
+}
+
+/* Seccion Banners  */
+
+.Banner__Container {
+
+    width: 100%;
+
+}
+
+.Banner__Thumbnail {
+
+    width: 100%;
+    position: relative;
+    
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Banner__TitleContainer {
+
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 20px 0px 20px 0px;
+    margin:0px !important;
+
+}
+
+.Banner__TextContainer {
+
+    width: auto;
+    position: absolute;
+    background:var(--back);
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-family: var(--font-SAR);
+    font-size: 12px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+/* Section Denied Acces */
+
+.Accessdenied__Container {
+
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+
+}
+
+.Accessdenied__ColOne {
+
+    width: 40%;
+    min-width: 440px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.Accessdenied__Icon {
+
+    width: 70%;
+
+}
+
+.Accessdenied__ColTwo {
+
+    width: 40%;
+    min-width: 440px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: var(--font-SAR);
+    font-size: 20px;
+    color: var(--c01);
+
+}
+
+.Accessdenied__Title {
+
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 80px;
+    color: var(--c09);
+
+}
+
+.DatosBack_Scroll {
+
+    width: 90%;
+    height: 250px;
+    overflow-y:scroll;
+    margin: 0px auto;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: var(--b09);
+    padding: 10px;
+    font-family: var(--font-SAR);
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--c06);
+    text-transform: uppercase;
+
+}
+
+.Title_Text {
+
+  width: 95%;
+
+}
+/* Section Footprints */
+
+.Footprints_Section {
+
+  margin: 0px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--b08);
+  padding: 10px
+}
+
+.Arrows {
+
+  width: 40px;
+  padding: 10px;
+  background: url('../../img/arrow_on.png') center no-repeat;
+  background-size: 40px;
+
+}
+
+.Arrows:hover {
+
+  width: 40px;
+  padding: 10px;
+  background: url('../../img/arrow_off.png') center no-repeat;
+  background-size: 40px;
+
+}
+
+.Footprints_img {
+
+  width: 150px;
+  height: 180px;
+  cursor: pointer;
+
+}
+
+.contenedor_mensualidades_seis{
+	height:292.5px;
+}
+
+.contenedor_mensualidades_dos{
+	height:150px;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.textAreaStyle::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.textAreaStyle::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.textAreaStyle::-webkit-scrollbar-button:increment {
+    display: none;
+} 
+
+.textAreaStyle::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.textAreaStyle::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.textAreaStyle::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.Datos_ContainerVisorExpeMovil {
+    padding: 0px 0px 10px 0px;
+
+}

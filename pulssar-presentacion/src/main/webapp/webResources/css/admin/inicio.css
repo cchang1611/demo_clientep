@@ -1,0 +1,181 @@
+/* Estilos Pulsar 07/03/2019 */
+
+/* Inicio hojas de estilo Afore Azteca*/
+
+.Inicio__Container {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.Inicio__Texto {
+
+  width: 50%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px 0px 50px 0px;
+
+}
+
+.Inicio__Title{
+
+  font-size: 30px;
+  color: #65B406;
+
+}
+
+
+.Inicio__Description{
+
+  font-size: 12px;
+  width: 60%;
+  margin: 0px auto;
+
+}
+
+
+.Login__Container {
+
+  width: 50%;
+  text-align: center;
+  background: #F2F2F2;
+  padding: 50px 0px 50px 0px;
+
+
+}
+
+.Login__Input {
+
+  width: 40%;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #72BE0B;
+  padding: 5px;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #626262;
+
+}
+
+.Login__Input:focus { outline: none; }
+
+.Login__Input::-webkit-input-placeholder {
+  color: #C3C3C3;
+}
+.Login__Input:-moz-placeholder {
+  color: #C3C3C3;
+}
+.Login__Input:-ms-input-placeholder {
+  color: #C3C3C3;
+}
+
+.Login__Submit {
+
+  width: 168px;
+  height: 40px;
+  border-radius: 7px;
+  border: 0px;
+  font-size: 18px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background: #72BE0B;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-style: normal;
+
+}
+
+.Login__Submit:hover {
+
+  background: #558E06;
+
+}
+
+.Login__Submit:focus { outline: none; }
+
+.Login__Forget {
+
+  color: #72BE0B;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+
+.Login__Forget:hover {
+
+color: #52960D;
+text-decoration: underline;
+
+}
+
+.Login__Parrafo {
+
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  color: #5F5F5F;
+  behavior:url (PIE/pie.htc);
+
+
+}
+
+.Inicio__Title_02 {
+
+  color: #4C8804;
+  font-size: 40px;
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .Inicio__Texto {
+
+    width: 100%;
+
+  }
+
+  .Login__Container {
+
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .Login__Input {
+
+    width: 80%;
+    height: 40px;
+    font-size: 17px;
+
+  }
+
+  .Login__Submit {
+
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+
+  }
+
+  .Login__Parrafo {
+
+    font-size: 15px;
+
+  }
+
+  .Inicio__Description {
+    font-size: 15px;
+    width: 80%;
+    margin: 0px auto;
+  }
+
+}

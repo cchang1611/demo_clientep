@@ -1,0 +1,189 @@
+/* Defines the width of the carousel and centers it on the page */
+
+
+.slick-carousel {
+
+  width: 100%;
+  max-width: 1135px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  position: relative;
+
+}
+
+
+/* The width of each slide */
+.slick-slide {
+  width: 350px;
+}
+
+/* Color of the arrows */
+.slick-next::before, .slick-prev::before {
+
+  color: gray;
+  font-size: 40px;
+
+}
+
+.slick-prev, .slick-next {
+
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: -30px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: 0;
+
+}
+
+.slick-prev {
+
+    left: -50px !important;
+
+}
+
+.slick-next {
+
+    right: -50px !important;
+
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+
+:focus {
+
+    outline:none;
+
+}
+
+.slick-list {
+
+  width: 100%;
+  height: 200px;
+  max-width: 1135px;
+
+}
+
+.slick-list::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+.CarrouselMenu__ThumbContainer {
+
+  min-width: 170px !important;
+  background: #5FA31A;
+  height: 170px;
+  border-radius: 20px 0px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.32);
+  -moz-box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.32);
+  box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.32);
+  text-decoration: none;
+}
+
+.CarrouselMenu__ThumbContainer:hover {
+
+  background: #72BE0B;
+
+}
+
+.CarrouselMenu__Title {
+
+  background: #52960D;
+  width: 170px;
+  min-height: 75px;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+
+}
+
+.Icon {
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 89px;
+  position: absolute;
+  top: 4px;
+  display: flex;
+
+}
+
+.IconImgMenu {
+  width: 60px;
+}
+.IconImgMenu2 {
+
+  width: 60px;
+
+}
+
+.IconImgMenuLarge {
+  width: 50px;
+}
+
+.slick-track {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+
+.CarrouselMenu__TitlePrimary {
+
+  background: #72BE0B;
+  width: 150px;
+  min-height: 150px;
+  height: 150px;
+  position: relative;
+  bottom: 0px;
+  border-radius: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  /* font-weight: bolder; */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}

@@ -1,0 +1,198 @@
+/* Styles Carrousel Visor */
+
+.Container_Carousel {
+
+  /* border: 1px solid var(--b01); */
+  height: auto;
+  min-height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mySlides {
+
+  text-align: center;
+  cursor: pointer;
+  height: auto;
+  overflow: hidden;
+  display: none;
+
+}
+
+.slideshow_img {
+
+  width: 200px;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: var(--b01);
+
+}
+
+/* Position the "next button" to the right */
+.next {
+
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+
+  background: var(--b02);
+
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.Modal__Alertpdf {
+
+      width: 100%;
+      text-align: center;
+      padding: 20px 0px 20px 0px;
+
+}
+/* Styles Carrousel Visor2 */
+
+.Container_Carousel02 {
+
+  /* border: 1px solid var(--b01); */
+  height: auto;
+  min-height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mySlides02 {
+
+  text-align: center;
+  cursor: pointer;
+  height: 203px;
+  overflow: hidden;
+  display: none;
+
+}
+
+/* Slideshow container */
+.slideshow-container02 {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev02, .next02 {
+
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: var(--b01);
+
+}
+
+/* Position the "next button" to the right */
+.next02 {
+
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev02:hover, .next02:hover {
+
+  background: var(--b02);
+
+}
+
+/* Fading animation */
+.fade02 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade02 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade02 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev02, .next02,.text02 {font-size: 11px}
+}
+
+.labelVisor02{
+	padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: var(--font-SAR);
+    color: var(--c08);
+    background: var(--b01);
+    text-align: center;
+}

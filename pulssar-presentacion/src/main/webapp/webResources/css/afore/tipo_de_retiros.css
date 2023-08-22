@@ -1,0 +1,185 @@
+/* Tipo de Retiros */
+
+
+.Container {
+
+  width: 100%;
+  margin-bottom: 10%;
+
+}
+
+
+.Colum {
+
+  width: 100%;
+  max-width: 900px;
+  margin: 0px auto;
+
+}
+
+
+.Title_OneOption {
+
+    background: #72BE0B;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.Title_OneOption:hover {
+
+    background: #A3A2A2;
+
+}
+
+.Title_TowOption {
+
+    background: #3D6505;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    padding: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.Title_TowOption:hover {
+
+    background: #A3A2A2;
+
+}
+
+.Title {
+    background: #72BE0B;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.row_container {
+
+  padding: 30px 10px 30px 10px;
+
+}
+
+.row_containerfloat {
+
+  width: 100%;
+  max-width: 380px;
+  margin-left: 10px;
+  margin-top: 5px;
+
+
+}
+
+.Container_One {
+
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #868983;
+  text-transform: uppercase;
+  background: #EDEDED;
+  display: block;
+
+}
+
+}
+
+.Section_One {
+
+  display: none;
+
+}
+
+.Section_Two {
+
+  display: none;
+
+}
+
+.Section_Tree {
+
+  display: none;
+
+}
+
+.Section_Four {
+
+  display: none;
+
+}
+
+.Container_Two {
+
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #868983;
+  text-transform: uppercase;
+  background: #EDEDED;
+  display: block;
+
+}
+
+.Container_Three {
+
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #868983;
+  text-transform: uppercase;
+  background: #EDEDED;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0px 40px 0px;
+
+}
+
+.Datos {
+
+  width: 100%;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+
+}
+
+
+strong {
+
+  font-weight: bold !important;
+
+}
+
+.ButtonGuardar {
+
+  width: 100%;
+  text-align: center;
+  display: none;
+
+}
+
+#mensajeErrorSectionTree, #mensajeErrorSectionFour{
+	text-align: center;
+}

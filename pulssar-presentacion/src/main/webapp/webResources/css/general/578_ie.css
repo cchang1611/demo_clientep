@@ -1,0 +1,1794 @@
+/* Main */
+
+/* Styles From ISSSTE Internet Explorer */
+
+/* Header */
+
+.Header {
+
+    background: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    border-bottom: #0C231E;
+
+}
+
+.Logo {
+
+    width: 360px;
+
+}
+
+.Header__ButtonMenuContainer {
+
+    color: #FFFFFF;
+    background: #1C5A4F;
+
+}
+
+.Header__ButtonMenuContainer:hover {
+
+    background: #000000;
+
+}
+
+
+.Header__ButtonClockContainer {
+
+    color: #FFFFFF;
+    background: #0C231E;
+
+}
+
+.Header__ButtonClockContainer:hover {
+
+    background: #2c2c2b;
+
+}
+
+.Header__UserContainer {
+
+    background: #1C5A4F;
+
+}
+
+.Header__UserContainer:hover {
+
+    background: #2c2c2b;
+
+}
+
+.Header__RegistrateLoginText {
+
+    color: #FFFFFF;
+
+}
+
+/* Header Primary */
+
+.Header__OneSection {
+
+    background: #0C231E;
+
+}
+
+.Header__TwoSection {
+
+    background: #1C5A4F;
+
+}
+
+.Header__TwoSection:hover {
+
+    background: #000000;
+
+}
+
+.Header__TwoSection__Link {
+
+    color: #FFFFFF;
+
+}
+
+.Header__TwoSection__Link:hover {
+
+    color: #FFFFFF;
+
+}
+
+.Header__TwoSection__Text {
+
+    color: #FFFFFF;
+
+}
+
+/* Dropdown */
+
+.dropdown {
+
+    background: #949494;
+
+}
+
+.dropdown {
+
+    background: #949494;
+
+}
+
+.dropdown:hover {
+
+    background: #CCCCCC;
+
+}
+
+.dropbtn {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+
+}
+
+.dropdown-content {
+
+    background-color: #949494;
+
+}
+
+.dropdown-content a {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.dropdown a:hover {
+
+    background-color: #CCCCCC;
+
+}
+
+.HeaderButton__Loginxl {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+
+}
+
+/* Header PAPERLESS */
+
+.HeaderPaperless {
+
+    background: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    border-bottom: 2px solid #0C231E;
+
+}
+
+.LogoPaperless {
+
+    width: 150px;
+
+}
+
+.HeaderPaperless__ButtonMenuContainer {
+
+    color: #FFFFFF;
+    background: #1C5A4F;
+
+}
+
+.HeaderPaperless__ButtonMenuContainer:hover {
+
+    background: #000000;
+
+}
+
+.HeaderPaperless__ButtonClockContainer {
+
+    color: #FFFFFF;
+    background: #0C231E;
+
+}
+
+.HeaderPaperless__ButtonClockContainer:hover {
+
+    background: #2c2c2b;
+
+}
+
+.HeaderPaperless__UserContainer {
+
+    background: #1C5A4F;
+
+}
+
+.HeaderPaperless__UserContainer:hover {
+
+    background: #2c2c2b;
+
+}
+
+.HeaderPaperless__RegistrateLoginText {
+
+    color: #FFFFFF;
+
+}
+
+/* Termina Header PAPERLESS */
+
+/* Dropdown PAPERLESS */
+
+.ButtonPaperless {
+
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  background: #0C231E;
+
+}
+
+.dropdownPaperless-content {
+
+    background-color: #2c2c2b;
+
+}
+
+.dropdownPaperless-content a {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.dropdownPaperless a:hover {
+
+    background-color: #0C231E;
+
+}
+
+.HeaderButtonPaperless__Loginxl {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+
+}
+
+/* Termina Dropdown PAPERLESS */
+
+/* Menu */
+
+.Menu__Title {
+
+    color: #1C5A4F;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #F8F8F8;
+
+}
+
+
+.Menu__Folio {
+
+    background: #949494;
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+/* Títulos CSS */
+
+.Title__Container {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #2c2c2b;
+
+}
+
+/* Acordion */
+
+.accordion-header,
+.accordion-body {
+
+    background: #FFFFFF;
+
+}
+
+.accordion-header {
+
+      background: #2c2c2b;
+      color: #FFFFFF;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      border-bottom: 1px solid #FFFFFF;
+
+}
+
+.accordion-header:hover {
+
+      background: #0C231E;
+
+}
+
+.accordion-header02 {
+
+      background: #2c2c2b;
+      color: #FFFFFF;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      border-bottom: 1px solid #FFFFFF;
+
+}
+
+.accordion-header02:hover {
+
+      background: #0C231E;
+
+}
+
+.accordion-body {
+
+      background: #F8F8F8;
+      color: #1C5A4F;
+
+}
+
+.accordion-body__contents {
+
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+
+    border-bottom: 1px solid #FFFFFF;
+
+}
+
+.accordion__item.active .accordion-header {
+
+    background: #1C5A4F;
+
+}
+
+.accordion__item .accordion__item .accordion-header {
+
+      background: #0C231E;
+      color: #FFFFFF;
+
+}
+
+.accordion__item .accordion__item .accordion-header:hover {
+
+      background: #1C5A4F;
+      color: #FFFFFF;
+
+}
+
+.accordion__item .accordion__item.active .accordion-header {
+
+      background: #1C5A4F;
+      color: #FFFFFF;
+
+}
+
+.accordion_link {
+
+      color: #747373;
+      background: #DEDEDE;
+
+}
+
+.accordion_link:hover {
+
+      color: #747373;
+      background: #E8E8E8;
+
+}
+
+.accordion_linksecond {
+
+      background: url("../../img/back_issste.png");
+      color: #393b3c;
+
+}
+
+.accordion_linksecond:hover {
+
+      color: #393b3c;
+      background: #F8F8F8;
+
+}
+
+/* Footer */
+
+.Footer {
+
+    background: #0C231E;
+    border-top: #C9AF8D;
+
+}
+
+.Footer__Title {
+
+    color: #FFFFFF;
+
+}
+
+.Footer__Services {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.Footer__Suport {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.Footer__Legacy {
+
+    background: #1C5A4F;
+
+}
+
+.Footer__LegacyLink {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.Footer__LegacyLink:hover {
+
+    color: #949494;
+
+}
+
+.FooterLink {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.FooterLink:hover {
+
+    color: #949494;
+
+}
+
+/* Container */
+
+.Icon__Seccion {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.Icon__Seccion:hover {
+
+  color: #D8D8D8;
+
+}
+
+.Title {
+
+    background: #0C231E;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+
+}
+
+.Line {
+
+    background:#0C231E;
+
+}
+
+.Datos_Container {
+
+    background: #F8F8F8;
+
+}
+
+.Datos_ContainerColumn {
+
+    background: #F8F8F8;
+
+}
+
+.Datos_ContainerColumn02 {
+
+    background: #CCCCCC;
+
+}
+
+.Datos_ContainerColumn03 {
+
+    background: #CCCCCC;
+
+}
+
+.Datos_ContainerColumn04 {
+
+    background: #F8F8F8;
+
+}
+
+.Datos {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.Datosxl {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.Datosxxl {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.DatosBack {
+
+    background: rgba(214, 214, 214, 0.8);
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.DatosBack_Scroll {
+
+    background: rgba(214, 214, 214, 0.8);
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.Datos_Error {
+
+    color: #b50202;
+
+}
+
+.button_agregar {
+
+    color: #FFFFFF;
+
+}
+
+.button_agregar:hover {
+
+    color: #393b3c;
+
+}
+
+.button_eliminar {
+
+    color: #FFFFFF;
+
+}
+
+.button_eliminar:hover {
+
+    color: #393b3c;
+
+}
+
+/* Class Section "Tipo de Retiros" */
+
+.Title_OneOption {
+
+    background: #0C231E;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: white;
+
+}
+
+.Title_OneOption:hover {
+
+    background: #000000;
+
+}
+
+.Title_TowOption {
+
+    background: #1C5A4F;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: white;
+
+}
+
+.Title_TowOption:hover {
+
+    background: #949494;
+
+}
+
+.Container_One {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #F8F8F8;
+
+}
+
+.Container_Two {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #F8F8F8;
+
+}
+
+.Container_Three {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #F8F8F8;
+
+}
+
+.Container_Section {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #0C231E;
+    background: #F8F8F8;
+
+}
+
+/* Seccion Banners  */
+
+
+.Banner__TextContainer {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+    background: url("../../img/back_issste.png");
+
+}
+
+/* Section Denied Acces */
+
+.Accessdenied__ColTwo {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #1C5A4F;
+
+}
+
+.Accessdenied__Title {
+
+    color: #b50202;
+
+}
+
+.Footprints_Section {
+
+  background: #FFFFFF;
+
+}
+
+/* Section copyright */
+
+.Copyright {
+
+  background: #2c2c2b;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+
+.Copyright_Icon {
+
+  color: #FFFFFF;
+  background: #1C5A4F;
+
+}
+
+.Copyright_Icon:hover {
+
+  background: #1C5A4F;
+  color: #FFFFFF;
+
+}
+
+.Copyright_text {
+
+  color: #FFFFFF;
+
+}
+
+/* Datos Generales */
+
+.ContainerDatosGenerales {
+
+    background: #F8F8F8;
+
+}
+
+.ContainerDatosGenerales__ColOne {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.ContainerDatosGenerales__NameError {
+
+    border: 1px solid #b50202;
+
+}
+
+.ContainerDatosGenerales__ColTwo {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.ContainerDatosGenerales_DateError {
+
+    border: 1px solid #b50202;
+
+}
+
+.linkRecertificacion {
+
+    color: #1C5A4F;
+
+}
+
+.linkRecertificacion:hover {
+
+    color: #2c2c2b;
+
+}
+
+.Icon__Seccion {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+/* Index */
+
+.Description {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.Login {
+
+    background: #F8F8F8;
+
+}
+
+/* Modal Window */
+
+.Modal {
+
+    background: url("../../img/back_issste.png");
+
+}
+
+.ModalContainerpdf {
+
+    background-color: #FFFFFF;
+
+}
+
+.ModalHeader {
+
+    background: #0C231E;
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.ModalButton {
+
+    color: #FFFFFF;
+    background: #1C5A4F;
+
+}
+
+.ModalButton:hover {
+
+    background: #000000;
+
+}
+
+.ModalText {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.Modal__Text {
+
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      color: #949494;
+
+}
+
+.Modal__AlertText {
+
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      color: #949494;
+
+}
+
+.Modal__AlertTextOk {
+
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      color: #0C231E;
+
+}
+
+.Modal__AlertTextError {
+
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      color: #b50202;
+
+}
+
+.Modal__Hora {
+
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      color: #949494;
+
+}
+
+/* Styles Forms */
+
+.Inputxxl {
+
+    border: 1px solid rgba(214, 214, 214, 0.8);
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #393b3c;
+
+}
+
+input::-webkit-input-placeholder {
+
+    color: #D8D8D8;
+
+}
+
+input:-moz-placeholder {
+
+    color: #D8D8D8;
+
+}
+
+input:-ms-input-placeholder {
+
+    color: #D8D8D8;
+
+}
+
+.InputEdit {
+
+    border: 1px solid rgba(214, 214, 214, 0.8);
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.Input_small {
+
+    border: 1px solid #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #393b3c;
+
+}
+
+input::-webkit-input-placeholder {color: #949494;}
+input:-moz-placeholder {color: #949494;}
+input:-ms-input-placeholder {color: #949494;}
+
+
+.Inputerror {
+
+    border: 1px solid #b50202;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+    background: #ffefef;
+
+}
+
+.Select {
+
+    border: 1px solid #949494;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.Submit {
+
+    color: #FFFFFF;
+    background: #545454;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+
+.Submit:hover {
+
+    background: #b50202;
+
+}
+
+.Submit_disabled {
+
+    color: #FFFFFF;
+    background: url("../../img/back_issste.png");
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.Submit_second {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #b50202;
+
+}
+
+.Submit_second:hover {
+
+    background: #ea8a8a;
+
+}
+
+.Submit_alert {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ff0000;
+
+}
+
+.Submit_alert:hover {
+
+    background: #f79292;
+
+}
+
+.Submit_prev {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ffc107;
+
+}
+
+.Submit_prev:hover {
+
+    background: #e0a800;
+
+}
+
+.Submit_info {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #17a2b8;
+
+}
+
+.Submit_info:hover {
+
+    background: #138496;
+
+}
+
+.Submitxl {
+
+    background: #545454;
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.Submitxl:hover {
+
+    background: #b50202;
+
+}
+
+.Submitxl_disabled {
+
+    background: url("../../img/back_issste.png");
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.Submitxl_alert {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ff0000;
+
+}
+
+.Submitxl_alert:hover {
+
+    background: #f79292;
+
+}
+
+.Submitxl_prev {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ffc107;
+
+}
+
+.Submitxl_prev:hover {
+
+    background: #e0a800;
+
+}
+
+.Submitxl_info {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #17a2b8;
+
+}
+
+.Submitxl_info:hover {
+
+    background: #138496;
+
+}
+
+.Submitx {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #545454;
+
+}
+
+.Submitx:hover {
+
+    background: #b50202;
+
+}
+
+.Submitx_disabled {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: url("../../img/back_issste.png");
+
+}
+
+.Submitx_alert {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ff0000;
+
+}
+
+.Submitx_alert:hover {
+
+    background: #f79292;
+
+}
+
+.Submitx_prev {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #ffc107;
+
+}
+
+.Submitx_prev:hover {
+
+    background: #e0a800;
+
+}
+
+.Submitx_info {
+
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #17a2b8;
+
+}
+
+.Submitx_info:hover {
+
+    background: #138496;
+
+}
+
+.Title__Label {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #1C5A4F;
+
+}
+
+.LabelText {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #1C5A4F;
+
+}
+
+.LabelTextEdit {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #747373;
+
+}
+
+.Labeltexterror {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #b50202;
+
+}
+
+.Captcha {
+
+    background: #CCCCCC;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+
+}
+
+.Container__RadioButtons {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #1C5A4F;
+
+}
+
+/* Time Picker */
+
+.timepicker {
+
+    border: 1px solid #FFFFFF;
+    color: #949494;
+    background: #F8F8F8;
+
+}
+
+.timepicker::-webkit-input-placeholder {
+
+    color: #949494;
+
+}
+
+.timepicker::-moz-placeholder {
+
+    color: #949494;
+
+}
+
+.timepicker::-ms-input-placeholder {
+
+    color: #949494;
+
+}
+
+/* Styles Tables */
+
+table {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.Table {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.RowHeader {
+
+    background: #0C231E;
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.RowHeader02 {
+
+    background: #2c2c2b;
+    color: #FFFFFF;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.Row1 {
+
+    background: #E8E8E8;
+    color: #1C5A4F;
+
+}
+
+.Row2 {
+
+    background: #DEDEDE;
+    color: #949494;
+
+}
+
+.Linkproceso {
+
+    color: #808080;
+
+}
+
+.Linkretaso {
+
+    color: #ff0000;
+
+}
+
+.Linkconcluido {
+
+    color: #808080;
+
+}
+
+.Linkpausado {
+
+    color: #BC9F00;
+
+}
+
+.Link_blue {
+
+  color: #1C5A4F;
+
+}
+
+.Link_blue:hover {
+
+  color: #1C5A4F;
+
+}
+
+.Link_gray {
+
+  color: #949494;
+
+}
+
+.Link_gray:hover {
+
+  color: #949494;
+
+}
+
+/* Styles Checkpoints */
+
+.Table_Check {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.Table_CheckPoints {
+
+	background: #FFFFFF;
+	color: #0C3741;
+
+}
+
+/* Styles Tabs */
+
+/* Pestaña Marcas Operativas */
+
+.PestanaTitle {
+
+    background: #0C231E;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+
+}
+
+.PestanaTitle:hover {
+
+    background: #1C5A4F;
+
+}
+
+.PestanaTableContainer {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.PestanaTitleContainer {
+
+    background: #949494;
+    color: #FFFFFF;
+
+}
+
+.Row {
+
+    background: #F8F8F8;
+    color: #949494;
+
+}
+
+.PestanasCarousel {
+
+    background: #DEDEDE;
+
+}
+
+/* Pestaña Renapo */
+
+.PestanaTitleRenapo  {
+
+    background: #0C231E;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+
+}
+
+.PestanaTitleRenapo:hover {
+
+    background: #1C5A4F;
+
+}
+
+.PestanaTableContainerRenapo  {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.PestanaTitleContainerRenapo  {
+
+      color: #FFFFFF;
+
+}
+
+.ContentRenapo  {
+
+      background: #F8F8F8;
+      color: #949494;
+
+}
+
+.TextRenapo {
+
+    color: #0C231E;
+
+}
+
+/* Pestaña Curp */
+
+.PestanaTitleCurp  {
+
+      background: #0C231E;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      color: #FFFFFF;
+
+}
+
+.PestanaTitleCurp:hover {
+
+      background: #1C5A4F;
+
+}
+
+.PestanaTableContainerCurp  {
+
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.PestanaTitleContainerCurp  {
+
+      background: #949494;
+      color: #FFFFFF;
+
+}
+
+.ContentCurp  {
+
+      color: #FFFFFF;
+
+}
+
+.Row1 {
+
+      background: #CCCCCC;
+      color: #747373;
+
+}
+
+.Row2 {
+
+      background: #F8F8F8;
+      color: #747373;
+
+}
+
+/* --- Styles Pestaña Datos Generales --- */
+
+.PestanaTitledatos {
+
+      background: #0C231E;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      color: #FFFFFF;
+
+}
+
+.PestanaTitledatos:hover {
+
+      background: #1C5A4F;
+
+}
+
+.PestanaTableContainerdatos {
+
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.PestanaTitleContainerdatos {
+
+      color: #FFFFFF;
+
+}
+
+.PestanasCarouseldatos {
+
+    background: #F8F8F8;
+
+}
+
+.ContainerDatosGenerales__Columna1 {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.ContainerDatosGenerales__Columna2 {
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #949494;
+
+}
+
+.linkRecertificacion {
+
+    color: #1C5A4F;
+
+}
+
+.linkRecertificacion:hover {
+
+    color: #2c2c2b;
+
+}
+
+/* Styles Templeates */
+
+.Aside__Col01 {
+
+    background: #F8F8F8;
+
+}
+
+.Aside__Col02 {
+
+    background: #F8F8F8;
+
+}
+
+/* Slick Carrousel  */
+
+.slick-next::before, .slick-prev::before {
+
+  color: #000000;
+
+}
+
+.Carrousel__ThumbContainer {
+
+  background: #0C231E;
+
+}
+
+.Carrousel__ThumbContainer:hover {
+
+  background: #1C5A4F;
+
+}
+
+.Carrousel__Title {
+
+  background: #1C5A4F;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+
+}
+
+/* Slick Carrousel Administrador */
+
+.CarrouselMenu__ThumbContainer {
+
+  background: #0C231E;
+
+}
+
+.CarrouselMenu__ThumbContainer:hover {
+
+  background: #1C5A4F;
+
+}
+
+.CarrouselMenu__Title {
+
+  background: #1C5A4F;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+
+}
+
+.CarrouselMenu__TitlePrimary {
+
+  background: #1C5A4F;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+
+}
+
+/* SLIDER */
+
+
+p {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+
+.heading-section h2 {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.home-account a {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.cart-info {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.main-menu a {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+/*-- Timeline --*/
+
+.timeline-caption h4 {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.timeline-caption p {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+#product-heading h2 {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+#filters span {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.label-text span {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.send button {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.info li {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.recent-post-info h6 {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.recent-post-info span {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.slider-caption {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.slider-caption h1 {
+
+  text-shadow: 1px 1px #FFFFFF;
+  color: #1C5A4F;
+
+}
+
+.slider-caption p {
+
+  color: #FFFFFF;
+  background: url("../../img/back_issste.png");
+
+}
+
+.slider-caption a {
+
+  background-color: #0C231E;
+  color: #FFFFFF;
+
+}
+
+.slider-caption a:hover {
+
+  background-color: #1C5A4F;
+
+}
+
+/*-- Services --*/
+
+.service-item h4 {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+/*-- Latest Posts --*/
+
+.content-show a {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+/*--Footer--*/
+
+.social-bottom span {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.subscribe-form span {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.footer-title {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.recent-post-info h6 {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.recent-post-info span {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+.more-info li {
+
+  font-family:  'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+/* Drag and Drop Component */
+
+#dropFileForm {
+
+  display: inline-inline-block;
+  vertical-align: middle;
+
+}
+
+/* ESTILOS BOTÓN CURP */
+
+.curpFaltante {
+
+    border: 1px solid #FFFFFF;
+    color: #949494;
+    background: #eaeaea;
+
+}
+
+.curpFaltante::-webkit-input-placeholder {
+
+    color: #949494;
+
+}
+
+.curpFaltante::-moz-placeholder {
+
+    color: #949494;
+
+}
+
+.curpFaltante::-ms-input-placeholder {
+
+    color: #949494;
+
+}
+
+/* Styles Carrousel Visor */
+
+.prev, .next {
+
+  color: #FFFFFF;
+  background: #1C5A4F;
+
+}
+
+.magnify-modal {
+
+    background-color: #0C231E;
+
+}

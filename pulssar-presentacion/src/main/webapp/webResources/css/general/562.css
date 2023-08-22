@@ -1,0 +1,93 @@
+/* Main */
+
+/* Styles From InverCap */
+
+:root {
+
+  --b01: #275a3a;
+  --b02: #0C8541;
+  --b03: #73af69;
+  --b04: #0C8541;
+  --b05: #B7B7B8;
+  --b06: #444444;
+  --b07: #EDEDED;
+  --b08: #FFFFFF;
+  --b09: rgba(214, 214, 214, 0.8);
+  --b10: #ffefef;
+  --b11: #ff0000;
+  --b12: url("../../img/back_invercap.png");
+  --b13: rgb(109, 180, 63);
+  --b14: #444444;
+  --b15: #E8E8E8;
+  --b16: #DEDEDE;
+
+/* Styles Background Banner */
+
+  --back: url("../../img/back_invercap.png");
+
+/* Styles Background White */
+
+  --bw: #FFFFFF;
+
+/* Styles Buttons Active */
+
+  --b17: #026227;
+  --b18: #54ab28;
+
+/* Styles Buttons Secondary */
+
+  --b19: #54ab28;
+  --b20: #026227;
+
+/* Styles Buttons Alert */
+
+  --b21: #ff0000;
+  --b22: #f79292;
+
+/* Styles Buttons Prev */
+
+  --b23: #ffc107;
+  --b24: #e0a800;
+
+/* Styles Buttons Info */
+
+  --b25: #17a2b8;
+  --b26: #138496;
+
+
+  --c01: #275a3a;
+  --c02: #0C3741;
+  --c03: #0C8541;
+  --c04: #FFFFFF;
+  --c04b: #444444;
+  --c05: #D8D8D8;
+  --c06: #949494;
+  --c07: #FFFFFF;
+  --c08: #FFFFFF;
+  --c09: #ff0000;
+  --c10: #747373;
+
+  /* Header Elements */
+
+  --bh: 2px solid #275a3a;
+
+  /* Footer Elements */
+
+  --bf: 2px solid #73af69;
+
+  /* Styles Type */
+
+  --font-SAR: 'Ubuntu', sans-serif;
+
+  /* Styles Logo */
+
+  --lsize: 300px;
+
+/* Styles Color Links Tables */
+
+  --lgtv: #008c00;
+  --lrtc: #ff0000;
+  --lgtc: #808080;
+  --lbtc: #BC9F00;
+
+}

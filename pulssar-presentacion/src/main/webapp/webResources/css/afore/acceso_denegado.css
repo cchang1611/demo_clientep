@@ -1,0 +1,50 @@
+/* Estilos Pulsar 07/03/2019 */
+
+
+.Container__AccesoDenegado {
+
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+
+}
+
+.Columna1 {
+
+  width: 40%;
+  min-width: 440px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+.icon_denied {
+
+  width: 70%;
+
+}
+
+.Columna2 {
+
+  width: 40%;
+  min-width: 440px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #525252;
+
+}
+
+.Title {
+
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 80px;
+  color: #e60000
+
+}

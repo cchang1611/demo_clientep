@@ -1,0 +1,208 @@
+/* Styles Templeates */
+
+@import url('main.css');
+
+.Container {
+
+    width: 100%;
+
+}
+
+.Layout__Full {
+
+    margin: 0px auto;
+    width: 1500px;
+    max-width: 100%;
+
+}
+
+
+.Layout__XL {
+
+    margin: 0px auto;
+    width: 1000px;
+    max-width: 100%;
+
+}
+
+
+.Layout__L {
+
+    margin: 0px auto;
+    width: 750px;
+    max-width: 100%;
+
+}
+
+.Layout__M {
+
+    margin: 0px auto;
+    width: 600px;
+    max-width: 100%;
+
+}
+
+.Layout__CH {
+
+    margin: 0px auto;
+    width: 500px;
+    max-width: 100%;
+
+}
+
+.Section {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.Aside__Col01 {
+
+    width: 550px;
+    max-width: 100%;
+    background: var(--b07);
+
+}
+
+.Aside__Col02 {
+
+    width: 550px;
+    max-width: 100%;
+    background: var(--b07);
+
+}
+
+.Col01 {
+
+    width: 50%;
+    max-width: 260px;
+
+}
+
+/* Styles Box Flex - Trámites SAR Ratificador */
+
+.Col02 {
+
+    width: 50%;
+    max-width: 260px;
+
+}
+
+.Container_Flex {
+
+    width: 100%;
+    display: flex;
+    display: -ms-flexbox;
+    justify-content: center;
+
+}
+
+.Aside01 {
+    margin-top: 20px;
+    max-width: 600px;
+    width: 33%;
+/*     border: 1px solid var(--b01); */
+
+}
+
+.Aside02 {
+
+    width: 60%;
+    max-width: 1000px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+.Asidev01 {
+
+    /* margin-top: 20px;
+    max-width: 600px; */
+    width: 33.3%;
+    border: 1px solid var(--b01);
+
+}
+
+.Asidev02 {
+
+   /*  margin-top: 20px;
+    max-width: 600px; */
+    width: 33.3%;
+    border: 1px solid var(--b01);
+
+}
+
+.Asidev03 {
+
+   /*  margin-top: 20px;
+    max-width: 600px; */
+    width: 33.3%;
+    border: 1px solid var(--b01);
+
+}
+
+.Container__AsidevImg{
+
+    height: 326px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+	margin-top: 10px;
+
+}
+
+.img_asidevimg {
+
+    width: 350px;
+
+}
+
+.AsideScroll {
+
+    max-height: 435px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .Aside02 {
+
+        width: 100%;
+        max-width: 50%;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .Aside01 {
+
+        display: none;
+
+    }
+
+    .Aside02 {
+
+        width: 100%;
+        max-width: 80%;
+
+    }
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #E8E8E8;
+}
+

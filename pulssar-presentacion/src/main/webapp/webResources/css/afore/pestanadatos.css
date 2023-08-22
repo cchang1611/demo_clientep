@@ -1,0 +1,86 @@
+/* Estilos Pulsar 07/03/2019 */
+
+.Pestanadatos {
+
+  width: auto;
+  position: fixed;
+  z-index: 20;
+  top: 170px;
+
+}
+
+
+.PestanaContainerdatos {
+
+  display: flex;
+
+}
+
+
+.PestanaTitledatos {
+
+  width: 15px;
+  min-height: 170px;
+  height: auto;
+  padding: 10px;
+  background: #558E06;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+  border-radius: 0px 5px 5px 0px;
+
+}
+
+.PestanaTitledatos:hover {
+
+  background: #558E06;
+
+}
+
+.PestanaTableContainerdatos {
+
+  width: 400px;
+  min-height: 250px;
+  height: auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  display: none;
+
+}
+
+.PestanaTitleContainerdatos {
+
+  padding: 20px 10px 20px 10px;
+  background: #747373;
+  color: white;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.28);
+
+}
+
+.Rowdatos {
+
+  margin-top: 5px;
+  padding: 10px;
+  background: #F2F2F2;
+  color: #898888;
+  word-wrap: break-word;
+
+}
+
+.PestanasCarouseldatos {
+
+  max-height: 463px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #bbbbbb;
+
+}
