@@ -29,7 +29,7 @@ jobs:
         uses: actions/setup-java@v2  # Esta acción configura la versión de Java que quieres utilizar.
         with:
            java-version: ${{ matrix.java-version }} #version de java.
-           distribution: 'adopt-openj9'
+           distribution: ${{ matrix.java-version == '11' && 'adopt-openj9' || 'adopt' }}
       - name: Set up Maven
         run: |
           if [[ "${{ matrix.maven-version }}" == "3.3" ]]; then
