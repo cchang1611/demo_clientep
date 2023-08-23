@@ -46,7 +46,12 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          mvn sonar:sonar -Dsonar.organization=your-organization-key -Dsonar.projectKey=cchang1611_demo_clientep -Dsonar.host.url=https://sonarcloud.io
+          mvn sonar:sonar \ 
+             -Dsonar.organization=cchang1611 \ 
+             -Dsonar.projectKey=cchang1611_demo_clientep \
+             -Dsonar.host.url=https://sonarcloud.io \
+             -Dsonar.projectVersion=1.0 \
+             -Dsonar.java.binaries=target
 
 
 
