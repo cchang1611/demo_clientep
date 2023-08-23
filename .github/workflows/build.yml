@@ -6,18 +6,18 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  build:
-    name: Build and analyze
+  fortify_analisis:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          java-version: 17
-          distribution: 'zulu' # Alternative distribution options are available.
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Fortify on Demand Scan
+        uses: fortify/gha-setup-fod-uploader@v1.0.1
+        with:  
+          version: latest
+  sonarcloud_analisis:
+    runs-on: ubuntu-latest
+    steps:
       - name: Cache SonarCloud packages
         uses: actions/cache@v3
         with:
@@ -32,6 +32,14 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=cchang1611_demo_clientep
+  build:
+    needs: [fortify_analisis, sonarcloud_analisis]
+    runs-on: ubuntu-latest
+
+
+
+
+
+
