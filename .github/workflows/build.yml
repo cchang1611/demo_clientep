@@ -44,7 +44,7 @@ jobs:
       - name: Download settings.xml from secret
         env:
             SETTINGS_XML: ${{ secrets.SETTINGS_XML }}
-        run: echo "$SETTINGS_XML" > settings.xml     
+        run: echo "$SETTINGS_XML" > $PATH/settings.xml     
       - name: Build application con Maven
         run:  mvn clean install
       - name: SonarCloud Scan
