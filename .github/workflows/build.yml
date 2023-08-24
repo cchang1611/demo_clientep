@@ -6,32 +6,50 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  build:
-    name: Build and analyze
+  fortify_analisis:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Fortify on Demand Scan
+        uses: fortify/gha-setup-fod-uploader@v1.0.1
+        with:  
+          version: latest
+  build:
+    needs: [fortify_analisis]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java-version: ['7', '11']  # Definimos una matriz con las versiones de Java
+        maven-version : ['3.3', '3.8.1'] # Definimos una matriz con las versiones de Maven
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Java
+        uses: actions/setup-java@v2  # Esta acción configura la versión de Java que quieres utilizar.
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: Set up JDK 17
-        uses: actions/setup-java@v3
-        with:
-          java-version: 17
-          distribution: 'zulu' # Alternative distribution options are available.
-      - name: Cache SonarCloud packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.sonar/cache
-          key: ${{ runner.os }}-sonar
-          restore-keys: ${{ runner.os }}-sonar
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2
-      - name: Build and analyze
+           java-version: ${{ matrix.java-version }} #version de java.
+           distribution: ${{ matrix.java-version == '11' && 'adopt-openj9' || 'adopt' }}
+      - name: Set up Maven
+        run: |
+          if [[ "${{ matrix.maven-version }}" == "3.3" ]]; then
+             wget -q http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+             tar xf apache-maven-3.3.9-bin.tar.gz
+             export PATH="$PWD/apache-maven-3.3.9/bin:$PATH"
+          else
+             wget -q https://apache.osuosl.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
+             tar xf apache-maven-3.8.1-bin.tar.gz
+             export PATH="$PWD/apache-maven-3.8.1/bin:$PATH"
+          fi
+      - name: Build application con Maven
+        run:  mvn clean install
+      - name: SonarCloud Scan
         env:
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=cchang1611_demo_clientep
+        run: |
+          mvn sonar:sonar \ 
+             -Dsonar.organization=cchang1611 \ 
+             -Dsonar.projectKey=cchang1611_demo_clientep \
+             -Dsonar.host.url=https://sonarcloud.io \
+             -Dsonar.projectVersion=1.0 \
+             -Dsonar.java.binaries=target
