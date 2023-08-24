@@ -26,7 +26,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Set up Java
-        uses: actions/setup-java@v2  # Esta acción configura la versión de Java que quieres utilizar.
+        uses: actions/setup-java@v2  
         with:
            java-version: ${{ matrix.java-version }} #version de java.
            distribution: ${{ matrix.java-version == '11' && 'adopt-openj9' || 'adopt' }}
@@ -41,6 +41,10 @@ jobs:
              tar xf apache-maven-3.8.1-bin.tar.gz
              export PATH="$PWD/apache-maven-3.8.1/bin:$PATH"
           fi
+      - name: Download settings.xml from secret
+        env:
+            SETTINGS_XML: ${{ secrets.SETTINGS_XML }}
+        run: echo "$SETTINGS_XML" > settings.xml     
       - name: Build application con Maven
         run:  mvn clean install
       - name: SonarCloud Scan
