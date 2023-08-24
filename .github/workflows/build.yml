@@ -37,7 +37,7 @@ jobs:
              tar xf apache-maven-3.3.9-bin.tar.gz
              export PATH="$PWD/apache-maven-3.3.9/bin:$PATH"
           else
-             wget -q https://apache.osuosl.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
+             wget -q http://archive.apache.org/dist/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
              tar xf apache-maven-3.8.1-bin.tar.gz
              export PATH="$PWD/apache-maven-3.8.1/bin:$PATH"
           fi
