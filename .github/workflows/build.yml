@@ -43,8 +43,8 @@ jobs:
           fi
       - name: Download settings.xml
         run: |
-            mkdir -p ~/.m2
-            curl -o ~/.m2/repository/settings.xml -u ${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }} https://nexus.james.lab.zivra.com/#browse/browse:cchang_artifacts:archivos/settings/2.0/settings-2.0.xml
+            mkdir -p /home/runner/.m2/repository
+            curl -o /home/runner/.m2/repository/settings.xml -u ${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }} https://nexus.james.lab.zivra.com/repository/cchang_artifacts/archivos/settings/2.0/settings-2.0.xml
       - name: Build application con Maven
         run:  mvn clean install
       - name: SonarCloud Scan
