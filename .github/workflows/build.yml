@@ -41,12 +41,10 @@ jobs:
              tar xf apache-maven-3.8.1-bin.tar.gz
              export PATH="$PWD/apache-maven-3.8.1/bin:$PATH"
           fi
-      - name: Download settings.xml from secret
-        env:
-            SETTINGS_XML: ${{ secrets.SETTINGS_XML }}
+      - name: Download settings.xml
         run: |
             mkdir -p ~/.m2
-            echo "$SETTINGS_XML" > ~/.m2/settings.xml     
+            curl -o ~/.m2/repository/settings.xml -u ${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }} https://nexus.james.lab.zivra.com/#browse/browse:cchang_artifacts:archivos/settings/2.0/settings-2.0.xml
       - name: Build application con Maven
         run:  mvn clean install
       - name: SonarCloud Scan
@@ -56,6 +54,4 @@ jobs:
           mvn sonar:sonar \ 
              -Dsonar.organization=cchang1611 \ 
              -Dsonar.projectKey=cchang1611_demo_clientep \
-             -Dsonar.host.url=https://sonarcloud.io \
-             -Dsonar.projectVersion=1.0 \
-             -Dsonar.java.binaries=target
+             -Dsonar.host.url=https://sonarcloud.io 
