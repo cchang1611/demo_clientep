@@ -11,10 +11,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Fortify on Demand Scan
-        uses: fortify/gha-setup-fod-uploader@v1.0.1
-        with:  
-          version: latest
+      - name: Fortify ScanCentral Scan
+        uses: fortify/gha-setup-scancentral-client@v1.2.0
+        with: 
+          version: 20.2.0          
+        #client-auth-token: # ScanCentral client authentication token. optional
   build:
     needs: [fortify_analisis]
     runs-on: ubuntu-latest
