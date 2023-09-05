@@ -1,0 +1,31 @@
+name: 'Increment Tag'
+description: 'Incrementa el ultimo tag'
+outputs:
+  incremented_tag:
+    description: 'El tag incrementado'
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Lista de branches
+      shell: bash
+      run: |
+         git fetch --prune --tags
+         current_branch=$(git symbolic-ref --short HEAD)
+         echo "Branch actual: $current_branch"
+        
+    - name: Run increment-tag script
+      id: tag-incrementado
+      shell: bash
+      run: |
+        git fetch --tags
+        TAG=$(git describe --abbrev=0 --tags)
+        echo "{TAG}={$TAG}" >> $GITHUB_OUTPUT
+        echo "El anterior tag es: $TAG"
+        INCREMENTED_TAG=$(sh .github/actions/increment-tag/increment-tag.sh $TAG)
+        echo "{INCREMENTED-TAG}={$INCREMENTED_TAG}" >> GITHUB_OUTPUT
+        echo "El nuevo tag es: $INCREMENTED-TAG"
