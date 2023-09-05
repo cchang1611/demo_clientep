@@ -40,13 +40,24 @@ jobs:
              tar xf apache-maven-3.8.1-bin.tar.gz
              export PATH="$PWD/apache-maven-3.8.1/bin:$PATH"
           fi
+          
       - name: Download settings.xml
         run: |
             mkdir -p /home/runner/.m2/repository
             curl -o /home/runner/.m2/repository/settings.xml -u ${{ secrets.NEXUS_USERNAME }}:${{ secrets.NEXUS_PASSWORD }} https://nexus.james.lab.zivra.com/repository/cchang_artifacts/archivos/settings/2.0/settings-2.0.xml
             cat /home/runner/.m2/repository/settings.xml
+    
       - name: Build application con Maven
         run:  mvn clean install
+
+      - name: Change Artifact Name
+        run: |
+          mvn build-helper:change-project-artifact -DnewName=nombre-del-artifact-aqui-con-version-${{ github.run_number }}
+          # ${{ github.run_number }} al nuevo nombre del artefacto generado antes de la implementación. 
+          #Esto incorporará un número de versión único en el nombre del artefacto, que se basará en el 
+          #número de ejecución del flujo de trabajo actual en GitHub Actions. 
+          #De esta manera, cada implementación generará un artefacto con un nombre único que refleje la versión del flujo de trabajo.
+      
       - name: SonarCloud Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
@@ -54,4 +65,14 @@ jobs:
           mvn sonar:sonar \ 
              -Dsonar.organization=cchang1611 \ 
              -Dsonar.projectKey=cchang1611_demo_clientep \
-             -Dsonar.host.url=https://sonarcloud.io 
+             -Dsonar.host.url=https://sonarcloud.io \
+             -Dsonar.login=$SONAR_TOKEN
+             
+      - name: Deploy to Nexus #Guarda el artefacto generado en Nexus
+        run: |
+          mvn deploy \
+            -DskipTests=true \  # Opcional: saltar las pruebas si es necesario
+            -DaltDeploymentRepository=nexus::default::https://nexus.procesar.mx \
+            -Dusername=usuario-nexus \
+            -Dpassword=contraseña-nexus
+      
