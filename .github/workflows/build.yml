@@ -1,3 +1,9 @@
+#${{ github.run_number }} al nuevo nombre del artefacto generado antes de la implementación. 
+#Esto incorporará un número de versión único en el nombre del artefacto, que se basará en el 
+#número de ejecución del flujo de trabajo actual en GitHub Actions. 
+#De esta manera, cada implementación generará un artefacto con un nombre único que refleje la versión del flujo de trabajo.
+
+
 name: CI pipeline
 on:
   push:
@@ -53,10 +59,6 @@ jobs:
       - name: Change Artifact Name
         run: |
           mvn build-helper:change-project-artifact -DnewName=nombre-del-artifact-aqui-con-version-${{ github.run_number }}
-          # ${{ github.run_number }} al nuevo nombre del artefacto generado antes de la implementación. 
-          #Esto incorporará un número de versión único en el nombre del artefacto, que se basará en el 
-          #número de ejecución del flujo de trabajo actual en GitHub Actions. 
-          #De esta manera, cada implementación generará un artefacto con un nombre único que refleje la versión del flujo de trabajo.
       
       - name: SonarCloud Scan
         env:
@@ -71,7 +73,7 @@ jobs:
       - name: Deploy to Nexus #Guarda el artefacto generado en Nexus
         run: |
           mvn deploy \
-            -DskipTests=true \  # Opcional: saltar las pruebas si es necesario
+            -DskipTests=true \  #Opcional
             -DaltDeploymentRepository=nexus::default::https://nexus.procesar.mx \
             -Dusername=usuario-nexus \
             -Dpassword=contraseña-nexus
