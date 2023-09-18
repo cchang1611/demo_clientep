@@ -58,12 +58,15 @@ jobs:
 
       - name: Ejecutar Action personalizada para versionamiento
         uses: ./.github/actions/action_tag.yml
-        with:
-          input-name: valor
 
+      - name: Captura salida de la accion
+        run: |
+          output_content=$(<output.txt)
+          echo "Version: $output_content"
+ 
       - name: Change Artifact Name
         run: |
-          mvn build-helper:change-project-artifact -DnewName=nombre-del-artifact-aqui-con-version-${{ github.run_number }}
+          mvn build-helper:change-project-artifact -DnewName=nombre-del-artifact-aqui-con-version-$Version
 
       - name: Sonarqube Scan
         env:
