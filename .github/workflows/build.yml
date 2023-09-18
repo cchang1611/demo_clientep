@@ -90,9 +90,15 @@ jobs:
              
       - name: Deploy to Nexus #Guarda el artefacto generado en Nexus
         run: |
-          mvn deploy \
-            -DskipTests=true \  #Opcional
-            -DaltDeploymentRepository=nexus::default::https://nexus.procesar.mx \
-            -Dusername=usuario-nexus \
-            -Dpassword=contraseña-nexus
+          mvn deploy:deploy-file \
+            -Durl=https://nexus.example.com/repository/maven-releases/ \
+            -DrepositoryId=nexus-releases \
+            -Dfile=target/my-project-1.0.jar \ #Ruta-del-nuevo-archivo
+            -DgroupId=com.example \
+            -DartifactId=my-project \
+            -Dversion=$Version \ #Colocar-aqui-la-version
+            -Dpackaging=jar \
+            -DgeneratePom=true \
+            -DgeneratePom.description="Descripción de mi proyecto" \
+            -DgeneratePom.url=https://github.com/usuario/mi-proyecto
       
