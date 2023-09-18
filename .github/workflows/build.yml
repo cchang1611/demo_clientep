@@ -56,10 +56,25 @@ jobs:
       - name: Build application con Maven
         run:  mvn clean install
 
+      - name: Ejecutar Action personalizada para versionamiento
+        uses: ./.github/actions/action_tag.yml
+        with:
+          input-name: valor
+
       - name: Change Artifact Name
         run: |
           mvn build-helper:change-project-artifact -DnewName=nombre-del-artifact-aqui-con-version-${{ github.run_number }}
-      
+
+      - name: Sonarqube Scan
+        env:
+          SONARQUBE_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
+        run: |
+          sonar-scanner \
+            -Dsonar.projectKey=pry-comunes \
+            -Dsonar.sources=. \
+            -Dsonar.host.url=https://servidor-sonarqube.com \
+            -Dsonar.login=$SONARQUBE_TOKEN || true
+          
       - name: SonarCloud Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
